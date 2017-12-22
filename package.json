@@ -1,0 +1,23 @@
+{
+  "name": "elementals",
+  "version": "1.0.0",
+  "description": "Jarvis components",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnsandy/elementals.git"
+  },
+  "keywords": [
+    "Jarvis",
+    "Components"
+  ],
+  "author": "Shawn Sandy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shawnsandy/elementals/issues"
+  },
+  "homepage": "https://github.com/shawnsandy/elementals#readme"
+}
