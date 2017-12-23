@@ -4,12 +4,10 @@
   "description": "Jarvis components",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shawnsandy/elementals.git"
-  },
+  "repository": "https://github.com/shawnsandy/elementals.git",
   "keywords": [
     "Jarvis",
     "Components"
@@ -19,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/shawnsandy/elementals/issues"
   },
-  "homepage": "https://github.com/shawnsandy/elementals#readme"
+  "homepage": "https://github.com/shawnsandy/elementals#readme",
+  "private": true,
+  "devDependencies": {
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "blendid": "^4.3.1",
+    "gulp": "^3.9.1"
+  }
 }
