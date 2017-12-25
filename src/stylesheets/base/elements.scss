@@ -1,0 +1,47 @@
+.block-element {
+	min-height: 40vh;
+	background-color: whitesmoke;
+}
+
+.block-element-small {
+	height: 25vh;
+}
+
+.block-element-medium {
+	height: 40vh;
+}
+
+.block-element-large {
+	height: 60vh;
+}
+
+.block-element-full {
+	height: 100vh;
+}
+
+.flex-element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	>* {
+		padding: 0 10px;
+	}
+}
+
+.flex-element-left {
+	@extend .flex-element;
+	justify-content: flex-start
+}
+
+.flex-element-right {
+	@extend .flex-element;
+	justify-content: flex-end;
+}
+
+.flex-element-header {
+	>* {
+		@extend .flex-element;
+		@extend .flex-element-left;
+	}
+}
