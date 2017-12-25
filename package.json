@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html"
+    "start": "browser-sync start --config bs-config.js"
   },
   "repository": "https://github.com/shawnsandy/elementals.git",
   "keywords": [
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "blendid": "^4.3.1",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-nunjucks": "^3.0.0"
   }
 }

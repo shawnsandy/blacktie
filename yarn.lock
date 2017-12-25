@@ -2897,6 +2897,14 @@ gulp-nunjucks-render@^2.2.1:
     nunjucks "^3.0.0"
     through2 "~0.4.0"
 
+gulp-nunjucks@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-nunjucks/-/gulp-nunjucks-3.0.0.tgz#77cb31d61632a1ae10d2e1f8c0a8cf82659fcf47"
+  dependencies:
+    gulp-util "^3.0.0"
+    nunjucks "^3.0.0"
+    through2 "^2.0.0"
+
 gulp-rename@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.2.2.tgz#3ad4428763f05e2764dec1c67d868db275687817"
