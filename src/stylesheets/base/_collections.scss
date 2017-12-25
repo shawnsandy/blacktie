@@ -4,11 +4,13 @@
 
 .collection-elements {
 	//margin: 5px 0;
+
 	padding: 20px;
 	border-bottom: 1px solid lightgray;
 	&:hover {
 		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
 		background-color: whitesmoke;
+
 	}
 	&:last-child {
 		border-bottom: none;
