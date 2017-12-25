@@ -1,3 +1,23 @@
 body {
   font-family: sans-serif;
 }
+
+.block-element {
+
+
+  min-height: 40vh;
+  background-color: whitesmoke;
+
+  &.medium {
+  height: 60vh;
+  }
+
+  &.large {
+    height: 80vh;
+  }
+
+  &.full {
+    height: 100vh;
+  }
+
+}
