@@ -1,5 +1,5 @@
 {
-  "name": "elementals",
+  "name": "jarvis-elementals",
   "version": "1.0.0",
   "description": "Jarvis components",
   "main": "build/index.js",
@@ -18,14 +18,17 @@
     "url": "https://github.com/shawnsandy/elementals/issues"
   },
   "homepage": "https://github.com/shawnsandy/elementals#readme",
-  "private": true,
+  "private": false,
   "devDependencies": {
-    "gulp-sass": "^3.1.0",
-    "node-sass": "^4.7.2"
-  },
-  "dependencies": {
     "blendid": "^4.3.1",
     "gulp": "^3.9.1",
-    "gulp-nunjucks": "^3.0.0"
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-print": "^2.0.1",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.7.2",
+    "np": "^2.18.3"
+  },
+  "dependencies": {
+
   }
 }

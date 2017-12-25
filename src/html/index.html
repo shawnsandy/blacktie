@@ -25,16 +25,16 @@
 <div class="container section">
 <div class="content">
 <p class="subtitle is-3">Collections</p>
-<div class="collections">
+<div class="collections-elements">
 {% for client in clients %}
-  <div class="collection flex-element-left" data-module="">
+  <div class="collection-elements flex-element-left" data-module="">
 
       <div class="">
       <div class="columns">
       <div class="column">{{ client.name }}</div>
       <div class="column">{{ client.address }}</div>
       <div class="column">{{ client.company }}</div>
-      <div class="column">{{ client.phone }}</div>
+      <div class="column">{{ client.phone }}.</div>
       </div>
       </div>
   </div>
