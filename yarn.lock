@@ -3028,7 +3028,7 @@ gulp-changed@^2.0.0:
     gulp-util "^3.0.0"
     through2 "^2.0.0"
 
-gulp-cssnano@2.1.2:
+gulp-cssnano@2.1.2, gulp-cssnano@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/gulp-cssnano/-/gulp-cssnano-2.1.2.tgz#e08a09771ec5454a549f1a005bdd256cb8e5e0a3"
   dependencies:
@@ -3172,7 +3172,7 @@ gulp-sequence@0.4.6:
     gulp-util ">=3.0.0"
     thunks "^4.5.1"
 
-gulp-sizereport@1.2.0:
+gulp-sizereport@1.2.0, gulp-sizereport@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/gulp-sizereport/-/gulp-sizereport-1.2.0.tgz#d8b7fa0f2365912521d16a387866857e6dcc4878"
   dependencies:
