@@ -1,5 +1,6 @@
 .block-element {
 	min-height: 40vh;
+	background-color: whitesmoke;
 }
 
 .block-element-small {
@@ -22,9 +23,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+
 	height: 100%;
+	width: 100%;
 	>* {
 		padding: 0 10px;
+		flex-grow: 1;
 	}
 }
 
