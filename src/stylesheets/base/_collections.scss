@@ -1,0 +1,39 @@
+.collections-element {
+	border: 1px solid lightgray;
+}
+
+.collection-element {
+	//margin: 5px 0;
+
+	padding: 20px;
+	border-bottom: 1px solid lightgray;
+	&:hover {
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+		background-color: whitesmoke;
+
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	//@include box-shadow();
+	>* {
+		//@extend .flex-element-left;
+
+	}
+	&-tiny {
+		height: 40px;
+
+	}
+	&-small {
+		height: 60px;
+		padding: 30px;
+	}
+	&-medium {
+		height: 90px;
+		padding: 40px;
+	}
+	&-large {
+		height: 140px;
+		padding: 60px;
+	}
+}
