@@ -1,13 +1,13 @@
 {
-  "name": "black-tie",
+  "name": "blacktie",
   "version": "1.0.0",
   "description": "Jarvis components",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --config bs-config.js"
+    "start": "yarn run blendid"
   },
-  "repository": "https://github.com/shawnsandy/elementals.git",
+  "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
     "Jarvis",
     "Components"
@@ -15,9 +15,9 @@
   "author": "Shawn Sandy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shawnsandy/elementals/issues"
+    "url": "https://github.com/shawnsandy/blacktie/issues"
   },
-  "homepage": "https://github.com/shawnsandy/elementals#readme",
+  "homepage": "https://github.com/shawnsandy/blacktie#readme",
   "private": false,
   "devDependencies": {
     "blendid": "^4.3.1",
