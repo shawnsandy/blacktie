@@ -22,12 +22,51 @@
 {% endblock %}
 
 {% block content %}
+<div class="container section posts-element">
+<div class="columns">
+  <div class="column is-9">
+  <article class="content">
+<section class="header">
+<h1 class="">
+Sample Article
+</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto nisi autem ratione officiis iste sed debitis hic earum nostrum, tempore eligendi rem quas nemo doloribus! Ex cum fuga saepe?</p>
+<p>Inventore sit, exercitationem quia vero architecto ipsum, dolore voluptas cumque dolores culpa nemo quaerat dicta amet eum praesentium velit accusantium officia omnis fugiat tenetur! Architecto nulla deserunt laudantium magnam dicta.</p>
+<p>Recusandae commodi dolores dolorum deserunt exercitationem fugit tenetur excepturi nesciunt at distinctio, aperiam pariatur natus nostrum? Architecto, facilis explicabo, quis fuga iure quas magnam dolorum molestiae, hic eaque eum laudantium!</p>
+<p>Laudantium iusto consectetur illo labore! Voluptatibus eum ipsam rem quibusdam porro sapiente error, culpa, perspiciatis optio explicabo, enim molestias molestiae ratione eaque possimus. Dolor nam vero nihil maxime non fugiat.</p>
+
+</section>
+<div class="meta-element">
+<div class="author-element">Author : John Hancock some other stuff</div>
+<div class="author-element">Author : John Hancock some other stuff</div>
+<div class="author-element">
+<div class="div">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+  <div class="column">
+
+  <aside class="links-element is-uppercase">
+   <p class="subtitle is-5 has-text-centered">Articles</p>
+   <p class="links-element-link"><a class="">Sample article</a></p>
+   <p class="links-element-link"><a class="">Sample article</a></p>
+   <p class="links-element-link"><a class="">Sample article</a></p>
+   <p class="links-element-link"><a class="">Sample article</a></p>
+   <p class="links-element-link"><a class="">Sample article</a></p>
+  </aside>
+  </div>
+</div>
+
+</div>
 <div class="container section">
 <div class="content">
 <p class="subtitle is-3">Collections</p>
-<div class="collections-elements">
+<div class="collections-element">
 {% for client in clients %}
-  <div class="collection-elements flex-element-left" data-module="">
+  <div class="collection-element flex-element-left" data-module="">
 
       <div class="">
       <div class="columns">
@@ -42,4 +81,12 @@
 </div>
 </div>
 </div>
+<section class="section container">
+<div class="columns">
+  <div class="column">card</div>
+  <div class="column">card</div>
+  <div class="column">card</div>
+  <div class="column">card</div>
+</div>
+</section>
 {% endblock %}
