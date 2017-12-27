@@ -1,0 +1,28 @@
+.flex-element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	> * {
+		padding: 0 10px;
+		flex-grow: 1;
+	}
+}
+
+.flex-element-left {
+	@extend .flex-element;
+	justify-content: flex-start
+}
+
+.flex-element-right {
+	@extend .flex-element;
+	justify-content: flex-end;
+}
+
+.flex-element-header {
+	>* {
+		@extend .flex-element;
+		@extend .flex-element-left;
+	}
+}
