@@ -5,6 +5,7 @@ const Copy = require('copy-webpack-plugin');
 const Uglify = require('uglifyjs-webpack-plugin');
 const Cleanup = require('clean-webpack-plugin');
 const Webpack = require('webpack');
+const Notify = require('webpack-notifier');
 
 require("dotenv").config();
 
@@ -30,6 +31,7 @@ const config = {
     app: __dirname + "/src/javascripts/app.js",
     print: __dirname + "/src/javascripts/print.js"
   },
+
   output: {
     path: __dirname + "/dist",
     filename: "[name].js",
@@ -67,7 +69,7 @@ const config = {
     }),
     new Webpack.optimize.CommonsChunkPlugin({
       name: "main"
-    })
+	})
   ],
   devServer: {
     contentBase: "./dist",
@@ -86,7 +88,13 @@ if(isProduction) {
         {
           from: __dirname + "/public/stylesheets"
         }
-      ]));
+	  ]),
+	  new Notify({
+		title: "Blacktie Notifications",
+		message: "Success. You are ready to party",
+		sound: true
+	})
+	);
 };
 
 
