@@ -10,7 +10,7 @@ gulp.task('sass', () =>
 	.pipe(sass().on('error', sass.logError))
 	.pipe(reports({gzip: true}))
 	.pipe(cssnano())
-	.pipe(gulp.dest('./build/css'))
+	.pipe(gulp.dest('./gist/css'))
 	.pipe(reports({gzip: true}))
 )
 
