@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env ENV=local webpack --hide-modules",
-    "dev": "cross-env ENV=production webpack --hide-modules",
-    "start": "webpack-dashboard -- webpack-dev-server --inline --progress --hide-modules"
+    "dev": "cross-env ENV=production webpack --hide-modules --progress",
+    "start": "cross-env ENV=local -- webpack-dev-server --progress --hide-modules",
+    "dashboard": "webpack-dashboard -- webpack "
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
