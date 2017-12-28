@@ -38,13 +38,13 @@
 
 	@extend .flex-element-left;
 	margin: 40px 0;
-	border: 1px solid lightgray;
+	border: 1px solid whitesmoke;
 
 	.meta-element-items {
 
-		border-right: 1px solid lightgray;
+		border-right: 1px solid whitesmoke;
 		height: inherit;
-		min-height: 80px;
+		min-height: 60px;
 		@extend .flex-element-left;
 		&:last-child {
 			border: none;
