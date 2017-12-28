@@ -6,6 +6,7 @@ const Uglify = require('uglifyjs-webpack-plugin');
 const Cleanup = require('clean-webpack-plugin');
 const Webpack = require('webpack');
 const Notify = require('webpack-notifier');
+const OptimizeCss = require('optimize-css-assets-webpack-plugin');
 
 require("dotenv").config();
 
@@ -53,8 +54,20 @@ const config = {
         use: Extract.extract({
           fallback: "style-loader",
           use: [
-            { loader: "css-loader" },
-            { loader: "sass-loader" }
+            {
+              loader: "css-loader",
+              options: {
+                minimize: true,
+                sourceMap: true
+              }
+            },
+            {
+              loader: "sass-loader",
+              options: {
+                minimize: true,
+                sourceMap: true
+              }
+            }
           ]
         })
       }
@@ -62,14 +75,14 @@ const config = {
   },
   plugins: [
     //new Dashboard(),
-    new Extract("blacktie.css"),
+    new Extract("[name].min.css"),
     new Html({
       template: __dirname + "/src/index.html",
       inject: "body"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
       name: "main"
-	})
+    })
   ],
   devServer: {
     contentBase: "./dist",
@@ -83,18 +96,16 @@ if(isProduction) {
     config.plugins.push(new Cleanup([
         "dist"
 	  ]),
-	  new Uglify(),
-	  new Copy([
+	  new Uglify(), new Copy([
         {
           from: __dirname + "/public/stylesheets"
         }
 	  ]),
 	  new Notify({
-		title: "Blacktie Notifications",
-		message: "Success. You are ready to party",
-		sound: true
-	})
-	);
+        title: "Blacktie Notifications",
+        message: "Production bundled successfully. You are ready to party",
+        sound: true
+      }));
 };
 
 
