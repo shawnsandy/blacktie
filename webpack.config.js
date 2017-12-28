@@ -7,10 +7,11 @@ const Cleanup = require('clean-webpack-plugin');
 const Webpack = require('webpack');
 const Notify = require('webpack-notifier');
 const OptimizeCss = require('optimize-css-assets-webpack-plugin');
+// const Prefixer = require('autoprefixer');
 
 require("dotenv").config();
 
-const ENV = process.env.APP_ENV;
+const ENV = process.env.ENV;
 const isLocal = ENV === "local";
 const isProduction = ENV === "production";
 
@@ -57,16 +58,14 @@ const config = {
             {
               loader: "css-loader",
               options: {
-                minimize: true,
-                sourceMap: true
+                minimize: isProduction
               }
-            },
+			},
+			{
+				loader: "postcss-loader"
+			},
             {
-              loader: "sass-loader",
-              options: {
-                minimize: true,
-                sourceMap: true
-              }
+              loader: "sass-loader"
             }
           ]
         })
@@ -74,15 +73,16 @@ const config = {
     ]
   },
   plugins: [
-    //new Dashboard(),
-    new Extract("[name].min.css"),
+	//new Dashboard(),
+	new Extract("[name].min.css"),
     new Html({
-      template: __dirname + "/src/index.html",
-      inject: "body"
+		template: __dirname + "/src/index.html",
+		inject: "body"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
-      name: "main"
-    })
+		name: "main"
+	})
+
   ],
   devServer: {
     contentBase: "./dist",
