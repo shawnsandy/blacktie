@@ -1,6 +1,6 @@
 {
   "name": "blacktie",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Jarvis components",
   "main": "build/index.js",
   "scripts": {
@@ -8,13 +8,12 @@
     "build": "cross-env ENV=production webpack --hide-modules",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
     "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline --progress",
-    "dashboard": "webpack-dashboard -- webpack",
     "bump": "cross-env ENV=production np --no-publish"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
-    "Jarvis",
-    "Components"
+    "Blacktie",
+    "CSS"
   ],
   "author": "Shawn Sandy",
   "license": "MIT",
@@ -54,6 +53,7 @@
     "webpack": "^3.10.0",
     "webpack-dashboard": "^1.0.2",
     "webpack-dev-server": "^2.9.7",
+    "webpack-monitor": "^1.0.14",
     "webpack-notifier": "^1.5.0"
   },
   "dependencies": {}
