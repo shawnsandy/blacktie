@@ -1,4 +1,6 @@
-public
-.cache
-build
-src
+public/
+.cache/
+build/
+src/
+monitor/
+.env

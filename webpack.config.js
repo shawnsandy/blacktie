@@ -7,17 +7,18 @@ const Cleanup = require('clean-webpack-plugin');
 const Webpack = require('webpack');
 const Notify = require('webpack-notifier');
 const OptimizeCss = require('optimize-css-assets-webpack-plugin');
+const Monitor = require('webpack-monitor');
 // const Prefixer = require('autoprefixer');
 
 require("dotenv").config();
 
 const ENV = process.env.ENV;
-const isLocal = ENV === "local";
+const isDevelopment = ENV === "development";
 const isProduction = ENV === "production";
 
 function setDevTool() {
   // function to set dev-tool depending on environment
-  if (isLocal) {
+  if (isDevelopment) {
     return "inline-source-map";
   } else if (isProduction) {
     return "source-map";
@@ -36,7 +37,7 @@ const config = {
 
   output: {
     path: __dirname + "/dist",
-    filename: "[name].js",
+    filename: "js/[name].js",
     publicPath: "/"
   },
   module: {
@@ -60,10 +61,10 @@ const config = {
               options: {
                 minimize: isProduction
               }
-			},
-			{
-				loader: "postcss-loader"
-			},
+            },
+            {
+              loader: "postcss-loader"
+            },
             {
               loader: "sass-loader"
             }
@@ -73,20 +74,19 @@ const config = {
     ]
   },
   plugins: [
-
-	new Extract("[name].min.css"),
+    new Extract("css/[name].min.css"),
     new Html({
-		template: __dirname + "/src/index.html",
-		inject: "body"
+      template: __dirname + "/src/index.html",
+      inject: "body"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
-		name: "main"
-	})
-
+      name: "main"
+    })
   ],
   devServer: {
     contentBase: "./dist",
-    port: "7700"
+    port: "7700",
+    open: true
   }
 };
 
@@ -102,13 +102,19 @@ if(isProduction) {
         }
 	  ]),
 	  new Notify({
-        title: "Blacktie Notifications",
+        title: "BlackTie Notifications",
         message: "Production bundled successfully. You are ready to party",
         sound: true
-      }));
+      }),
+    new Monitor({
+      capture: true,
+      launch: true,
+      port: 3031
+    })
+  );
 };
 
-if(isLocal) {
+if(isDevelopment) {
 
 	config.plugins.push(
 		new Dashboard()
