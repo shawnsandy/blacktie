@@ -5,9 +5,11 @@
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env ENV=local webpack --hide-modules",
-    "dev": "cross-env ENV=production webpack --hide-modules",
-    "start": "webpack-dashboard -- webpack-dev-server --inline --progress --hide-modules"
+    "build": "cross-env ENV=production webpack --hide-modules",
+    "dev": "cross-env ENV=local webpack --hide-modules --progress",
+    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline --progress",
+    "dashboard": "webpack-dashboard -- webpack",
+    "bump": "cross-env ENV=production np --no-publish"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
@@ -20,7 +22,7 @@
     "url": "https://github.com/shawnsandy/blacktie/issues"
   },
   "homepage": "https://github.com/shawnsandy/blacktie#readme",
-  "private": false,
+  "private": true,
   "devDependencies": {
     "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.0",

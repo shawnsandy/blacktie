@@ -73,7 +73,7 @@ const config = {
     ]
   },
   plugins: [
-	//new Dashboard(),
+
 	new Extract("[name].min.css"),
     new Html({
 		template: __dirname + "/src/index.html",
@@ -107,6 +107,15 @@ if(isProduction) {
         sound: true
       }));
 };
+
+if(isLocal) {
+
+	config.plugins.push(
+		new Dashboard()
+	);
+
+
+}
 
 
 module.exports = config;
