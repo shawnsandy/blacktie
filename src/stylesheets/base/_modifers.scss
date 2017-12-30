@@ -1,14 +1,25 @@
+.element-border-color {
+	border-color: lightgray;
+}
+
+.element-border {
+	border: 1px solid lightgray;
+
+}
+
 .element-borderless {
 	border: none;
 }
 
 .element-border-top {
+	@extend .element-border;
 	border-bottom: none;
 	border-left: none;
 	border-right: none;
 }
 
 .element-border-bottom {
+	@extend .element-border;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -24,4 +35,13 @@
 	border-top: none;
 	border-bottom: none;
 	border-right: none;
+}
+
+
+.element-background {
+	background-color: whitesmoke;
+}
+
+.element-background-transparent {
+	background-color: transparent;
 }

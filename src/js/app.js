@@ -1,6 +1,5 @@
-import './modules'
-
-console.log('app.js has loaded!')
+import "./../stylesheets/app.scss";
+console.log("app.js has loaded!");
 
 class TestClass {
   constructor() {
@@ -10,3 +9,6 @@ class TestClass {
 }
 
 let test = new TestClass();
+
+const say = "Hello World..."
+console.log(say)

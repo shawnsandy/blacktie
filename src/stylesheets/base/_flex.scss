@@ -30,3 +30,9 @@
 .radius {
 	border-radius: 7px;
 }
+
+.flex-element-column {
+	@extend .flex-element;
+	flex-direction: column;
+	overflow: hidden;
+}
