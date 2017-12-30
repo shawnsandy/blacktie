@@ -8,7 +8,6 @@ const Webpack = require('webpack');
 const Notify = require('webpack-notifier');
 const OptimizeCss = require('optimize-css-assets-webpack-plugin');
 const Monitor = require('webpack-monitor');
-// const Prefixer = require('autoprefixer');
 
 require("dotenv").config();
 
@@ -31,7 +30,7 @@ const config = {
   devtool: setDevTool(),
 
   entry: {
-    app: __dirname + "/src/javascripts/app.js",
+    app: __dirname + "/src/js/app.js",
     print: __dirname + "/src/javascripts/print.js"
   },
 
@@ -96,7 +95,8 @@ if(isProduction) {
     config.plugins.push(new Cleanup([
         "dist"
 	  ]),
-	  new Uglify(), new Copy([
+    new Uglify(),
+    new Copy([
         {
           from: __dirname + "/public/stylesheets"
         }
