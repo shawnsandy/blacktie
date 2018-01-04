@@ -1,28 +1,28 @@
-.card-element
+.card-elm
 {
-	@extend .element-background;
-	@extend .flex-element-column;
+	@extend .elm-background;
+	@extend .flex-elm-column;
 	border-radius: 5px;
 
 }
 
-.card-element-shadow {
-	@extend .card-element;
-	@extend .element-shadow;
+.card-elm-shadow {
+	@extend .card-elm;
+	@extend .elm-shadow;
 }
 
-.card-element-header {
-	@extend .flex-element;
-	@extend .element-border-bottom;
+.card-elm-header {
+	@extend .flex-elm;
+	@extend .elm-border-bottom;
 	padding: 10px;
 	width: 100%
 }
 
-.card-element-content {
+.card-elm-content {
 	height: 100%;
 	> * {
 
-		@extend .flex-element-column;
+		@extend .flex-elm-column;
 		padding: 20px;
 	}
 }

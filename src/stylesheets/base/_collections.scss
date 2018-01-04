@@ -1,8 +1,11 @@
-.collections-element {
-	border: 1px solid lightgray;
+.collections-elm {
+	margin: 20px 0;
+	@extend .elm-border-top;
+	@extend .elm-border-bottom;
+	border-color: whitesmoke;
 }
 
-.collection-element {
+.collection-elm {
 	//margin: 5px 0;
 
 	padding: 20px;
@@ -17,12 +20,11 @@
 	}
 	//@include box-shadow();
 	>* {
-		//@extend .flex-element-left;
+		//@extend .flex-elm-left;
 
 	}
 	&-tiny {
 		height: 40px;
-
 	}
 	&-small {
 		height: 60px;
