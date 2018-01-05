@@ -1,4 +1,5 @@
 import "./../stylesheets/app.scss";
+import "./../stylesheets/colors.scss";
 console.log("app.js has loaded!");
 
 class TestClass {
