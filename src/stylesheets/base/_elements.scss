@@ -1,6 +1,6 @@
 .block-elm {
 	min-height: 40vh;
-	background-color: whitesmoke;
+	@extend .elm-bg-whitesmoke;
 }
 
 .block-elm-small {

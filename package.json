@@ -1,12 +1,12 @@
 {
   "name": "blacktie",
-  "version": "1.0.2",
+  "version": "0.1.2",
   "description": "Jarvis components",
-  "main": "build/index.js",
+  "main": "dist/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env ENV=production webpack --hide-modules",
-    "dev": "cross-env ENV=local webpack --hide-modules --progress",
+    "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
+    "dev": "cross-env ENV=local webpack --hide-modules --progress && gulp reports",
     "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline",
     "bump": "cross-env ENV=production np --no-publish"
   },

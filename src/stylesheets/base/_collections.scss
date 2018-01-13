@@ -16,10 +16,10 @@
 
 	}
 	&:last-child {
-		border-bottom: none;
+		// border-bottom: none;
 	}
 	//@include box-shadow();
-	>* {
+	> * {
 		//@extend .flex-elm-left;
 
 	}
@@ -38,4 +38,5 @@
 		height: 140px;
 		padding: 60px;
 	}
+
 }
