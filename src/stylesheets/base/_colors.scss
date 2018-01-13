@@ -3,15 +3,23 @@
 
 	.elm-color-#{$name} {
 		color: $color;
+		&:hover {
+			color: darken($color, 10%)
+		}
 	}
 
-	.elm-border-color-#{$name} {
+	.elm-border-#{$name} {
 		border-color: $color;
+		&:hover {
+			color: darken($color, 10%)
+		}
 	}
 
-	.elm-bg-color-#{$name} {
+	.elm-bg-#{$name} {
 		background-color: $color;
-
+		&:hover {
+			color: darken($color, 10%)
+		}
 	}
 
 }
