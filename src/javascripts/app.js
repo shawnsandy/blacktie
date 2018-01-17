@@ -1,12 +1,22 @@
-import './modules'
-
 console.log('app.js has loaded!')
 
-class TestClass {
-  constructor() {
-    let msg = "Using ES2015+ syntax";
-    console.log(msg);
-  }
-}
+// let test = new TestClass();
+import { u } from "umbrellajs";
+const validate = require("validate");
+validate.init();
 
-let test = new TestClass();
+const smoothScroll = require("smooth-scroll");
+const scroll = new smoothScroll('a[href*="#"]');
+
+/** scroll to top */
+
+const screenHeight = window.innerHeight;
+const toTop = u(".back-to-top");
+
+window.addEventListener('scroll', (e) => {
+  if(window.pageYOffset > screenHeight){
+   u(toTop).removeClass("elm-hide");
+ } else {
+   u(toTop).addClass("elm-hide");
+ }
+});

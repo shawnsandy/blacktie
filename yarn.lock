@@ -7911,6 +7911,10 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
+smooth-scroll@^12.1.5:
+  version "12.1.5"
+  resolved "https://registry.yarnpkg.com/smooth-scroll/-/smooth-scroll-12.1.5.tgz#b6d8deca371a9edd5ea3ad291ef0fb7e741ed41e"
+
 snake-case@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/snake-case/-/snake-case-2.1.0.tgz#41bdb1b73f30ec66a04d4e2cad1b76387d4d6d9f"
@@ -8780,6 +8784,10 @@ ultron@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
 
+umbrellajs@^2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/umbrellajs/-/umbrellajs-2.10.1.tgz#9529055f76bc733d7c90c58db0a28fcbb7272f06"
+
 unc-path-regex@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
@@ -8992,6 +9000,10 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
+
+validate@cferdinandi/validate:
+  version "1.1.0"
+  resolved "https://codeload.github.com/cferdinandi/validate/tar.gz/1975f06980a98616b1dec5512f9cda3069eb6531"
 
 vary@~1.1.2:
   version "1.1.2"
