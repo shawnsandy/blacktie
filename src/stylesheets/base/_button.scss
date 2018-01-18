@@ -1,0 +1,25 @@
+.button-elm {
+
+  @extend .elm-border;
+  @extend .elm-text-shadow;
+  border-radius: 2px;
+  line-height: 1.7;
+  padding: .5em 1em;
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: 400;
+
+  &.elm-blue {
+	  @extend .elm-bg-blue;
+	  @extend .elm-color-whitesmoke;
+	  &:hover {
+		  @extend .elm-color-white;
+	  }
+  }
+
+}
+
+.button-elm-rounded {
+	@extend .button-elm;
+	@extend .elm-radius-rounded;
+}

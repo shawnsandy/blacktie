@@ -1,27 +1,28 @@
-.card-element
+.card-elm
 {
-	@extend .element-background;
-	@extend .flex-element-column;
-	@extend .element-border;
+	@extend .elm-background;
+	@extend .flex-elm-column;
 	border-radius: 5px;
-	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11),
-	0 5px 15px 0 rgba(0, 0, 0, .08);
 
 }
 
-.card-element-header {
-	@extend .flex-element;
-	@extend .element-border-bottom;
+.card-elm-shadow {
+	@extend .card-elm;
+	@extend .elm-shadow;
+}
+
+.card-elm-header {
+	@extend .flex-elm;
+	@extend .elm-border-bottom;
 	padding: 10px;
-	background-color: #fff;
 	width: 100%
 }
 
-.card-element-content {
+.card-elm-content {
 	height: 100%;
 	> * {
 
-		@extend .flex-element-column;
+		@extend .flex-elm-column;
 		padding: 20px;
 	}
 }
