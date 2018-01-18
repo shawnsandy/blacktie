@@ -39,7 +39,8 @@ u(".confirm-actions").each((elm, i) => {
       // set the confirmation value
       // search for data-confirm-html attribute
       // or defaults to confirm
-      const confirmation = u(elm).data('confirm-html') || "confirm";
+      const confirmation = u(elm).data('confirm-html') || "Confirm";
+      const timer = u(elm).data('timeout') || 4000;
 
       // check if element html value is the same as the confirmation
       // if is reset to original value else set to confirmation
@@ -51,7 +52,7 @@ u(".confirm-actions").each((elm, i) => {
         u(elm).html(confirmation);
         setTimeout(() => {
           u(elm).html(val);
-        }, 5000);
+        }, timer);
         e.preventDefault();
       }
 
