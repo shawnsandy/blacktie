@@ -8,7 +8,8 @@
     "build": "gulp reports && cross-env ENV=production webpack --hide-modules && gulp reports",
     "dev": "cross-env ENV=local webpack --hide-modules --progress && gulp reports",
     "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline",
-    "bump": "cross-env ENV=production np --no-publish"
+    "bump": "cross-env ENV=production np --no-publish",
+    "kss": "kss --config kss-config.json"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
@@ -57,6 +58,8 @@
     "webpack-notifier": "^1.5.0"
   },
   "dependencies": {
+    "kss": "^3.0.0-beta.18",
+    "michelangelo": "^0.6.1",
     "smooth-scroll": "^12.1.5",
     "umbrellajs": "^2.10.1",
     "validate": "cferdinandi/validate"
