@@ -20,3 +20,33 @@ window.addEventListener('scroll', (e) => {
    u(toTop).addClass("elm-hide");
  }
 });
+
+
+/**
+ * Confirm actions before submit
+ * Prompt user before deleting data
+ */
+u(".confirm-actions").each((elm, i) => {
+
+  if(elm)
+  {
+    let val = u(elm).html();
+    //console.log(val);
+
+    u(elm).on("click", (e) => {
+      console.log("clicked")
+      const confirmation = u(elm).data('confirm-html') || "confirm";
+
+      if (confirmation === u(elm).html()) {
+        u(elm).html(val);
+        console.log(val);
+      } else {
+        u(elm).html(confirmation);
+        console.log(val);
+        e.preventDefault();
+      }
+
+    });
+  }
+
+});
