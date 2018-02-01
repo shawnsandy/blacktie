@@ -24,6 +24,7 @@
   "homepage": "https://github.com/shawnsandy/blacktie#readme",
   "private": true,
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.39",
     "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -58,6 +59,8 @@
     "webpack-notifier": "^1.5.0"
   },
   "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "hyperapp": "^1.0.2",
     "kss": "^3.0.0-beta.18",
     "michelangelo": "^0.6.1",
     "smooth-scroll": "^12.1.5",
