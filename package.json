@@ -5,11 +5,12 @@
   "main": "dist/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp reports && cross-env ENV=production webpack --hide-modules && gulp reports",
+    "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
     "dev": "cross-env ENV=local webpack --hide-modules --progress && gulp reports",
     "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline",
     "bump": "cross-env ENV=production np --no-publish",
-    "kss": "kss --config kss-config.json"
+    "kss": "kss --config kss-config.json",
+    "reports": "gulp reports"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
@@ -61,8 +62,10 @@
   "dependencies": {
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "hyperapp": "^1.0.2",
+    "hyperapp-nestable": "^0.2.1",
     "kss": "^3.0.0-beta.18",
     "michelangelo": "^0.6.1",
+    "preact": "^8.2.7",
     "smooth-scroll": "^12.1.5",
     "umbrellajs": "^2.10.1",
     "validate": "cferdinandi/validate"
