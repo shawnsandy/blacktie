@@ -14,19 +14,7 @@ validate.init();
 /** scroll to anchors */
 const scroll = new smoothScroll('a[href*="#"]');
 
-/**
- * scroll to top
- * */
-const screenHeight = window.innerHeight;
-const toTop = u(".back-to-top");
 
-window.addEventListener("scroll", e => {
-  if (window.pageYOffset > screenHeight) {
-    u(toTop).removeClass("elm-hide");
-  } else {
-    u(toTop).addClass("elm-hide");
-  }
-});
 
 /**
  * Confirm actions before submit
