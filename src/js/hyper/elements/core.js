@@ -1,8 +1,6 @@
 import { h } from "hyperapp";
 import { u } from "umbrellajs";
 
-const nested = require("hyperapp-nestable");
-
 export const Link = ({ link, click, classes = 'button-elm' }, children) => (
   <a
     href={link}

@@ -21,6 +21,7 @@ export const actions = {
         u(toTop).addClass("elm-hide");
       }
     });
+    //console.log(u(e).parent())
   }
 };
 
@@ -38,4 +39,5 @@ export const view = (state, actions) => (
       <i class="im im-arrow-up-circle is-2" />
     </a>
   </div>
+
 );

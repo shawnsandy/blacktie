@@ -31,7 +31,7 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    hyper_components: __dirname + "/src/js/hyper/index.js",
+    'hyper-apps': __dirname + "/src/js/hyper/index.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll", "hyperapp-nestable"]
   },
 
