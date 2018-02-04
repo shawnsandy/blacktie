@@ -6,15 +6,11 @@ import { u } from "umbrellajs";
 const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
 
-
-
 /** simple and easy form validation */
 validate.init();
 
 /** scroll to anchors */
 const scroll = new smoothScroll('a[href*="#"]');
-
-
 
 /**
  * Confirm actions before submit
