@@ -22,13 +22,24 @@ export const actions = {
 
 export const view = (state, actions) => (
   <span oncreate={e => {
-   const icon = u(e).parent().data('icon') || "/icons/bytesize-symbols.min.svg#i-chevron-right"
+   const icon = u(e).parent().data('icon') || "i-chevron-right"
    const classes = u(e).parent().data('class') || "svg-elm"
-   console.log( classes )
+   console.log( icon )
    actions.setIcon(icon);
    actions.setClass(classes)
   }}
      >
     <Svg icon={state.icon} classes={state.classes} />
+  </span>
+)
+
+export const bytesize = (state, actions) => (
+  <span oncreate={e => {
+   const icon = u(e).parent().data('icon') || "i-chevron-right"
+   const classes = u(e).parent().data('class') || "svg-elm"
+   actions.setIcon(icon);
+   actions.setClass(classes)
+  }}>
+    <Svg icon={`/icons/bytesize-symbols.min.svg#${state.icon}`} classes={state.classes} />
   </span>
 )

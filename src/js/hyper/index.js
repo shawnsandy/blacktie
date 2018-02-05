@@ -10,4 +10,4 @@ const main = app(btn.state, btn.actions, btn.view, document.querySelector(".hype
 
 const toTop = app(top.state, top.actions, top.view, document.querySelector('.top'))
 
-const svg = app(icon.state, icon.actions, icon.view, document.querySelector('.icon'))
+const svg = app(icon.state, icon.actions, icon.bytesize, document.querySelector('.icon'))
