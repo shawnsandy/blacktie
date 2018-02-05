@@ -50,4 +50,4 @@ export const view = (state, actions) => (
   >
     <Svg icon={state.icon} classes={state.classes} />
   </span>
-);
+)
