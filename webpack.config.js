@@ -101,6 +101,10 @@ if(isProduction) {
     new Copy([
         {
           from: __dirname + "/public/stylesheets"
+        },
+        {
+          from: __dirname + "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
+          to: "./icons"
         }
 	  ]),
 	  new Notify({
