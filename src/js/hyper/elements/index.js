@@ -20,7 +20,12 @@ export const Svg = ({
   icon = "/icons/bytesize-symbols.min.svg#i-chevron-right",
   classes = "svg-elm-48"
 }) => (
-  <svg class={classes}>
+  <svg
+    class={classes}
+    oncreate={e => {
+      console.log("svg created");
+    }}
+  >
     <use href={icon} />
   </svg>
 );
