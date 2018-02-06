@@ -1,5 +1,5 @@
 import { h } from "hyperapp";
-import { Button } from "./elements/core";
+import { Button } from "./elements/index";
 import { u } from "umbrellajs";
 
 export const state = {

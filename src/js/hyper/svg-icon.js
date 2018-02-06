@@ -1,6 +1,6 @@
 import { h, app } from "hyperapp";
 import { u } from "umbrellajs";
-import { Svg } from "./elements/core";
+import { Svg } from "./elements/index";
 
 export const state = {
   icon: "i-chevron-right",
