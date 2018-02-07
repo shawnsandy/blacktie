@@ -5,8 +5,12 @@ import { u } from "umbrellajs";
 import { setTimeout } from "timers";
 const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
+import {h, app} from "hyperapp";
 
+/** simple and easy form validation */
 validate.init();
+
+/** scroll to anchors */
 const scroll = new smoothScroll('a[href*="#"]');
 
 /** scroll to top */
@@ -60,3 +64,28 @@ u(".confirm-actions").each((elm, i) => {
   }
 
 });
+
+
+const state = {
+  count: 0
+};
+
+const actions = {
+  down: () => state => ({ count: state.count - 1 }),
+  up: () => state => ({ count: state.count + 1 })
+};
+
+const view = (state, actions) => (
+  <main>
+    <h1>{state.count}</h1>
+    <button onclick={actions.down}>-</button>
+    <button onclick={actions.up}>+</button>
+  </main>
+);
+
+const main = app(
+  state,
+  actions,
+  view,
+  document.querySelector(".hyper")
+);

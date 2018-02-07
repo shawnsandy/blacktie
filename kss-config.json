@@ -1,0 +1,13 @@
+{
+  "title": "BlackTie Style Guide",
+
+  "source": "src/stylesheets/",
+
+  "destination": "public/styleguide/",
+
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+
+  "css": ["/dist/app.css", "/dist/colors.css"],
+
+  "js": ["/dist/js/main", "/dist/js/app.js"]
+}

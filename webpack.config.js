@@ -31,7 +31,8 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    print: __dirname + "/src/javascripts/print.js"
+    'hyper-apps': __dirname + "/src/js/hyper/index.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll", "hyperapp-nestable"]
   },
 
   output: {
@@ -79,9 +80,10 @@ const config = {
       inject: "body"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
-      name: "main"
+      name: "vendors"
     })
   ],
+
   devServer: {
     contentBase: "./dist",
     port: "7700",
@@ -99,18 +101,17 @@ if(isProduction) {
     new Copy([
         {
           from: __dirname + "/public/stylesheets"
+        },
+        {
+          from: __dirname + "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
+          to: "./icons"
         }
 	  ]),
 	  new Notify({
         title: "BlackTie Notifications",
         message: "Production bundled successfully. You are ready to party",
         sound: true
-      }),
-    new Monitor({
-      capture: true,
-      launch: true,
-      port: 3031
-    })
+      })
   );
 };
 
@@ -120,8 +121,6 @@ if(isDevelopment) {
 		new Dashboard()
 	);
 
-
 }
-
 
 module.exports = config;
