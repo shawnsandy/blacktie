@@ -11,12 +11,5 @@ export const actions = {
 }
 
 export const view = (state, actions) => (
-  <div
-    class=""
-    oncreate={e => {
-      console.log("upload component created");
-    }}
-  >
     <FileUploads required='required' />
-  </div>
 )

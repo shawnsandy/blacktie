@@ -103,8 +103,8 @@
 
   <div class="section container content">
     <p class="subtitle is-3">Button</p>
-    <span data-action="/" class="confirm-btn"></span>
-    <span data-action="/" class="confirm-link"></span>
+   <span data-action="/" class="confirm-btn"><button type="submit" class="confirm-actions button-elm">Delete</button></span>
+    <span data-action="/" class="confirm-link"><a href="/" class="confirm-actions button-elm">Delete</a></span>
     <hr>
     <p>
       <button class="button-elm confirm-actions" type="submit">
@@ -140,23 +140,8 @@
     <form data-validate action="/" method="get">
     <div class="flex-elm">
       <div class="parent upload ">
-        <div class="file has-name is-fullwidth">
-          <label class="file-label">
-            <input class="file-input" type="file" name="resume">
-            <span class="file-cta">
-              <span class="file-icon">
-                <i class="fas fa-upload"></i>
-              </span>
-              <span class="file-label">
-                Choose a file…
-              </span>
-            </span>
-            <span class="file-name">
-              Screen Shot 2017-07-29 at 15.54.25.png
-            </span>
-          </label>
-        </div>
-      </div>
+
+      <div class="file has-name is-fullwidth"><label class="file-label"><input class="file-input" type="file" name="resume" required=""><span class="file-cta"><span class="file-icon"><i class="fas fa-upload"></i></span><span class="file-label">File Upload</span></span><span class="file-name">Please select file to upload</span></label></div></div>
     </div>
     <div class="section">
 
