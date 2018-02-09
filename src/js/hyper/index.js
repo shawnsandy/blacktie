@@ -17,7 +17,6 @@ const icon = app(svg.state, svg.actions, svg.view, document.querySelector('.icon
 
 const actions =  app(confirmBtn.state, confirmBtn.actions, confirmBtn.button, document.querySelector('.confirm-btn'))
 
-
 const links =  app(confirmBtn.state, confirmBtn.actions, confirmBtn.link, document.querySelector('.confirm-link'))
 
 const upload = app(up.state, up.actions, up.view, document.querySelector('.upload'))

@@ -39,5 +39,4 @@ export const view = (state, actions) => (
       <i class="im im-arrow-up-circle is-2" />
     </a>
   </div>
-
 );

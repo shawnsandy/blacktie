@@ -1,58 +1,33 @@
 import { h, app } from "hyperapp";
 import { u } from "umbrellajs";
+import {
+  ConfirmButtonActions,
+  ConfirmLinkActions
+} from "./elements/confirmActions";
 
 export const state = {
-  url: null,
-  style: null,
-  button: "button-elm",
-  type: null,
-  name: "Delete"
+  url: "/",
+  className: "button-elm",
+  type: "submit",
+  label: "Delete"
 };
 
 export const actions = {
-  setName: () => state => ({ name: "John Hancock" })
-};
+  setUrl: value => state => ({ url: value }),
+  setType: value => state => ({ type: value }),
+  setLabel: value => state => ({ label: value }),
 
-const confirmActions = elm => {
-  const val = u(elm).html();
-  u(elm).on("click", e => {
-    const confirmation = u(elm).data("confirm-html") || "Confirm";
-    const timer = u(elm).data("timeout") || 2000;
-    if (confirmation === u(elm).html()) {
-      u(elm).html(val);
-    } else {
-      u(elm).html(confirmation);
-      setTimeout(() => {
-        u(elm).html(val);
-      }, timer);
-      e.preventDefault();
-    }
-  });
+  setClassName: value => state => ({ className: value })
 };
 
 export const link = (state, actions) => (
-
-    <a
-      href="/"
-      class={`confirm-actions ${state.button}`}
-      oncreate={elm => {
-        confirmActions(elm);
-      }}
-    >
-      {state.name}
-    </a>
-
+  <span>
+    <ConfirmLinkActions label="Remove" confirmLabel="Are you sure" />
+  </span>
 );
 
 export const button = (state, actions) => (
-  <button
-    type={state.type}
-    class={`confirm-actions ${state.button}`}
-    type="submit"
-    oncreate={elm => {
-      confirmActions(elm);
-    }}
-  >
-    {state.name}
-  </button>
+  <span>
+    <ConfirmButtonActions />
+  </span>
 );
