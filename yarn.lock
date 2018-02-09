@@ -4325,8 +4325,8 @@ hyperapp-nestable@^0.2.1:
   resolved "https://registry.yarnpkg.com/hyperapp-nestable/-/hyperapp-nestable-0.2.1.tgz#44d085d9ba9f7433ff59289a4bf79b795f7513bd"
 
 hyperapp@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.0.2.tgz#aa3e03434650297368339a9465cb0b489fb49332"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.1.1.tgz#1e80f0b2b4180defd389f815dfcbd863a9143a97"
 
 iconv-lite@0.4.19, iconv-lite@^0.4.17:
   version "0.4.19"

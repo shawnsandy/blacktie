@@ -6,11 +6,13 @@ const onCreate = elm => {
 };
 
 const getFileName = elm => {
-  u(elm.target)
+
+ u(elm.target)
     .parent()
     .find(".file-name")
     .html(elm.target.files[0].name);
-    console.log(elm.target.files[0])
+   // console.log(elm.target.files[0])
+
 };
 
 export const FileUploads = ({
@@ -24,6 +26,7 @@ export const FileUploads = ({
     key={name}
     class={className}
     oncreate={e => {
+
       onCreate(e);
     }}
   >
