@@ -27,7 +27,7 @@ export const onClickAction = (e, confirmLabel = "Confirm", timeout = 3000) => {
 }
 
 export const ConfirmButtonActions = (
-  { label = "Delete", className = "button-elm", type = "submit", confirmLabel= "Confirm". timeout = 3000 },
+  { label = "Delete", className = "button-elm", type = "submit", confirmLabel= "Confirm", timeout },
   children
 ) => (
   <button
