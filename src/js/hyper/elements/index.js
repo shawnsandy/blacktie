@@ -23,9 +23,9 @@ export const Svg = ({
   <svg
     class={classes}
     oncreate={e => {
-      console.log("svg created");
+      console.log(u(e).find('use').attr('href'));
     }}
   >
-    <use href={icon} />
+    <use key={icon} href={icon} />
   </svg>
 );
