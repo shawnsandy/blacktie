@@ -39,6 +39,19 @@ const getClasses = elm => {
       .data("class") || "svg-elm";
 }
 
+export const byteSizeIcons = (state, actions) => (
+  <span
+    oncreate={e => {
+      const icon = getIcon(e)
+      const classes = getClasses(e)
+      actions.setIcon(icon);
+      actions.setClass(classes);
+    }}
+  >
+    <Svg icon={state.svg_url+state.icon} classes={state.classes} />
+  </span>
+)
+
 export const view = (state, actions) => (
   <span
     oncreate={e => {
