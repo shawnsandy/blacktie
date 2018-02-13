@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "transform-vue-jsx",
     [
       "transform-react-jsx",
        { "pragma": "h" }]

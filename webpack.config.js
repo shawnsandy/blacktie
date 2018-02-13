@@ -31,9 +31,10 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    'hyper-apps': __dirname + "/src/js/hyper/index.js",
-    'hyper-icons': __dirname + "/src/js/hyper/Svg.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", "hyperapp-nestable"]
+    "hyper-apps": __dirname + "/src/js/hyper/index.js",
+    "hyper-icons": __dirname + "/src/js/hyper/Svg.js",
+    "vue-components": __dirname + "/src/js/vue/index.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll", "vue"]
   },
 
   output: {
@@ -47,6 +48,11 @@ const config = {
         test: /\.js$/,
         use: "babel-loader",
         exclude: [/node_modules/]
+      },
+      {
+        test: /\.vue$/,
+        loader: "vue-loader",
+        options: {}
       },
       {
         test: /\.html/,
@@ -99,6 +105,10 @@ if(isProduction) {
         "dist"
 	  ]),
     new Uglify(),
+    new Webpack.DefinePlugin({
+      "process.env": { NODE_ENV: '"production"'}
+
+    }),
     new Copy([
         {
           from: __dirname + "/public/stylesheets"
