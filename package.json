@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
     "dev": "cross-env ENV=local webpack --hide-modules --progress && gulp reports",
-    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline",
+    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"
