@@ -3,3 +3,4 @@
 .env
 /monitor
 /SassMagic
+yarn-error.log

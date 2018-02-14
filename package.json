@@ -3,20 +3,24 @@
   "version": "0.1.2",
   "description": "Jarvis components",
   "main": "dist/js/app.js",
+  "browser": "dist/my-web-components.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
-    "dev": "cross-env ENV=local webpack --hide-modules --progress && gulp reports",
-    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot",
+    "build-stencil": "stencil build",
+    "stencil-dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "dev":
+      "cross-env ENV=local webpack --hide-modules --progress && gulp reports",
+    "start":
+      "cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
-  "keywords": [
-    "Blacktie",
-    "CSS"
-  ],
+  "keywords": ["Blacktie", "CSS"],
   "author": "Shawn Sandy",
   "license": "MIT",
   "bugs": {
@@ -64,6 +68,7 @@
     "webpack-notifier": "^1.5.0"
   },
   "dependencies": {
+    "@stencil/core": "^0.5.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",

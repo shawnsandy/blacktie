@@ -33,7 +33,6 @@ const config = {
     app: __dirname + "/src/js/app.js",
     "hyper-apps": __dirname + "/src/js/hyper/index.js",
     "hyper-icons": __dirname + "/src/js/hyper/Svg.js",
-    "vue-components": __dirname + "/src/js/vue/index.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll", "vue"]
   },
 
