@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
-    "build-stencil": "stencil build",
+    "build-stencil": "stencil build --dev --watch",
     "stencil-dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "dev":
       "cross-env ENV=local webpack --hide-modules --progress && gulp reports",

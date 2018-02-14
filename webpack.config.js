@@ -1,13 +1,13 @@
 const Html = require("html-webpack-plugin");
 const Extract = require("extract-text-webpack-plugin");
-const Dashboard = require("webpack-dashboard/plugin")
-const Copy = require('copy-webpack-plugin');
-const Uglify = require('uglifyjs-webpack-plugin');
-const Cleanup = require('clean-webpack-plugin');
-const Webpack = require('webpack');
-const Notify = require('webpack-notifier');
-const OptimizeCss = require('optimize-css-assets-webpack-plugin');
-const Monitor = require('webpack-monitor');
+const Dashboard = require("webpack-dashboard/plugin");
+const Copy = require("copy-webpack-plugin");
+const Uglify = require("uglifyjs-webpack-plugin");
+const Cleanup = require("clean-webpack-plugin");
+const Webpack = require("webpack");
+const Notify = require("webpack-notifier");
+const OptimizeCss = require("optimize-css-assets-webpack-plugin");
+const Monitor = require("webpack-monitor");
 
 require("dotenv").config();
 
@@ -81,7 +81,7 @@ const config = {
   },
   resolve: {
     alias: {
-      'vue$': "vue/dist/vue.esm.js"
+      vue$: "vue/dist/vue.esm.js"
     },
     extensions: ["*", ".js", ".vue", ".json"]
   },
@@ -93,7 +93,22 @@ const config = {
     }),
     new Webpack.optimize.CommonsChunkPlugin({
       name: "vendors"
-    })
+    }),
+    new Copy([
+      {
+        from: __dirname + "/public/stylesheets"
+      },
+      {
+        from:
+          __dirname +
+          "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
+        to: "./icons"
+      },
+      {
+        from: __dirname + "/www/",
+        to: "./components"
+      }
+    ])
   ],
 
   devServer: {
@@ -105,38 +120,23 @@ const config = {
 
 // Minify and copy assets in production
 // plugins to use in a production environment
-if(isProduction) {
-    config.plugins.push(new Cleanup([
-        "dist"
-	  ]),
+if (isProduction) {
+  config.plugins.push(
+    new Cleanup(["dist"]),
     new Uglify(),
     new Webpack.DefinePlugin({
-      "process.env": { NODE_ENV: '"production"'}
-
+      "process.env": { NODE_ENV: '"production"' }
     }),
-    new Copy([
-        {
-          from: __dirname + "/public/stylesheets"
-        },
-        {
-          from: __dirname + "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-          to: "./icons"
-        }
-	  ]),
-	  new Notify({
-        title: "BlackTie Notifications",
-        message: "Production bundled successfully. You are ready to party",
-        sound: true
-      })
+    new Notify({
+      title: "BlackTie Notifications",
+      message: "Production bundled successfully. You are ready to party",
+      sound: true
+    })
   );
-};
+}
 
-if(isDevelopment) {
-
-	config.plugins.push(
-		new Dashboard()
-	);
-
+if (isDevelopment) {
+  config.plugins.push(new Dashboard());
 }
 
 module.exports = config;

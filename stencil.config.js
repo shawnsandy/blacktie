@@ -4,4 +4,4 @@ exports.config = {
   indexHtmlSrc: "./src/js/stencil/index.html",
   generateWWW: false,
   bundles: [{ components: ["my-first-component"] }]
-};
+}
