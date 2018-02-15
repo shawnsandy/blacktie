@@ -6,13 +6,13 @@ import { Component, Prop } from "@stencil/core";
 export class MyComponent {
   // Indicate that name should be a public property on the component
   @Prop() name: string;
-  @Prop() classname: string;
+  @Prop() classname: string ;
 
   render() {
     return (
       <span>
         <p class={`selector ${this.classname}`}>
-          My name is {this.name}!
+          My name is {this.name}...
           <slot />
         </p>
         <p>
