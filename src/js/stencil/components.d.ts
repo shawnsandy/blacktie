@@ -38,6 +38,37 @@ declare global {
   }
   namespace JSXElements {
     export interface MyFirstComponentAttributes extends HTMLAttributes {
+      classname?: string;
+      name?: string;
+    }
+  }
+}
+
+
+import {
+  MyComponent as MyComponent
+} from './template';
+
+declare global {
+  interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {
+  }
+  var HTMLMyComponentElement: {
+    prototype: HTMLMyComponentElement;
+    new (): HTMLMyComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    "my-component": HTMLMyComponentElement;
+  }
+  interface ElementTagNameMap {
+    "my-component": HTMLMyComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "my-component": JSXElements.MyComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface MyComponentAttributes extends HTMLAttributes {
       name?: string;
     }
   }

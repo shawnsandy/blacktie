@@ -5,6 +5,9 @@
   "core": "app.core.js",
   "corePolyfilled": "app.core.pf.js",
   "components": {
+    "my-component": {
+      "$": "my-component"
+    },
     "my-first-component": {
       "$": "my-first-component"
     }

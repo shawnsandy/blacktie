@@ -89,7 +89,8 @@ const config = {
     new Extract("css/[name].min.css"),
     new Html({
       template: __dirname + "/src/index.html",
-      inject: "body"
+      inject: "body",
+      title: "BlackTie"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
       name: "vendors"
