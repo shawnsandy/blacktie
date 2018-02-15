@@ -51,11 +51,11 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app/my-first-component.es5.js",
-    "revision": "f9fd12c8931551284e05965bb4530aa0"
+    "revision": "a02cf4700c2d5a0ab78ab9a03c31fb81"
   },
   {
     "url": "stencil/app/my-first-component.js",
-    "revision": "3130bcf0b63318cd79553a78b898ef2d"
+    "revision": "1d83f7e754a7d70f462d86247a65cbbb"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

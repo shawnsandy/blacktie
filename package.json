@@ -27,11 +27,12 @@
   "homepage": "https://github.com/shawnsandy/blacktie#readme",
   "private": true,
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.39",
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.40",
     "@stencil/dev-server": "^0.0.18",
     "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "blendid": "^4.3.1",
     "clean-webpack-plugin": "^0.1.17",

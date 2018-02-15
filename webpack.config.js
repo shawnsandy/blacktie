@@ -31,6 +31,7 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
+    components: __dirname + "/www/stencil/app.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
 
