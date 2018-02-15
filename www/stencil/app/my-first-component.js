@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+const{h:t,Context:n}=window.App;class s{render(){return t("span",null,t("p",{class:`selector ${this.classname}`},"My name is ",this.name,"!",t("slot",null)),t("p",null,t("button",{class:"button"},"Button")),t("hr",null))}static get is(){return"my-first-component"}static get properties(){return{classname:{type:String,attr:"classname"},name:{type:String,attr:"name"}}}}export{s as MyFirstComponent};

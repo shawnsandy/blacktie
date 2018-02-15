@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="/components/app.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -30,11 +31,9 @@
   </section>
   <div class="section container">
   <h1 class="title">Vue</h1>
-  <section id="app">
-   Template here
-   <helo-world></helo-world>
-   <helo-world></helo-world>
-  </section>
+  <my-first-component name="Shawn Sandy" className="is-size-3 has-text-info">
+  This is a simple slot</my-first-component>
+  <my-first-component name="John Hannock"></my-first-component>
   </div>
 
   <div class="container section posts-elm">
@@ -104,8 +103,7 @@
   <div class="container section">
     <div class="content">
       <p class="subtitle is-3">Collections</p>
-      <div class="collections-elm">
-      </div>
+      <my-first-component name="Max"></my-first-component>
     </div>
   </div>
 

@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+App.loadBundle("my-first-component",["exports"],function(e){var n=window.App.h,t=(window.App.Context,function(){function e(){}return e.prototype.render=function(){return n("p",null,"My name is ",this.name,"!")},Object.defineProperty(e,"is",{get:function(){return"my-first-component"},enumerable:!0,configurable:!0}),Object.defineProperty(e,"properties",{get:function(){return{name:{type:String,attr:"name"}}},enumerable:!0,configurable:!0}),e}());e.MyFirstComponent=t,Object.defineProperty(e,"__esModule",{value:!0})});

@@ -1,0 +1,12 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "core": "app.core.js",
+  "corePolyfilled": "app.core.pf.js",
+  "components": {
+    "my-first-component": {
+      "$": "my-first-component"
+    }
+  }
+}
