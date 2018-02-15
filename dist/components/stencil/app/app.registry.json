@@ -2,11 +2,11 @@
   "namespace": "App",
   "fsNamespace": "app",
   "loader": "../app.js",
-  "core": "app.qui07g2v.js",
-  "corePolyfilled": "app.kuro4mu9.js",
+  "core": "app.core.js",
+  "corePolyfilled": "app.core.pf.js",
   "components": {
     "my-first-component": {
-      "$": "hfhje7pg"
+      "$": "my-first-component"
     }
   }
 }

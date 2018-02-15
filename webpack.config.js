@@ -105,7 +105,7 @@ const config = {
         to: "./icons"
       },
       {
-        from: __dirname + "/www/",
+        from: __dirname + "/www/stencil",
         to: "./components"
       }
     ])

@@ -1,0 +1,12 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "core": "app.bv7ddz06.js",
+  "corePolyfilled": "app.eksg1jlm.js",
+  "components": {
+    "my-first-component": {
+      "$": "0bg6sfy7"
+    }
+  }
+}
