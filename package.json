@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
     "stencil": "stencil build",
-    "stencil-dev": "concurrently \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
-    "start": "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot --https\" ",
+    "start-stencil": "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot --https\" ",
+     "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot --https",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"

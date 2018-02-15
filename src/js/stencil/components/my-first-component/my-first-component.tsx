@@ -12,11 +12,11 @@ export class MyComponent {
     return (
       <span>
         <p class={`selector ${this.classname}`}>
-          My name is {this.name}...
+          My name is {this.name}
           <slot />
         </p>
         <p>
-          <button class="button">Button</button>
+          <button class="button-elm">Button</button>
         </p>
         <hr />
       </span>

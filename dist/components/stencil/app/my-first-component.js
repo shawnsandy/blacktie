@@ -1,2 +1,0 @@
-/*! Built with http://stenciljs.com */
-const{h:t,Context:e}=window.App;class n{render(){return t("p",null,"My name is ",this.name,"!")}static get is(){return"my-first-component"}static get properties(){return{name:{type:String,attr:"name"}}}}export{n as MyFirstComponent};
