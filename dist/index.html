@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="/components/app.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -30,11 +31,9 @@
   </section>
   <div class="section container">
   <h1 class="title">Vue</h1>
-  <section id="app">
-   Template here
-   <helo-world></helo-world>
-   <helo-world></helo-world>
-  </section>
+  <my-first-component name="Shawn Sandy" classname="is-size-3 has-text-info">
+  This is a simple slot</my-first-component>
+  <my-first-component name="John Hannock"></my-first-component>
   </div>
 
   <div class="container section posts-elm">
@@ -104,7 +103,6 @@
   <div class="container section">
     <div class="content">
       <p class="subtitle is-3">Collections</p>
-      <my-first-component name="Max"></my-first-component>
     </div>
   </div>
 
@@ -161,100 +159,6 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="is-1 title">HyperApp Components</h1>
-      <hr>
-    </div>
-  </section>
-  <div class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <p class="subtitle is-3">
-          SVG Icons
-        </p>
-        <p>
-          <span class="i-search" data-icon="i-search"></span>
-        </p>
-        <p>
-          <span class="i-search" data-icon="i-search"></span>
-        </p>
-        <p>
-          <span class="i-tag" data-icon="i-tag"></span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <p class="is-3 subtitle">
-          Upload Components
-        </p>
-        <form data-validate action="/" method="get">
-
-          <div class="parent upload ">
-
-            <div class="file has-name is-fullwidth">
-              <label class="file-label">
-                <input class="file-input" type="file" name="resume" required="">
-                <span class="file-cta">
-                  <span class="file-icon">
-                    <i class="fas fa-upload"></i>
-                  </span>
-                  <span class="file-label">File Upload</span>
-                </span>
-                <span class="file-name">Please select file to upload</span>
-              </label>
-            </div>
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero">
-    <div class="hero-body">
-      <div class="container">
-
-        <p class="subtitle is-3">Buttons</p>
-        <p>
-          <span data-action="/" data-label="click here" class="confirm-btn">
-            <button type="submit" class="confirm-actions button-elm">Delete</button>
-          </span>
-          <span data-action="/" class="confirm-link">
-            <a href="/" class="confirm-actions button-elm">Delete</a>
-          </span>
-        </p>
-        <hr>
-        <p>
-          <button class="button-elm confirm-actions" type="submit">
-            Basic Button
-          </button>
-          <a href="/" class="button-elm confirm-actions" data-confirm-html="Please Confirm" data-timeout="1000">
-            Basic Button 1
-          </a>
-        </p>
-
-      </div>
-    </div>
-  </div>
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-
-        <div class="example-component">
-          <p class="is-3 subtitle">
-            Button Component Demo
-          </p>
-          <hyper-button class="hyper" data-element="app"></hyper-button>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="elm-bg-gray-dark">
     <section class="container section elm-color-lightgray">
       <div class="columns">
@@ -296,7 +200,6 @@
     </div>
 
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script type="text/javascript" src="/js/vendors.js"></script><script type="text/javascript" src="/js/hyper-apps.js"></script><script type="text/javascript" src="/js/hyper-icons.js"></script><script type="text/javascript" src="/js/app.js"></script></body>
+<script type="text/javascript" src="/js/vendors.js"></script><script type="text/javascript" src="/js/app.js"></script></body>
 
 </html>

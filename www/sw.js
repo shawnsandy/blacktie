@@ -27,27 +27,35 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app.js",
-    "revision": "f90d2cd00e567d17784af83e241321c9"
+    "revision": "a7c0a749d65b9220fcbd656a925b69f8"
   },
   {
     "url": "stencil/app/app.core.js",
-    "revision": "90ddb328742103aaea8edf478f85349e"
+    "revision": "0dfbf5e2806b8dcb6ee4979d26603ad9"
   },
   {
     "url": "stencil/app/app.core.pf.js",
-    "revision": "033115e41e157d80f4dc0938785796ee"
+    "revision": "669097b16541d15f586b7ea1009603e8"
   },
   {
     "url": "stencil/app/app.registry.json",
-    "revision": "2eeb0ff77afa58c743d35962d4040baf"
+    "revision": "d821d89fb36961be962c9bf8c3fb77fe"
+  },
+  {
+    "url": "stencil/app/my-component.es5.js",
+    "revision": "059e36e37773c97de3147161470fd14c"
+  },
+  {
+    "url": "stencil/app/my-component.js",
+    "revision": "d568d3633bc659b2d0fd85a5bf6dfadf"
   },
   {
     "url": "stencil/app/my-first-component.es5.js",
-    "revision": "047da1cfb0e3fc9faa3466af9389466e"
+    "revision": "a02cf4700c2d5a0ab78ab9a03c31fb81"
   },
   {
     "url": "stencil/app/my-first-component.js",
-    "revision": "ff44708ab0b66691af9e94fbbffdadf7"
+    "revision": "1d83f7e754a7d70f462d86247a65cbbb"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

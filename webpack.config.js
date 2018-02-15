@@ -31,9 +31,8 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    "hyper-apps": __dirname + "/src/js/hyper/index.js",
-    "hyper-icons": __dirname + "/src/js/hyper/Svg.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", "vue"]
+    components: __dirname + "/www/stencil/app.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
 
   output: {
@@ -79,12 +78,6 @@ const config = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      vue$: "vue/dist/vue.esm.js"
-    },
-    extensions: ["*", ".js", ".vue", ".json"]
-  },
   plugins: [
     new Extract("css/[name].min.css"),
     new Html({
@@ -98,12 +91,6 @@ const config = {
     new Copy([
       {
         from: __dirname + "/public/stylesheets"
-      },
-      {
-        from:
-          __dirname +
-          "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-        to: "./icons"
       },
       {
         from: __dirname + "/www/stencil",
