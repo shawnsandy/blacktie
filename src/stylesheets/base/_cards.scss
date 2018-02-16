@@ -1,0 +1,35 @@
+.card-elm
+{
+
+	@extend .flex-elm-column;
+	border-radius: 5px;
+	@extend .elm-shadow;
+	@extend .elm-border;
+	> * {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+}
+
+.card-elm-shadow {
+	@extend .card-elm;
+	@extend .elm-shadow;
+}
+
+.card-elm-header {
+	@extend .flex-elm-left;
+	padding: 10px 20px;
+	font-weight: 500;
+	width: 100%
+}
+
+.card-elm-content {
+	height: 100%;
+	> * {
+
+		@extend .flex-elm-column;
+		padding: 20px 20px;
+	}
+}

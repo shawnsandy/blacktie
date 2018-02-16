@@ -1,54 +1,63 @@
-.block-element {
-	min-height: 40vh;
-	background-color: whitesmoke;
+.block-elm {
+  min-height: 40vh;
+  @extend .elm-bg-whitesmoke;
 }
 
-.block-element-small {
-	height: 25vh;
+.block-elm-small {
+  height: 25vh;
 }
 
-.block-element-medium {
-	height: 40vh;
+.block-elm-medium {
+  height: 40vh;
 }
 
-.block-element-large {
-	height: 60vh;
+.block-elm-large {
+  height: 60vh;
 }
 
-.block-element-full {
-	height: 100vh;
+.block-elm-full {
+  height: 100vh;
 }
 
-.links-element {
+.links-elm {
+  padding: 0 5 0 0;
 
-	padding: 0 5 0 0;
-
-	.links-element-link {
-		padding: 10px 0px;
-		display: block;
-		border-bottom: 1px solid whitesmoke;
-		* {
-			padding: 0 10px;
-		}
-	}
-
+  .links-elm-link {
+    padding: 10px 0px;
+    display: block;
+    border-bottom: 1px solid whitesmoke;
+    * {
+      padding: 0 10px;
+    }
+  }
 }
 
-.meta-element {
+.meta-elm {
+  @extend .flex-elm-left;
+  margin: 40px 0;
+  border: 1px solid whitesmoke;
 
-	@extend .flex-element-left;
-	margin: 40px 0;
-	border: 1px solid whitesmoke;
+  .meta-elm-items {
+    border-right: 1px solid whitesmoke;
+    height: inherit;
+    min-height: 60px;
+    @extend .flex-elm-left;
+    &:last-child {
+      border: none;
+    }
+  }
+}
 
-	.meta-element-items {
-
-		border-right: 1px solid whitesmoke;
-		height: inherit;
-		min-height: 60px;
-		@extend .flex-element-left;
-		&:last-child {
-			border: none;
-		}
-	}
-
+.back-to-top {
+  position: fixed;
+  z-index: 7;
+  bottom: 160px;
+  right: 60px;
+  transition: all 0.7s ease;
+}
+a.back-to-top {
+  color: gray;
+  &:hover {
+    color: darken(gray, 40%);
+  }
 }

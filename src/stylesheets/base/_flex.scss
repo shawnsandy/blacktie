@@ -1,4 +1,4 @@
-.flex-element {
+.flex-elm {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -10,23 +10,29 @@
 	}
 }
 
-.flex-element-left {
-	@extend .flex-element;
+.flex-elm-left {
+	@extend .flex-elm;
 	justify-content: flex-start
 }
 
-.flex-element-right {
-	@extend .flex-element;
+.flex-elm-right {
+	@extend .flex-elm;
 	justify-content: flex-end;
 }
 
-.flex-element-header {
+.flex-elm-header {
 	>* {
-		@extend .flex-element;
-		@extend .flex-element-left;
+		@extend .flex-elm;
+		@extend .flex-elm-left;
 	}
 }
 
 .radius {
 	border-radius: 7px;
+}
+
+.flex-elm-column {
+	@extend .flex-elm;
+	flex-direction: column;
+	overflow: hidden;
 }

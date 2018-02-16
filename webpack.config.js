@@ -1,14 +1,13 @@
 const Html = require("html-webpack-plugin");
 const Extract = require("extract-text-webpack-plugin");
-const Dashboard = require("webpack-dashboard/plugin")
-const Copy = require('copy-webpack-plugin');
-const Uglify = require('uglifyjs-webpack-plugin');
-const Cleanup = require('clean-webpack-plugin');
-const Webpack = require('webpack');
-const Notify = require('webpack-notifier');
-const OptimizeCss = require('optimize-css-assets-webpack-plugin');
-const Monitor = require('webpack-monitor');
-// const Prefixer = require('autoprefixer');
+const Dashboard = require("webpack-dashboard/plugin");
+const Copy = require("copy-webpack-plugin");
+const Uglify = require("uglifyjs-webpack-plugin");
+const Cleanup = require("clean-webpack-plugin");
+const Webpack = require("webpack");
+const Notify = require("webpack-notifier");
+const OptimizeCss = require("optimize-css-assets-webpack-plugin");
+const Monitor = require("webpack-monitor");
 
 require("dotenv").config();
 
@@ -31,8 +30,9 @@ const config = {
   devtool: setDevTool(),
 
   entry: {
-    app: __dirname + "/src/javascripts/app.js",
-    print: __dirname + "/src/javascripts/print.js"
+    app: __dirname + "/src/js/app.js",
+    components: __dirname + "/www/stencil/app.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
 
   output: {
@@ -46,6 +46,11 @@ const config = {
         test: /\.js$/,
         use: "babel-loader",
         exclude: [/node_modules/]
+      },
+      {
+        test: /\.vue$/,
+        loader: "vue-loader",
+        options: {}
       },
       {
         test: /\.html/,
@@ -77,12 +82,23 @@ const config = {
     new Extract("css/[name].min.css"),
     new Html({
       template: __dirname + "/src/index.html",
-      inject: "body"
+      inject: "body",
+      title: "BlackTie"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
-      name: "main"
-    })
+      name: "vendors"
+    }),
+    new Copy([
+      {
+        from: __dirname + "/public/stylesheets"
+      },
+      {
+        from: __dirname + "/www/stencil",
+        to: "./components"
+      }
+    ])
   ],
+
   devServer: {
     contentBase: "./dist",
     port: "7700",
@@ -92,36 +108,23 @@ const config = {
 
 // Minify and copy assets in production
 // plugins to use in a production environment
-if(isProduction) {
-    config.plugins.push(new Cleanup([
-        "dist"
-	  ]),
-	  new Uglify(), new Copy([
-        {
-          from: __dirname + "/public/stylesheets"
-        }
-	  ]),
-	  new Notify({
-        title: "BlackTie Notifications",
-        message: "Production bundled successfully. You are ready to party",
-        sound: true
-      }),
-    new Monitor({
-      capture: true,
-      launch: true,
-      port: 3031
+if (isProduction) {
+  config.plugins.push(
+    new Cleanup(["dist"]),
+    new Uglify(),
+    new Webpack.DefinePlugin({
+      "process.env": { NODE_ENV: '"production"' }
+    }),
+    new Notify({
+      title: "BlackTie Notifications",
+      message: "Production bundled successfully. You are ready to party",
+      sound: true
     })
   );
-};
-
-if(isDevelopment) {
-
-	config.plugins.push(
-		new Dashboard()
-	);
-
-
 }
 
+if (isDevelopment) {
+  config.plugins.push(new Dashboard());
+}
 
 module.exports = config;
