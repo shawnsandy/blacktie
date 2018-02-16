@@ -15,7 +15,38 @@ declare global {
 
 
 import {
-  MyComponent as MyFirstComponent
+  Card as BlkCard
+} from './components/blk-card/blk-card';
+
+declare global {
+  interface HTMLBlkCardElement extends BlkCard, HTMLStencilElement {
+  }
+  var HTMLBlkCardElement: {
+    prototype: HTMLBlkCardElement;
+    new (): HTMLBlkCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blk-card": HTMLBlkCardElement;
+  }
+  interface ElementTagNameMap {
+    "blk-card": HTMLBlkCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blk-card": JSXElements.BlkCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlkCardAttributes extends HTMLAttributes {
+      className?: string;
+      name?: string;
+    }
+  }
+}
+
+
+import {
+  MyFirstComponent as MyFirstComponent
 } from './components/my-first-component/my-first-component';
 
 declare global {

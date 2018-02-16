@@ -3,6 +3,8 @@
 	@extend .elm-background;
 	@extend .flex-elm-column;
 	border-radius: 5px;
+	@extend .elm-shadow;
+	@extend .elm-border;
 
 }
 

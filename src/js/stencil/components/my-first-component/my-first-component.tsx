@@ -3,7 +3,7 @@ import { Component, Prop } from "@stencil/core";
 @Component({
   tag: 'my-first-component'
 })
-export class MyComponent {
+export class MyFirstComponent {
   // Indicate that name should be a public property on the component
   @Prop() name: string;
   @Prop() classname: string ;

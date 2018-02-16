@@ -5,11 +5,14 @@
   "core": "app.core.js",
   "corePolyfilled": "app.core.pf.js",
   "components": {
+    "blk-card": {
+      "$": "blk-card"
+    },
     "my-component": {
       "$": "my-component"
     },
     "my-first-component": {
-      "$": "my-first-component"
+      "$": "blk-card"
     }
   }
 }

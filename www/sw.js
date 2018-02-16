@@ -27,7 +27,7 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app.js",
-    "revision": "a7c0a749d65b9220fcbd656a925b69f8"
+    "revision": "e619e7a0d9fe66d7fa279ce26cbfcfee"
   },
   {
     "url": "stencil/app/app.core.js",
@@ -39,7 +39,15 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app/app.registry.json",
-    "revision": "d821d89fb36961be962c9bf8c3fb77fe"
+    "revision": "dc5cae3ea12c3a3e8741eacfde27f636"
+  },
+  {
+    "url": "stencil/app/blk-card.es5.js",
+    "revision": "0f245507f784d25079a378327664a12a"
+  },
+  {
+    "url": "stencil/app/blk-card.js",
+    "revision": "99543d01aa2d4d298beb2814e93be227"
   },
   {
     "url": "stencil/app/my-component.es5.js",
@@ -48,14 +56,6 @@ self.__precacheManifest = [
   {
     "url": "stencil/app/my-component.js",
     "revision": "d568d3633bc659b2d0fd85a5bf6dfadf"
-  },
-  {
-    "url": "stencil/app/my-first-component.es5.js",
-    "revision": "a02cf4700c2d5a0ab78ab9a03c31fb81"
-  },
-  {
-    "url": "stencil/app/my-first-component.js",
-    "revision": "1d83f7e754a7d70f462d86247a65cbbb"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
