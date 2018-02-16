@@ -1,7 +1,7 @@
 import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: "card-elm"
+  tag: "bt-card-elm"
 })
 export class CardElm {
   @Prop() className: string = "elm-borderless";
@@ -31,9 +31,9 @@ export class CardElm {
     return (
       <div class={`card-elm ${this.className}`}>
         <slot name="card-header"></slot>
-        <card-elm-content>
+        <bt-card-elm-content>
           <slot />
-        </card-elm-content>
+        </bt-card-elm-content>
       </div>
     );
   }
