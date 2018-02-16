@@ -15,7 +15,67 @@ declare global {
 
 
 import {
-  MyComponent as MyFirstComponent
+  CardElmContent as CardElmContent
+} from './js/stencil/components/card-elm/card-elm-content';
+
+declare global {
+  interface HTMLCardElmContentElement extends CardElmContent, HTMLStencilElement {
+  }
+  var HTMLCardElmContentElement: {
+    prototype: HTMLCardElmContentElement;
+    new (): HTMLCardElmContentElement;
+  };
+  interface HTMLElementTagNameMap {
+    "card-elm-content": HTMLCardElmContentElement;
+  }
+  interface ElementTagNameMap {
+    "card-elm-content": HTMLCardElmContentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "card-elm-content": JSXElements.CardElmContentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CardElmContentAttributes extends HTMLAttributes {
+      className?: string;
+    }
+  }
+}
+
+
+import {
+  CardElm as CardElm
+} from './js/stencil/components/card-elm/card-elm';
+
+declare global {
+  interface HTMLCardElmElement extends CardElm, HTMLStencilElement {
+  }
+  var HTMLCardElmElement: {
+    prototype: HTMLCardElmElement;
+    new (): HTMLCardElmElement;
+  };
+  interface HTMLElementTagNameMap {
+    "card-elm": HTMLCardElmElement;
+  }
+  interface ElementTagNameMap {
+    "card-elm": HTMLCardElmElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "card-elm": JSXElements.CardElmAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CardElmAttributes extends HTMLAttributes {
+      className?: string;
+    }
+  }
+}
+
+
+import {
+  MyFirstComponent as MyFirstComponent
 } from './js/stencil/components/my-first-component/my-first-component';
 
 declare global {
@@ -38,6 +98,37 @@ declare global {
   }
   namespace JSXElements {
     export interface MyFirstComponentAttributes extends HTMLAttributes {
+      classname?: string;
+      name?: string;
+    }
+  }
+}
+
+
+import {
+  MyComponent as MyComponent
+} from './js/stencil/template';
+
+declare global {
+  interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {
+  }
+  var HTMLMyComponentElement: {
+    prototype: HTMLMyComponentElement;
+    new (): HTMLMyComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    "my-component": HTMLMyComponentElement;
+  }
+  interface ElementTagNameMap {
+    "my-component": HTMLMyComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "my-component": JSXElements.MyComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface MyComponentAttributes extends HTMLAttributes {
       name?: string;
     }
   }
