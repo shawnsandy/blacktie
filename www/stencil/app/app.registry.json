@@ -2,20 +2,20 @@
   "namespace": "App",
   "fsNamespace": "app",
   "loader": "../app.js",
-  "core": "app.core.js",
-  "corePolyfilled": "es5-build-disabled.js",
+  "core": "app.hnteciro.js",
+  "corePolyfilled": "app.5xfahmc9.js",
   "components": {
     "card-elm": {
-      "$": "card-elm"
+      "$": "gp5xne7w"
     },
     "card-elm-content": {
-      "$": "card-elm"
+      "$": "gp5xne7w"
     },
     "my-component": {
-      "$": "my-component"
+      "$": "0gvjaxcy"
     },
     "my-first-component": {
-      "$": "card-elm"
+      "$": "hlvasici"
     }
   }
 }
