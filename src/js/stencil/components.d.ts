@@ -106,6 +106,36 @@ declare global {
 
 
 import {
+  TopAnchor as BtTopAnchor
+} from './components/bt-top-anchor/bt-top-anchor';
+
+declare global {
+  interface HTMLBtTopAnchorElement extends BtTopAnchor, HTMLStencilElement {
+  }
+  var HTMLBtTopAnchorElement: {
+    prototype: HTMLBtTopAnchorElement;
+    new (): HTMLBtTopAnchorElement;
+  };
+  interface HTMLElementTagNameMap {
+    "bt-top-anchor": HTMLBtTopAnchorElement;
+  }
+  interface ElementTagNameMap {
+    "bt-top-anchor": HTMLBtTopAnchorElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "bt-top-anchor": JSXElements.BtTopAnchorAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtTopAnchorAttributes extends HTMLAttributes {
+      name?: string;
+    }
+  }
+}
+
+
+import {
   MyFirstComponent as MyFirstComponent
 } from './components/my-first-component/my-first-component';
 
