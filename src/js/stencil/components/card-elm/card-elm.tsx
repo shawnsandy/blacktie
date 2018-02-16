@@ -4,7 +4,7 @@ import { Component, Prop } from "@stencil/core";
   tag: "card-elm"
 })
 export class CardElm {
-  @Prop() className: string = "elm-borderless elm-background-transparent";
+  @Prop() className: string = "elm-borderless";
   @Prop() title: string;
 
   componentWillLoad() {
@@ -30,7 +30,7 @@ export class CardElm {
   render() {
     return (
       <div class={`card-elm ${this.className}`}>
-        <card-elm-header>{this.title}</card-elm-header>
+        { this.title ? <card-elm-header>{this.title}</card-elm-header> : ''}
         <card-elm-content>
           <slot />
         </card-elm-content>
