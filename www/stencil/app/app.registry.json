@@ -3,16 +3,19 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "core": "app.core.js",
-  "corePolyfilled": "app.core.pf.js",
+  "corePolyfilled": "es5-build-disabled.js",
   "components": {
-    "blk-card": {
-      "$": "blk-card"
+    "card-elm": {
+      "$": "card-elm"
+    },
+    "card-elm-content": {
+      "$": "card-elm"
     },
     "my-component": {
       "$": "my-component"
     },
     "my-first-component": {
-      "$": "blk-card"
+      "$": "card-elm"
     }
   }
 }

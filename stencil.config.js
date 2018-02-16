@@ -1,5 +1,5 @@
 exports.config = {
   srcDir: "src/js/stencil",
   buildDir: "stencil",
-  bundles: [{ components: ["my-first-component", "blk-card"] }]
+  bundles: [{ components: ["my-first-component", "card-elm", "card-elm-content"] }]
 };

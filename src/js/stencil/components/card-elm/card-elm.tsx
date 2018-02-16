@@ -1,27 +1,26 @@
 import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: "blk-card"
+  tag: "card-elm"
 })
-export class Card {
-  @Prop() name: string;
-
-  @Prop() className: string = "card-elm elm-borderless elm-background-transparent";
+export class CardElm {
+  @Prop()
+  className: string = "card-elm elm-borderless elm-background-transparent";
 
   componentWillLoad() {
     //console.log("The component is about to be rendered");
   }
 
   componentDidLoad() {
-   // console.log("The component has been rendered");
+    // console.log("The component has been rendered");
   }
 
   componentWillUpdate() {
-   // console.log("The component will update");
+    // console.log("The component will update");
   }
 
   componentDidUpdate() {
-   // console.log("The component did update");
+    // console.log("The component did update");
   }
 
   componentDidUnload() {
@@ -30,13 +29,11 @@ export class Card {
 
   render() {
     return (
-      <span>
         <div class={`${this.className}`}>
-          <div class="card-elm-content">
+          <card-elm-content class="card-elm-content">
             <slot />
-          </div>
+          </card-elm-content>
         </div>
-      </span>
     );
   }
 }
