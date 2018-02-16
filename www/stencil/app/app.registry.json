@@ -5,14 +5,14 @@
   "core": "app.core.js",
   "corePolyfilled": "app.core.pf.js",
   "components": {
-    "card-elm": {
-      "$": "card-elm"
+    "bt-card-elm": {
+      "$": "bt-card-elm"
     },
-    "card-elm-content": {
-      "$": "card-elm"
+    "bt-card-elm-content": {
+      "$": "bt-card-elm"
     },
-    "card-elm-header": {
-      "$": "card-elm"
+    "bt-card-elm-header": {
+      "$": "bt-card-elm"
     },
     "my-component": {
       "$": "my-component"

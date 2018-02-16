@@ -1,7 +1,11 @@
 import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: "bt-card-elm"
+  tag: "bt-card-elm",
+  host: {
+    theme: "card-elm-header",
+    role: 'contentinfo'
+  }
 })
 export class CardElm {
   @Prop() className: string = "elm-borderless";
@@ -30,7 +34,7 @@ export class CardElm {
   render() {
     return (
       <div class={`card-elm ${this.className}`}>
-        <slot name="card-header"></slot>
+        <slot name="card-header" />
         <bt-card-elm-content>
           <slot />
         </bt-card-elm-content>

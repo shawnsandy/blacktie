@@ -15,29 +15,29 @@ declare global {
 
 
 import {
-  CardElmContent as CardElmContent
-} from './components/card-elm/card-elm-content';
+  CardElmContent as BtCardElmContent
+} from './components/bt-card-elm/bt-card-elm-content';
 
 declare global {
-  interface HTMLCardElmContentElement extends CardElmContent, HTMLStencilElement {
+  interface HTMLBtCardElmContentElement extends BtCardElmContent, HTMLStencilElement {
   }
-  var HTMLCardElmContentElement: {
-    prototype: HTMLCardElmContentElement;
-    new (): HTMLCardElmContentElement;
+  var HTMLBtCardElmContentElement: {
+    prototype: HTMLBtCardElmContentElement;
+    new (): HTMLBtCardElmContentElement;
   };
   interface HTMLElementTagNameMap {
-    "card-elm-content": HTMLCardElmContentElement;
+    "bt-card-elm-content": HTMLBtCardElmContentElement;
   }
   interface ElementTagNameMap {
-    "card-elm-content": HTMLCardElmContentElement;
+    "bt-card-elm-content": HTMLBtCardElmContentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "card-elm-content": JSXElements.CardElmContentAttributes;
+      "bt-card-elm-content": JSXElements.BtCardElmContentAttributes;
     }
   }
   namespace JSXElements {
-    export interface CardElmContentAttributes extends HTMLAttributes {
+    export interface BtCardElmContentAttributes extends HTMLAttributes {
       className?: string;
     }
   }
@@ -45,29 +45,29 @@ declare global {
 
 
 import {
-  CardElmHeader as CardElmHeader
-} from './components/card-elm/card-elm-header';
+  CardElmHeader as BtCardElmHeader
+} from './components/bt-card-elm/bt-card-elm-header';
 
 declare global {
-  interface HTMLCardElmHeaderElement extends CardElmHeader, HTMLStencilElement {
+  interface HTMLBtCardElmHeaderElement extends BtCardElmHeader, HTMLStencilElement {
   }
-  var HTMLCardElmHeaderElement: {
-    prototype: HTMLCardElmHeaderElement;
-    new (): HTMLCardElmHeaderElement;
+  var HTMLBtCardElmHeaderElement: {
+    prototype: HTMLBtCardElmHeaderElement;
+    new (): HTMLBtCardElmHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    "card-elm-header": HTMLCardElmHeaderElement;
+    "bt-card-elm-header": HTMLBtCardElmHeaderElement;
   }
   interface ElementTagNameMap {
-    "card-elm-header": HTMLCardElmHeaderElement;
+    "bt-card-elm-header": HTMLBtCardElmHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "card-elm-header": JSXElements.CardElmHeaderAttributes;
+      "bt-card-elm-header": JSXElements.BtCardElmHeaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface CardElmHeaderAttributes extends HTMLAttributes {
+    export interface BtCardElmHeaderAttributes extends HTMLAttributes {
       className?: string;
     }
   }
@@ -75,29 +75,29 @@ declare global {
 
 
 import {
-  CardElm as CardElm
-} from './components/card-elm/card-elm';
+  CardElm as BtCardElm
+} from './components/bt-card-elm/bt-card-elm';
 
 declare global {
-  interface HTMLCardElmElement extends CardElm, HTMLStencilElement {
+  interface HTMLBtCardElmElement extends BtCardElm, HTMLStencilElement {
   }
-  var HTMLCardElmElement: {
-    prototype: HTMLCardElmElement;
-    new (): HTMLCardElmElement;
+  var HTMLBtCardElmElement: {
+    prototype: HTMLBtCardElmElement;
+    new (): HTMLBtCardElmElement;
   };
   interface HTMLElementTagNameMap {
-    "card-elm": HTMLCardElmElement;
+    "bt-card-elm": HTMLBtCardElmElement;
   }
   interface ElementTagNameMap {
-    "card-elm": HTMLCardElmElement;
+    "bt-card-elm": HTMLBtCardElmElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "card-elm": JSXElements.CardElmAttributes;
+      "bt-card-elm": JSXElements.BtCardElmAttributes;
     }
   }
   namespace JSXElements {
-    export interface CardElmAttributes extends HTMLAttributes {
+    export interface BtCardElmAttributes extends HTMLAttributes {
       className?: string;
       title?: string;
     }

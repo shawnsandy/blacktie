@@ -27,27 +27,27 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app.js",
-    "revision": "57f8536cc825b622971dfdf1a5ebfe5b"
+    "revision": "5b7e742e06f55b4302a2d207b5d025af"
   },
   {
     "url": "stencil/app/app.core.js",
-    "revision": "0dfbf5e2806b8dcb6ee4979d26603ad9"
+    "revision": "07844b66884a3b9932efd3fab847f9d5"
   },
   {
     "url": "stencil/app/app.core.pf.js",
-    "revision": "669097b16541d15f586b7ea1009603e8"
+    "revision": "4e23985c02fe0c4348b22c1b79e4dfbf"
   },
   {
     "url": "stencil/app/app.registry.json",
-    "revision": "567267af50d6335222a61e205e6774b8"
+    "revision": "e5d9e77f4ea89559459e3090e5543441"
   },
   {
-    "url": "stencil/app/card-elm.es5.js",
-    "revision": "4eeff4acada049a4ec355f82e3d06fda"
+    "url": "stencil/app/bt-card-elm.es5.js",
+    "revision": "08e0df75b21231003cbbfb291136483b"
   },
   {
-    "url": "stencil/app/card-elm.js",
-    "revision": "9b26075fe62ac82f382955707786e802"
+    "url": "stencil/app/bt-card-elm.js",
+    "revision": "934eae4ea4b2c4ed10fef4e05b9731f6"
   },
   {
     "url": "stencil/app/my-component.es5.js",
