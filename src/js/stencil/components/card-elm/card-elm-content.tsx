@@ -4,7 +4,7 @@ import { Component, Prop } from "@stencil/core";
   tag: "card-elm-content"
 })
 export class CardElmContent {
-  @Prop() className: string = "card-elm-content";
+  @Prop() className: string = ""
 
   componentWillLoad() {
     //console.log("The component is about to be rendered");
@@ -27,10 +27,8 @@ export class CardElmContent {
   }
 
   render() {
-    return (
-      <div class={`${this.className}`}>
+    return <div class={`card-elm-content ${this.className}`}>
         <slot />
-      </div>
-    );
+      </div>;
   }
 }

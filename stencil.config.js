@@ -4,6 +4,6 @@ exports.config = {
   hashFileNames: false,
   bundles: [
     { components: ["my-first-component"] },
-    { components: ["card-elm", "card-elm-content"] }
+    { components: ["card-elm", "card-elm-content", "card-elm-header"] }
   ]
 };

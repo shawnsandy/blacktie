@@ -45,6 +45,36 @@ declare global {
 
 
 import {
+  CardElmHeader as CardElmHeader
+} from './components/card-elm/card-elm-header';
+
+declare global {
+  interface HTMLCardElmHeaderElement extends CardElmHeader, HTMLStencilElement {
+  }
+  var HTMLCardElmHeaderElement: {
+    prototype: HTMLCardElmHeaderElement;
+    new (): HTMLCardElmHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    "card-elm-header": HTMLCardElmHeaderElement;
+  }
+  interface ElementTagNameMap {
+    "card-elm-header": HTMLCardElmHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "card-elm-header": JSXElements.CardElmHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CardElmHeaderAttributes extends HTMLAttributes {
+      className?: string;
+    }
+  }
+}
+
+
+import {
   CardElm as CardElm
 } from './components/card-elm/card-elm';
 
@@ -69,6 +99,7 @@ declare global {
   namespace JSXElements {
     export interface CardElmAttributes extends HTMLAttributes {
       className?: string;
+      title?: string;
     }
   }
 }

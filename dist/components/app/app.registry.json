@@ -11,6 +11,9 @@
     "card-elm-content": {
       "$": "card-elm"
     },
+    "card-elm-header": {
+      "$": "card-elm"
+    },
     "my-component": {
       "$": "my-component"
     },

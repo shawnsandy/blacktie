@@ -27,7 +27,7 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app.js",
-    "revision": "18fbc5933b83cc436c92732978230964"
+    "revision": "57f8536cc825b622971dfdf1a5ebfe5b"
   },
   {
     "url": "stencil/app/app.core.js",
@@ -39,15 +39,15 @@ self.__precacheManifest = [
   },
   {
     "url": "stencil/app/app.registry.json",
-    "revision": "e9f4ec1a788fcc9655f66d0400f41d61"
+    "revision": "567267af50d6335222a61e205e6774b8"
   },
   {
     "url": "stencil/app/card-elm.es5.js",
-    "revision": "2d228472383cba85ce5a1183ecd3bf2c"
+    "revision": "4eeff4acada049a4ec355f82e3d06fda"
   },
   {
     "url": "stencil/app/card-elm.js",
-    "revision": "615f0919a1b41ffecccc60fd757fb6bc"
+    "revision": "9b26075fe62ac82f382955707786e802"
   },
   {
     "url": "stencil/app/my-component.es5.js",
