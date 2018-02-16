@@ -30,7 +30,7 @@ export class CardElm {
   render() {
     return (
       <div class={`card-elm ${this.className}`}>
-        { this.title ? <card-elm-header>{this.title}</card-elm-header> : ''}
+        <slot name="card-header"></slot>
         <card-elm-content>
           <slot />
         </card-elm-content>
