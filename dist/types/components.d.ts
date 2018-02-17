@@ -16,7 +16,7 @@ declare global {
 
 import {
   CardElmContent as BtCardElmContent
-} from './js/stencil/components/bt-card-elm/bt-card-elm-content';
+} from './components/bt-card-elm/bt-card-elm-content';
 
 declare global {
   interface HTMLBtCardElmContentElement extends BtCardElmContent, HTMLStencilElement {
@@ -46,7 +46,7 @@ declare global {
 
 import {
   CardElmHeader as BtCardElmHeader
-} from './js/stencil/components/bt-card-elm/bt-card-elm-header';
+} from './components/bt-card-elm/bt-card-elm-header';
 
 declare global {
   interface HTMLBtCardElmHeaderElement extends BtCardElmHeader, HTMLStencilElement {
@@ -76,7 +76,7 @@ declare global {
 
 import {
   CardElm as BtCardElm
-} from './js/stencil/components/bt-card-elm/bt-card-elm';
+} from './components/bt-card-elm/bt-card-elm';
 
 declare global {
   interface HTMLBtCardElmElement extends BtCardElm, HTMLStencilElement {
@@ -107,7 +107,7 @@ declare global {
 
 import {
   TopAnchor as BtTopAnchor
-} from './js/stencil/components/bt-top-anchor/bt-top-anchor';
+} from './components/bt-top-anchor/bt-top-anchor';
 
 declare global {
   interface HTMLBtTopAnchorElement extends BtTopAnchor, HTMLStencilElement {
@@ -137,7 +137,7 @@ declare global {
 
 import {
   MyFirstComponent as MyFirstComponent
-} from './js/stencil/components/my-first-component/my-first-component';
+} from './components/my-first-component/my-first-component';
 
 declare global {
   interface HTMLMyFirstComponentElement extends MyFirstComponent, HTMLStencilElement {
@@ -168,7 +168,7 @@ declare global {
 
 import {
   MyComponent as MyComponent
-} from './js/stencil/template';
+} from './template';
 
 declare global {
   interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {

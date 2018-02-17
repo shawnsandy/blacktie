@@ -1,6 +1,9 @@
 exports.config = {
   srcDir: "src/js/stencil",
-  buildDir: "stencil",
+  generateDistribution: true,
+  buildDir: "./build",
+  generateWWW: false,
+  indexHtmlSrc: "src/js/stencil/index.html",
   hashFileNames: false,
   bundles: [
     { components: ["my-first-component", "bt-top-anchor"] },

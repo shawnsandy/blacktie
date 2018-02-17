@@ -2,23 +2,27 @@
   "name": "blacktie",
   "version": "0.1.2",
   "description": "Jarvis components",
-  "main": "dist/js/app.js",
+  "main": "dist/app.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": ["dist/"],
+  "browser": "dist/myname.js",
   "collection": "dist/collection/collection-manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "stencil build && cross-env ENV=production webpack --hide-modules && gulp reports",
+    "build":
+      "cross-env ENV=production webpack --hide-modules && gulp reports",
     "stencil": "stencil build",
+    "start-stencil": "stencil-dev-server",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
-    "start": "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot --https\" ",
+    "start":
+      "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --https\" ",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
-  "keywords": [
-    "Blacktie",
-    "CSS"
-  ],
+  "keywords": ["Blacktie", "CSS"],
   "author": "Shawn Sandy",
   "license": "MIT",
   "bugs": {
