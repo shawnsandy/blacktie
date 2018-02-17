@@ -4,6 +4,7 @@ export class MyFirstComponent {
             h("p", { class: `selector ${this.classname}` },
                 "My name is ",
                 this.name,
+                "!!!",
                 h("slot", null)),
             h("p", null,
                 h("button", { class: "button-elm" }, "Button")),
