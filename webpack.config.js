@@ -31,7 +31,6 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    components: __dirname + "/dist/app.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
   output: {

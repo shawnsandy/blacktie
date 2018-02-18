@@ -4,7 +4,7 @@ import { Component, Prop } from "@stencil/core";
   tag: "bt-card-elm",
   host: {
     theme: "card-elm-header",
-    role: 'contentinfo'
+    role: 'content'
   }
 })
 export class CardElm {
