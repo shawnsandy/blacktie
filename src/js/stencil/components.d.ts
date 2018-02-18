@@ -129,7 +129,7 @@ declare global {
   }
   namespace JSXElements {
     export interface BtTopAnchorAttributes extends HTMLAttributes {
-      name?: string;
+      classes?: string;
     }
   }
 }

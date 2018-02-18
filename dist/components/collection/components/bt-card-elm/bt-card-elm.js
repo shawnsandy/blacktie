@@ -9,7 +9,6 @@ export class CardElm {
                 h("slot", null))));
     }
     static get is() { return "bt-card-elm"; }
-    static get encapsulation() { return "shadow"; }
-    static get host() { return { "theme": "card-elm-header", "role": "content" }; }
+    static get host() { return { "theme": "card-elm", "role": "content" }; }
     static get properties() { return { "className": { "type": String, "attr": "class-name" }, "title": { "type": String, "attr": "title" } }; }
 }

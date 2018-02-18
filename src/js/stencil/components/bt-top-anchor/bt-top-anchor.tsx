@@ -1,4 +1,5 @@
-import { Component, Prop, Listen } from "@stencil/core";
+import { Component, Prop } from "@stencil/core";
+//import { u } from 'umbrellajs'
 
 @Component({
   tag: "bt-top-anchor",
@@ -8,17 +9,34 @@ import { Component, Prop, Listen } from "@stencil/core";
   }
 })
 export class TopAnchor {
+  @Prop() classes: string = "back-to-top animated bounceInUp elm-hide"
 
-  @Listen("body:scroll")
-  handleScroll(ev) {
-    console.log("the body was scrolled", ev);
+  componentDidLoad() {
+
+   const screenHeight = window.innerHeight
+   const topLink = document.querySelector('.back-to-top')
+
+    window.addEventListener("scroll", function() {
+        if (window.pageYOffset > screenHeight) {
+          topLink.classList.remove('elm-hide')
+        } else {
+          topLink.classList.add('elm-hide')
+        }
+
+    });
   }
 
-  @Prop() name: string;
-
-
-
   render() {
-    return <p>My name is {this.name}</p>;
+    return (
+      <span>
+        <a
+          data-scroll
+          href="#body"
+          class={this.classes}
+        >
+          <i class="im im-arrow-up-circle is-2" />
+        </a>
+      </span>
+    );
   }
 }

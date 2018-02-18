@@ -2,9 +2,8 @@ import { Component, Prop } from "@stencil/core";
 
 @Component({
   tag: "bt-card-elm",
-  shadow: true,
   host: {
-    theme: "card-elm-header",
+    theme: "card-elm",
     role: 'content'
   }
 })

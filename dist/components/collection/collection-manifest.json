@@ -19,10 +19,9 @@
         }
       ],
       "host": {
-        "theme": "card-elm-header",
+        "theme": "card-elm",
         "role": "content"
-      },
-      "shadow": true
+      }
     },
     {
       "tag": "bt-card-elm-content",
@@ -58,15 +57,8 @@
       "styles": {},
       "props": [
         {
-          "name": "name",
+          "name": "classes",
           "type": "String"
-        }
-      ],
-      "listeners": [
-        {
-          "event": "body:scroll",
-          "method": "handleScroll",
-          "capture": false
         }
       ],
       "host": {

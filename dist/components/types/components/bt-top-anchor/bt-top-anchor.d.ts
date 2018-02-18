@@ -1,5 +1,5 @@
 export declare class TopAnchor {
-    handleScroll(ev: any): void;
-    name: string;
+    classes: string;
+    componentDidLoad(): void;
     render(): JSX.Element;
 }
