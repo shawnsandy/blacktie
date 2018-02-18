@@ -2,14 +2,20 @@
   "name": "blacktie",
   "version": "0.1.2",
   "description": "Jarvis components",
-  "main": "dist/js/app.js",
-  "collection": "dist/collection/collection-manifest.json",
+  "main": "dist/components/app.js",
+  "types": "dist/components/types/index.d.ts",
+  "files": [
+    "dist/components/"
+  ],
+  "browser": "dist/components/app.js",
+  "collection": "dist/components/collection/collection-manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "stencil build && cross-env ENV=production webpack --hide-modules && gulp reports",
+    "build": "cross-env ENV=production webpack --hide-modules",
     "stencil": "stencil build",
+    "start-stencil": "stencil-dev-server",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
-    "start": "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --hot --https\" ",
+    "start": "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --https --hot\" ",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"
@@ -64,7 +70,7 @@
     "webpack-notifier": "^1.5.0"
   },
   "dependencies": {
-    "@stencil/core": "^0.5.1",
+    "@stencil/core": "0.6.0",
     "bytesize-icons": "^1.3.0",
     "concurrently": "^3.5.1",
     "kss": "^3.0.0-beta.18",

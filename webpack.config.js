@@ -31,10 +31,8 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    components: __dirname + "/www/stencil/app.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
-
   output: {
     path: __dirname + "/dist",
     filename: "js/[name].js",
@@ -91,10 +89,6 @@ const config = {
     new Copy([
       {
         from: __dirname + "/public/stylesheets"
-      },
-      {
-        from: __dirname + "/www/stencil",
-        to: "./components"
       }
     ])
   ],
@@ -110,7 +104,6 @@ const config = {
 // plugins to use in a production environment
 if (isProduction) {
   config.plugins.push(
-    new Cleanup(["dist"]),
     new Uglify(),
     new Webpack.DefinePlugin({
       "process.env": { NODE_ENV: '"production"' }

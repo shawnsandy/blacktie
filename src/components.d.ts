@@ -15,29 +15,29 @@ declare global {
 
 
 import {
-  CardElmContent as CardElmContent
-} from './js/stencil/components/card-elm/card-elm-content';
+  CardElmContent as BtCardElmContent
+} from './js/stencil/components/bt-card-elm/bt-card-elm-content';
 
 declare global {
-  interface HTMLCardElmContentElement extends CardElmContent, HTMLStencilElement {
+  interface HTMLBtCardElmContentElement extends BtCardElmContent, HTMLStencilElement {
   }
-  var HTMLCardElmContentElement: {
-    prototype: HTMLCardElmContentElement;
-    new (): HTMLCardElmContentElement;
+  var HTMLBtCardElmContentElement: {
+    prototype: HTMLBtCardElmContentElement;
+    new (): HTMLBtCardElmContentElement;
   };
   interface HTMLElementTagNameMap {
-    "card-elm-content": HTMLCardElmContentElement;
+    "bt-card-elm-content": HTMLBtCardElmContentElement;
   }
   interface ElementTagNameMap {
-    "card-elm-content": HTMLCardElmContentElement;
+    "bt-card-elm-content": HTMLBtCardElmContentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "card-elm-content": JSXElements.CardElmContentAttributes;
+      "bt-card-elm-content": JSXElements.BtCardElmContentAttributes;
     }
   }
   namespace JSXElements {
-    export interface CardElmContentAttributes extends HTMLAttributes {
+    export interface BtCardElmContentAttributes extends HTMLAttributes {
       className?: string;
     }
   }
@@ -45,30 +45,91 @@ declare global {
 
 
 import {
-  CardElm as CardElm
-} from './js/stencil/components/card-elm/card-elm';
+  CardElmHeader as BtCardElmHeader
+} from './js/stencil/components/bt-card-elm/bt-card-elm-header';
 
 declare global {
-  interface HTMLCardElmElement extends CardElm, HTMLStencilElement {
+  interface HTMLBtCardElmHeaderElement extends BtCardElmHeader, HTMLStencilElement {
   }
-  var HTMLCardElmElement: {
-    prototype: HTMLCardElmElement;
-    new (): HTMLCardElmElement;
+  var HTMLBtCardElmHeaderElement: {
+    prototype: HTMLBtCardElmHeaderElement;
+    new (): HTMLBtCardElmHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    "card-elm": HTMLCardElmElement;
+    "bt-card-elm-header": HTMLBtCardElmHeaderElement;
   }
   interface ElementTagNameMap {
-    "card-elm": HTMLCardElmElement;
+    "bt-card-elm-header": HTMLBtCardElmHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "card-elm": JSXElements.CardElmAttributes;
+      "bt-card-elm-header": JSXElements.BtCardElmHeaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface CardElmAttributes extends HTMLAttributes {
+    export interface BtCardElmHeaderAttributes extends HTMLAttributes {
       className?: string;
+    }
+  }
+}
+
+
+import {
+  CardElm as BtCardElm
+} from './js/stencil/components/bt-card-elm/bt-card-elm';
+
+declare global {
+  interface HTMLBtCardElmElement extends BtCardElm, HTMLStencilElement {
+  }
+  var HTMLBtCardElmElement: {
+    prototype: HTMLBtCardElmElement;
+    new (): HTMLBtCardElmElement;
+  };
+  interface HTMLElementTagNameMap {
+    "bt-card-elm": HTMLBtCardElmElement;
+  }
+  interface ElementTagNameMap {
+    "bt-card-elm": HTMLBtCardElmElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "bt-card-elm": JSXElements.BtCardElmAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtCardElmAttributes extends HTMLAttributes {
+      className?: string;
+      title?: string;
+    }
+  }
+}
+
+
+import {
+  TopAnchor as BtTopAnchor
+} from './js/stencil/components/bt-top-anchor/bt-top-anchor';
+
+declare global {
+  interface HTMLBtTopAnchorElement extends BtTopAnchor, HTMLStencilElement {
+  }
+  var HTMLBtTopAnchorElement: {
+    prototype: HTMLBtTopAnchorElement;
+    new (): HTMLBtTopAnchorElement;
+  };
+  interface HTMLElementTagNameMap {
+    "bt-top-anchor": HTMLBtTopAnchorElement;
+  }
+  interface ElementTagNameMap {
+    "bt-top-anchor": HTMLBtTopAnchorElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "bt-top-anchor": JSXElements.BtTopAnchorAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtTopAnchorAttributes extends HTMLAttributes {
+      name?: string;
     }
   }
 }

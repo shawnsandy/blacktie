@@ -12,7 +12,7 @@ export class MyFirstComponent {
     return (
       <span>
         <p class={`selector ${this.classname}`}>
-          My name is {this.name}
+          My name is {this.name}!!!
           <slot />
         </p>
         <p>
