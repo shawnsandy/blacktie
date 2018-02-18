@@ -2,13 +2,13 @@
   "name": "blacktie",
   "version": "0.1.2",
   "description": "Jarvis components",
-  "main": "dist/app.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/components/app.js",
+  "types": "dist/components/types/index.d.ts",
   "files": [
-    "dist/"
+    "dist/components/"
   ],
-  "browser": "dist/app.js",
-  "collection": "dist/collection/collection-manifest.json",
+  "browser": "dist/components/app.js",
+  "collection": "dist/components/collection/collection-manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env ENV=production webpack --hide-modules",
