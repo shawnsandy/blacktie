@@ -91,8 +91,8 @@ const config = {
         from: __dirname + "/public/stylesheets"
       },
       {
-        from: __dirname + "/node_modules/bytesize-icons/dist/icons",
-        to: 'icons'
+        from: __dirname + "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
+        to: 'icons/bytesize-symbols.min.svg'
       }
     ])
   ],
