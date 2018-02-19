@@ -5,22 +5,33 @@
 	height: 16px;
 	stroke-width: 2px;
 	overflow: hidden;
+	margin-bottom: -1px;
+}
+
+.svg-elm-24 {
+	@extend .svg-elm;
+	width: 24px;
+	height: 24px;
+	margin-bottom: -2px;
 }
 
 .svg-elm-32 {
 	@extend .svg-elm;
 	width: 32px;
 	height: 32px;
+	margin-bottom: -2px;
 }
 
 .svg-elm-48 {
 	@extend .svg-elm;
 	width: 48px;
 	height: 48px;
+	margin-bottom: -2px;
 }
 
 .svg-elm-64 {
 	@extend .svg-elm;
 	width: 48px;
 	height: 48px;
+	margin-bottom: -2px;
 }

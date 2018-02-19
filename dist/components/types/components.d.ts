@@ -106,6 +106,38 @@ declare global {
 
 
 import {
+  SvgElm as BtwSvgElm
+} from './components/btw-svg-elm/btw-svg-elm';
+
+declare global {
+  interface HTMLBtwSvgElmElement extends BtwSvgElm, HTMLStencilElement {
+  }
+  var HTMLBtwSvgElmElement: {
+    prototype: HTMLBtwSvgElmElement;
+    new (): HTMLBtwSvgElmElement;
+  };
+  interface HTMLElementTagNameMap {
+    "btw-svg-elm": HTMLBtwSvgElmElement;
+  }
+  interface ElementTagNameMap {
+    "btw-svg-elm": HTMLBtwSvgElmElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "btw-svg-elm": JSXElements.BtwSvgElmAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtwSvgElmAttributes extends HTMLAttributes {
+      classes?: string;
+      icon?: string;
+      iconUrl?: string;
+    }
+  }
+}
+
+
+import {
   TopAnchorContent as BtwTopAnchorContent
 } from './components/btw-top-anchor/btw-top-anchor-content';
 
