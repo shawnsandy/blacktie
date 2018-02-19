@@ -21,7 +21,7 @@ export class BtwTopAnchor {
       } else {
         topLink.classList.add("elm-hide");
       }
-    });
+    })
   }
 
   render() {
