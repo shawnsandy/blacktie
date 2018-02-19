@@ -50,10 +50,10 @@
       ]
     },
     {
-      "tag": "bt-top-anchor",
+      "tag": "btw-top-anchor",
       "dependencies": [],
       "componentClass": "TopAnchor",
-      "componentPath": "components/bt-top-anchor/bt-top-anchor.js",
+      "componentPath": "components/bt-top-anchor/btw-top-anchor.js",
       "styles": {},
       "props": [
         {

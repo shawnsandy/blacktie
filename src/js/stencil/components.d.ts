@@ -106,29 +106,29 @@ declare global {
 
 
 import {
-  TopAnchor as BtTopAnchor
-} from './components/bt-top-anchor/bt-top-anchor';
+  TopAnchor as BtwTopAnchor
+} from './components/bt-top-anchor/btw-top-anchor';
 
 declare global {
-  interface HTMLBtTopAnchorElement extends BtTopAnchor, HTMLStencilElement {
+  interface HTMLBtwTopAnchorElement extends BtwTopAnchor, HTMLStencilElement {
   }
-  var HTMLBtTopAnchorElement: {
-    prototype: HTMLBtTopAnchorElement;
-    new (): HTMLBtTopAnchorElement;
+  var HTMLBtwTopAnchorElement: {
+    prototype: HTMLBtwTopAnchorElement;
+    new (): HTMLBtwTopAnchorElement;
   };
   interface HTMLElementTagNameMap {
-    "bt-top-anchor": HTMLBtTopAnchorElement;
+    "btw-top-anchor": HTMLBtwTopAnchorElement;
   }
   interface ElementTagNameMap {
-    "bt-top-anchor": HTMLBtTopAnchorElement;
+    "btw-top-anchor": HTMLBtwTopAnchorElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "bt-top-anchor": JSXElements.BtTopAnchorAttributes;
+      "btw-top-anchor": JSXElements.BtwTopAnchorAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtTopAnchorAttributes extends HTMLAttributes {
+    export interface BtwTopAnchorAttributes extends HTMLAttributes {
       classes?: string;
     }
   }

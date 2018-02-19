@@ -7,7 +7,7 @@ exports.config = {
   indexHtmlSrc: "src/index.html",
   hashFileNames: false,
   bundles: [
-    { components: ["my-first-component", "bt-top-anchor"] },
+    { components: ["my-first-component", "btw-top-anchor"] },
     { components: ["bt-card-elm", "bt-card-elm-content", "bt-card-elm-header"] }
   ]
 };

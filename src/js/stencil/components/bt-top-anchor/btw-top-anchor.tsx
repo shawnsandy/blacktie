@@ -2,7 +2,7 @@ import { Component, Prop } from "@stencil/core";
 //import { u } from 'umbrellajs'
 
 @Component({
-  tag: "bt-top-anchor",
+  tag: "btw-top-anchor",
   host: {
     theme: "top",
     role: "navigation"
