@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+const{h:t,Context:e}=window.App;class s{constructor(){this.className=""}render(){return t("div",{class:`card-elm-content ${this.className}`},t("slot",null))}static get is(){return"bt-card-elm-content"}static get properties(){return{className:{type:String,attr:"class-name"}}}}class r{render(){return t("div",{class:`card-elm-header ${this.className}`},t("slot",null))}static get is(){return"bt-card-elm-header"}static get properties(){return{className:{type:String,attr:"class-name"}}}}export{s as BtCardElmContent,r as BtCardElmHeader};

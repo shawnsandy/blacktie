@@ -1,13 +1,13 @@
 const Html = require("html-webpack-plugin");
 const Extract = require("extract-text-webpack-plugin");
-const Dashboard = require("webpack-dashboard/plugin")
-const Copy = require('copy-webpack-plugin');
-const Uglify = require('uglifyjs-webpack-plugin');
-const Cleanup = require('clean-webpack-plugin');
-const Webpack = require('webpack');
-const Notify = require('webpack-notifier');
-const OptimizeCss = require('optimize-css-assets-webpack-plugin');
-const Monitor = require('webpack-monitor');
+const Dashboard = require("webpack-dashboard/plugin");
+const Copy = require("copy-webpack-plugin");
+const Uglify = require("uglifyjs-webpack-plugin");
+const Cleanup = require("clean-webpack-plugin");
+const Webpack = require("webpack");
+const Notify = require("webpack-notifier");
+const OptimizeCss = require("optimize-css-assets-webpack-plugin");
+const Monitor = require("webpack-monitor");
 
 require("dotenv").config();
 
@@ -31,11 +31,8 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    'hyper-apps': __dirname + "/src/js/hyper/index.js",
-    'hyper-icons': __dirname + "/src/js/hyper/Svg.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", "hyperapp-nestable"]
+    vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
-
   output: {
     path: __dirname + "/dist",
     filename: "js/[name].js",
@@ -47,6 +44,11 @@ const config = {
         test: /\.js$/,
         use: "babel-loader",
         exclude: [/node_modules/]
+      },
+      {
+        test: /\.vue$/,
+        loader: "vue-loader",
+        options: {}
       },
       {
         test: /\.html/,
@@ -78,11 +80,17 @@ const config = {
     new Extract("css/[name].min.css"),
     new Html({
       template: __dirname + "/src/index.html",
-      inject: "body"
+      inject: "body",
+      title: "BlackTie"
     }),
     new Webpack.optimize.CommonsChunkPlugin({
       name: "vendors"
-    })
+    }),
+    new Copy([
+      {
+        from: __dirname + "/public/stylesheets"
+      }
+    ])
   ],
 
   devServer: {
@@ -94,34 +102,22 @@ const config = {
 
 // Minify and copy assets in production
 // plugins to use in a production environment
-if(isProduction) {
-    config.plugins.push(new Cleanup([
-        "dist"
-	  ]),
+if (isProduction) {
+  config.plugins.push(
     new Uglify(),
-    new Copy([
-        {
-          from: __dirname + "/public/stylesheets"
-        },
-        {
-          from: __dirname + "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-          to: "./icons"
-        }
-	  ]),
-	  new Notify({
-        title: "BlackTie Notifications",
-        message: "Production bundled successfully. You are ready to party",
-        sound: true
-      })
+    new Webpack.DefinePlugin({
+      "process.env": { NODE_ENV: '"production"' }
+    }),
+    new Notify({
+      title: "BlackTie Notifications",
+      message: "Production bundled successfully. You are ready to party",
+      sound: true
+    })
   );
-};
+}
 
-if(isDevelopment) {
-
-	config.plugins.push(
-		new Dashboard()
-	);
-
+if (isDevelopment) {
+  config.plugins.push(new Dashboard());
 }
 
 module.exports = config;
