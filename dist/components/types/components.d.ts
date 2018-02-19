@@ -106,7 +106,37 @@ declare global {
 
 
 import {
-  TopAnchor as BtwTopAnchor
+  TopAnchorContent as BtwTopAnchorContent
+} from './components/btw-top-anchor/btw-top-anchor-content';
+
+declare global {
+  interface HTMLBtwTopAnchorContentElement extends BtwTopAnchorContent, HTMLStencilElement {
+  }
+  var HTMLBtwTopAnchorContentElement: {
+    prototype: HTMLBtwTopAnchorContentElement;
+    new (): HTMLBtwTopAnchorContentElement;
+  };
+  interface HTMLElementTagNameMap {
+    "btw-top-anchor-content": HTMLBtwTopAnchorContentElement;
+  }
+  interface ElementTagNameMap {
+    "btw-top-anchor-content": HTMLBtwTopAnchorContentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "btw-top-anchor-content": JSXElements.BtwTopAnchorContentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtwTopAnchorContentAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  BtwTopAnchor as BtwTopAnchor
 } from './components/btw-top-anchor/btw-top-anchor';
 
 declare global {

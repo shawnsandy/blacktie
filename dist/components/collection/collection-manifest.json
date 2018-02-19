@@ -52,7 +52,7 @@
     {
       "tag": "btw-top-anchor",
       "dependencies": [],
-      "componentClass": "TopAnchor",
+      "componentClass": "BtwTopAnchor",
       "componentPath": "components/btw-top-anchor/btw-top-anchor.js",
       "styles": {},
       "props": [
@@ -65,6 +65,13 @@
         "theme": "top",
         "role": "navigation"
       }
+    },
+    {
+      "tag": "btw-top-anchor-content",
+      "dependencies": [],
+      "componentClass": "TopAnchorContent",
+      "componentPath": "components/btw-top-anchor/btw-top-anchor-content.js",
+      "styles": {}
     },
     {
       "tag": "my-component",

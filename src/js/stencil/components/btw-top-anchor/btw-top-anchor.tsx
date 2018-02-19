@@ -8,35 +8,29 @@ import { Component, Prop } from "@stencil/core";
     role: "navigation"
   }
 })
-export class TopAnchor {
-  @Prop() classes: string = "back-to-top animated bounceInUp elm-hide"
+export class BtwTopAnchor {
+  @Prop() classes: string = "animated bounceInUp elm-hide";
 
   componentDidLoad() {
+    const screenHeight = window.innerHeight;
+    const topLink = document.querySelector(".back-to-top");
 
-   const screenHeight = window.innerHeight
-   const topLink = document.querySelector('.back-to-top')
-
-    window.addEventListener("scroll", function() {
-        if (window.pageYOffset > screenHeight) {
-          topLink.classList.remove('elm-hide')
-        } else {
-          topLink.classList.add('elm-hide')
-        }
-
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > screenHeight) {
+        topLink.classList.remove("elm-hide");
+      } else {
+        topLink.classList.add("elm-hide");
+      }
     });
   }
 
   render() {
     return (
-      <span>
-        <a
-          data-scroll
-          href="#body"
-          class={this.classes}
-        >
+      <div>
+        <a data-scroll href="#body" class={`back-to-top ${this.classes}`}>
           <i class="im im-arrow-up-circle is-2" />
         </a>
-      </span>
+      </div>
     );
   }
 }

@@ -1,23 +1,23 @@
 //import { u } from 'umbrellajs'
-export class TopAnchor {
+export class BtwTopAnchor {
     constructor() {
-        this.classes = "back-to-top animated bounceInUp elm-hide";
+        this.classes = "animated bounceInUp elm-hide";
     }
     componentDidLoad() {
         const screenHeight = window.innerHeight;
-        const topLink = document.querySelector('.back-to-top');
-        window.addEventListener("scroll", function () {
+        const topLink = document.querySelector(".back-to-top");
+        window.addEventListener("scroll", () => {
             if (window.pageYOffset > screenHeight) {
-                topLink.classList.remove('elm-hide');
+                topLink.classList.remove("elm-hide");
             }
             else {
-                topLink.classList.add('elm-hide');
+                topLink.classList.add("elm-hide");
             }
         });
     }
     render() {
-        return (h("span", null,
-            h("a", { "data-scroll": true, href: "#body", class: this.classes },
+        return (h("div", null,
+            h("a", { "data-scroll": true, href: "#body", class: `back-to-top ${this.classes}` },
                 h("i", { class: "im im-arrow-up-circle is-2" }))));
     }
     static get is() { return "btw-top-anchor"; }
