@@ -1,12 +1,12 @@
 {
   "components": [
     {
-      "tag": "bt-card-elm",
+      "tag": "btw-card-elm",
       "dependencies": [
-        "bt-card-elm-content"
+        "btw-card-elm-content"
       ],
       "componentClass": "CardElm",
-      "componentPath": "components/bt-card-elm/bt-card-elm.js",
+      "componentPath": "components/btw-card-elm/btw-card-elm.js",
       "styles": {},
       "props": [
         {
@@ -24,10 +24,10 @@
       }
     },
     {
-      "tag": "bt-card-elm-content",
+      "tag": "btw-card-elm-content",
       "dependencies": [],
       "componentClass": "CardElmContent",
-      "componentPath": "components/bt-card-elm/bt-card-elm-content.js",
+      "componentPath": "components/btw-card-elm/btw-card-elm-content.js",
       "styles": {},
       "props": [
         {
@@ -37,10 +37,10 @@
       ]
     },
     {
-      "tag": "bt-card-elm-header",
+      "tag": "btw-card-elm-header",
       "dependencies": [],
       "componentClass": "CardElmHeader",
-      "componentPath": "components/bt-card-elm/bt-card-elm-header.js",
+      "componentPath": "components/btw-card-elm/btw-card-elm-header.js",
       "styles": {},
       "props": [
         {
@@ -53,7 +53,7 @@
       "tag": "btw-top-anchor",
       "dependencies": [],
       "componentClass": "TopAnchor",
-      "componentPath": "components/bt-top-anchor/btw-top-anchor.js",
+      "componentPath": "components/btw-top-anchor/btw-top-anchor.js",
       "styles": {},
       "props": [
         {

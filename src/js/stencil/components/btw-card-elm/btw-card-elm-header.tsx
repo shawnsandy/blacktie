@@ -1,7 +1,7 @@
 import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: "bt-card-elm-header"
+  tag: "btw-card-elm-header"
 })
 export class CardElmHeader {
 

@@ -8,6 +8,6 @@ exports.config = {
   hashFileNames: false,
   bundles: [
     { components: ["my-first-component", "btw-top-anchor"] },
-    { components: ["bt-card-elm", "bt-card-elm-content", "bt-card-elm-header"] }
+    { components: ["btw-card-elm", "btw-card-elm-content", "btw-card-elm-header"] }
   ]
 };
