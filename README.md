@@ -7,7 +7,9 @@ A collection of Javascript and CSS utilities designed to make it easy to customi
 BlackTie Top Anchor component add a scroll to top anchor to any page
 
 ``` html
+
 <btw-top-anchor></btw-top-anchor>
+
 ```
 
 ![top anchor link](/btw-anchor.gif)
