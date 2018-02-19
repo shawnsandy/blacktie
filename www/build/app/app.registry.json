@@ -1,0 +1,27 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "core": "app.brfhakf1.js",
+  "corePolyfilled": "app.4ggsen9n.js",
+  "components": {
+    "bt-card-elm": {
+      "$": "j4k0pwl2"
+    },
+    "bt-card-elm-content": {
+      "$": "j4k0pwl2"
+    },
+    "bt-card-elm-header": {
+      "$": "idn0efrs"
+    },
+    "bt-top-anchor": {
+      "$": "e6waqi4o"
+    },
+    "my-component": {
+      "$": "0gvjaxcy"
+    },
+    "my-first-component": {
+      "$": "hlvasici"
+    }
+  }
+}

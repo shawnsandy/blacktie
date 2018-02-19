@@ -9,9 +9,9 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <script src="/components/app.js"></script>
+  <script src="/app.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -114,35 +114,39 @@
 
 
       <div class="column">
-        <card-elm class-name="card-elm-shadow elm-background-transparent">
-        <div class="has-text-centered">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+        <bt-card-elm>
+        <div slot="card-header">
+        <bt-card-elm-header>CARD HEADER</bt-card-elm-header>
         </div>
-        </card-elm>
+        <p class="">
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
+        </p>
+        </bt-card-elm>
       </div>
 
       <div class="column">
-        <card-elm title="My Component">
+        <bt-card-elm class-name="bt-card-elm-shadow elm-background-transparent">
+        <p class="">
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+        </p>
+        </bt-card-elm>
+      </div>
+
+
+      <div class="column">
+        <bt-card-elm>
         <div class="has-text-centered">
          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
         </div>
-        </card-elm>
+        </bt-card-elm>
       </div>
 
       <div class="column">
-        <card-elm>
+        <bt-card-elm>
         <div class="has-text-centered">
          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
         </div>
-        </card-elm>
-      </div>
-
-      <div class="column">
-        <card-elm>
-        <div class="has-text-centered">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
-        </div>
-        </card-elm>
+        </bt-card-elm>
       </div>
 
     </div>
@@ -187,8 +191,8 @@
       </p>
       <top-link class="top"></top-link>
     </div>
-
+<bt-top-anchor></bt-top-anchor>
   </footer>
-<script type="text/javascript" src="/js/vendors.js"></script><script type="text/javascript" src="/js/app.js"></script><script type="text/javascript" src="/js/components.js"></script></body>
+<script type="text/javascript" src="/js/vendors.js"></script><script type="text/javascript" src="/js/app.js"></script></body>
 
 </html>

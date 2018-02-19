@@ -1,9 +1,13 @@
 exports.config = {
   srcDir: "src/js/stencil",
-  buildDir: "stencil",
+  generateDistribution: true,
+  buildDir: "./build",
+  distDir: "./dist/components",
+  generateWWW: false,
+  indexHtmlSrc: "src/index.html",
   hashFileNames: false,
   bundles: [
-    { components: ["my-first-component"] },
-    { components: ["card-elm", "card-elm-content", "card-elm-header"] }
+    { components: ["my-first-component", "btw-top-anchor"] },
+    { components: ["bt-card-elm", "bt-card-elm-content", "bt-card-elm-header"] }
   ]
 };
