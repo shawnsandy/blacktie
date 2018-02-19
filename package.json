@@ -2,12 +2,12 @@
   "name": "blacktie",
   "version": "0.1.2",
   "description": "Jarvis components",
-  "main": "dist/components/app.js",
+  "main": "dist/components/btw.js",
   "types": "dist/components/types/index.d.ts",
   "files": [
     "dist/components/"
   ],
-  "browser": "dist/components/app.js",
+  "browser": "dist/components/btw.js",
   "collection": "dist/components/collection/collection-manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
