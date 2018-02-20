@@ -15,29 +15,29 @@ declare global {
 
 
 import {
-  CardElmContent as BtwCardElmContent
-} from './components/btw-card-elm/btw-card-elm-content';
+  CardElmContent as BtsCardElmContent
+} from './components/bts-card-elm/bts-card-elm-content';
 
 declare global {
-  interface HTMLBtwCardElmContentElement extends BtwCardElmContent, HTMLStencilElement {
+  interface HTMLBtsCardElmContentElement extends BtsCardElmContent, HTMLStencilElement {
   }
-  var HTMLBtwCardElmContentElement: {
-    prototype: HTMLBtwCardElmContentElement;
-    new (): HTMLBtwCardElmContentElement;
+  var HTMLBtsCardElmContentElement: {
+    prototype: HTMLBtsCardElmContentElement;
+    new (): HTMLBtsCardElmContentElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-card-elm-content": HTMLBtwCardElmContentElement;
+    "bts-card-elm-content": HTMLBtsCardElmContentElement;
   }
   interface ElementTagNameMap {
-    "btw-card-elm-content": HTMLBtwCardElmContentElement;
+    "bts-card-elm-content": HTMLBtsCardElmContentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-card-elm-content": JSXElements.BtwCardElmContentAttributes;
+      "bts-card-elm-content": JSXElements.BtsCardElmContentAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwCardElmContentAttributes extends HTMLAttributes {
+    export interface BtsCardElmContentAttributes extends HTMLAttributes {
       className?: string;
     }
   }
@@ -45,29 +45,29 @@ declare global {
 
 
 import {
-  CardElmHeader as BtwCardElmHeader
-} from './components/btw-card-elm/btw-card-elm-header';
+  CardElmHeader as BtsCardElmHeader
+} from './components/bts-card-elm/bts-card-elm-header';
 
 declare global {
-  interface HTMLBtwCardElmHeaderElement extends BtwCardElmHeader, HTMLStencilElement {
+  interface HTMLBtsCardElmHeaderElement extends BtsCardElmHeader, HTMLStencilElement {
   }
-  var HTMLBtwCardElmHeaderElement: {
-    prototype: HTMLBtwCardElmHeaderElement;
-    new (): HTMLBtwCardElmHeaderElement;
+  var HTMLBtsCardElmHeaderElement: {
+    prototype: HTMLBtsCardElmHeaderElement;
+    new (): HTMLBtsCardElmHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-card-elm-header": HTMLBtwCardElmHeaderElement;
+    "bts-card-elm-header": HTMLBtsCardElmHeaderElement;
   }
   interface ElementTagNameMap {
-    "btw-card-elm-header": HTMLBtwCardElmHeaderElement;
+    "bts-card-elm-header": HTMLBtsCardElmHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-card-elm-header": JSXElements.BtwCardElmHeaderAttributes;
+      "bts-card-elm-header": JSXElements.BtsCardElmHeaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwCardElmHeaderAttributes extends HTMLAttributes {
+    export interface BtsCardElmHeaderAttributes extends HTMLAttributes {
       className?: string;
     }
   }
@@ -75,29 +75,29 @@ declare global {
 
 
 import {
-  CardElm as BtwCardElm
-} from './components/btw-card-elm/btw-card-elm';
+  CardElm as BtsCardElm
+} from './components/bts-card-elm/bts-card-elm';
 
 declare global {
-  interface HTMLBtwCardElmElement extends BtwCardElm, HTMLStencilElement {
+  interface HTMLBtsCardElmElement extends BtsCardElm, HTMLStencilElement {
   }
-  var HTMLBtwCardElmElement: {
-    prototype: HTMLBtwCardElmElement;
-    new (): HTMLBtwCardElmElement;
+  var HTMLBtsCardElmElement: {
+    prototype: HTMLBtsCardElmElement;
+    new (): HTMLBtsCardElmElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-card-elm": HTMLBtwCardElmElement;
+    "bts-card-elm": HTMLBtsCardElmElement;
   }
   interface ElementTagNameMap {
-    "btw-card-elm": HTMLBtwCardElmElement;
+    "bts-card-elm": HTMLBtsCardElmElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-card-elm": JSXElements.BtwCardElmAttributes;
+      "bts-card-elm": JSXElements.BtsCardElmAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwCardElmAttributes extends HTMLAttributes {
+    export interface BtsCardElmAttributes extends HTMLAttributes {
       className?: string;
       title?: string;
     }
@@ -106,29 +106,29 @@ declare global {
 
 
 import {
-  ConfirmActions as BtwConfirmActions
-} from './components/btw-confirm-actions/btw-confirm-actions';
+  ConfirmActions as BtsConfirmActions
+} from './components/bts-confirm-actions/bts-confirm-actions';
 
 declare global {
-  interface HTMLBtwConfirmActionsElement extends BtwConfirmActions, HTMLStencilElement {
+  interface HTMLBtsConfirmActionsElement extends BtsConfirmActions, HTMLStencilElement {
   }
-  var HTMLBtwConfirmActionsElement: {
-    prototype: HTMLBtwConfirmActionsElement;
-    new (): HTMLBtwConfirmActionsElement;
+  var HTMLBtsConfirmActionsElement: {
+    prototype: HTMLBtsConfirmActionsElement;
+    new (): HTMLBtsConfirmActionsElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-confirm-actions": HTMLBtwConfirmActionsElement;
+    "bts-confirm-actions": HTMLBtsConfirmActionsElement;
   }
   interface ElementTagNameMap {
-    "btw-confirm-actions": HTMLBtwConfirmActionsElement;
+    "bts-confirm-actions": HTMLBtsConfirmActionsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-confirm-actions": JSXElements.BtwConfirmActionsAttributes;
+      "bts-confirm-actions": JSXElements.BtsConfirmActionsAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwConfirmActionsAttributes extends HTMLAttributes {
+    export interface BtsConfirmActionsAttributes extends HTMLAttributes {
       buttonType?: string;
       classes?: string;
       confirmLabel?: string;
@@ -141,29 +141,29 @@ declare global {
 
 
 import {
-  SvgElm as BtwSvgElm
-} from './components/btw-svg-elm/btw-svg-elm';
+  SvgElm as BtsSvgElm
+} from './components/bts-svg-elm/bts-svg-elm';
 
 declare global {
-  interface HTMLBtwSvgElmElement extends BtwSvgElm, HTMLStencilElement {
+  interface HTMLBtsSvgElmElement extends BtsSvgElm, HTMLStencilElement {
   }
-  var HTMLBtwSvgElmElement: {
-    prototype: HTMLBtwSvgElmElement;
-    new (): HTMLBtwSvgElmElement;
+  var HTMLBtsSvgElmElement: {
+    prototype: HTMLBtsSvgElmElement;
+    new (): HTMLBtsSvgElmElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-svg-elm": HTMLBtwSvgElmElement;
+    "bts-svg-elm": HTMLBtsSvgElmElement;
   }
   interface ElementTagNameMap {
-    "btw-svg-elm": HTMLBtwSvgElmElement;
+    "bts-svg-elm": HTMLBtsSvgElmElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-svg-elm": JSXElements.BtwSvgElmAttributes;
+      "bts-svg-elm": JSXElements.BtsSvgElmAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwSvgElmAttributes extends HTMLAttributes {
+    export interface BtsSvgElmAttributes extends HTMLAttributes {
       classes?: string;
       icon?: string;
       iconUrl?: string;
@@ -173,29 +173,29 @@ declare global {
 
 
 import {
-  TopAnchorContent as BtwTopAnchorContent
-} from './components/btw-top-anchor/btw-top-anchor-content';
+  TopAnchorContent as BtsTopAnchorContent
+} from './components/btw-top-anchor/bts-top-anchor-content';
 
 declare global {
-  interface HTMLBtwTopAnchorContentElement extends BtwTopAnchorContent, HTMLStencilElement {
+  interface HTMLBtsTopAnchorContentElement extends BtsTopAnchorContent, HTMLStencilElement {
   }
-  var HTMLBtwTopAnchorContentElement: {
-    prototype: HTMLBtwTopAnchorContentElement;
-    new (): HTMLBtwTopAnchorContentElement;
+  var HTMLBtsTopAnchorContentElement: {
+    prototype: HTMLBtsTopAnchorContentElement;
+    new (): HTMLBtsTopAnchorContentElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-top-anchor-content": HTMLBtwTopAnchorContentElement;
+    "bts-top-anchor-content": HTMLBtsTopAnchorContentElement;
   }
   interface ElementTagNameMap {
-    "btw-top-anchor-content": HTMLBtwTopAnchorContentElement;
+    "bts-top-anchor-content": HTMLBtsTopAnchorContentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-top-anchor-content": JSXElements.BtwTopAnchorContentAttributes;
+      "bts-top-anchor-content": JSXElements.BtsTopAnchorContentAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwTopAnchorContentAttributes extends HTMLAttributes {
+    export interface BtsTopAnchorContentAttributes extends HTMLAttributes {
       
     }
   }
@@ -203,29 +203,29 @@ declare global {
 
 
 import {
-  BtwTopAnchor as BtwTopAnchor
-} from './components/btw-top-anchor/btw-top-anchor';
+  BtwTopAnchor as BtsTopAnchor
+} from './components/btw-top-anchor/bts-top-anchor';
 
 declare global {
-  interface HTMLBtwTopAnchorElement extends BtwTopAnchor, HTMLStencilElement {
+  interface HTMLBtsTopAnchorElement extends BtsTopAnchor, HTMLStencilElement {
   }
-  var HTMLBtwTopAnchorElement: {
-    prototype: HTMLBtwTopAnchorElement;
-    new (): HTMLBtwTopAnchorElement;
+  var HTMLBtsTopAnchorElement: {
+    prototype: HTMLBtsTopAnchorElement;
+    new (): HTMLBtsTopAnchorElement;
   };
   interface HTMLElementTagNameMap {
-    "btw-top-anchor": HTMLBtwTopAnchorElement;
+    "bts-top-anchor": HTMLBtsTopAnchorElement;
   }
   interface ElementTagNameMap {
-    "btw-top-anchor": HTMLBtwTopAnchorElement;
+    "bts-top-anchor": HTMLBtsTopAnchorElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "btw-top-anchor": JSXElements.BtwTopAnchorAttributes;
+      "bts-top-anchor": JSXElements.BtsTopAnchorAttributes;
     }
   }
   namespace JSXElements {
-    export interface BtwTopAnchorAttributes extends HTMLAttributes {
+    export interface BtsTopAnchorAttributes extends HTMLAttributes {
       classes?: string;
     }
   }

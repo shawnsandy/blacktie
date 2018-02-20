@@ -1,12 +1,10 @@
 {
   "components": [
     {
-      "tag": "btw-card-elm",
-      "dependencies": [
-        "btw-card-elm-content"
-      ],
+      "tag": "bts-card-elm",
+      "dependencies": [],
       "componentClass": "CardElm",
-      "componentPath": "components/btw-card-elm/btw-card-elm.js",
+      "componentPath": "components/bts-card-elm/bts-card-elm.js",
       "styles": {},
       "props": [
         {
@@ -24,10 +22,10 @@
       }
     },
     {
-      "tag": "btw-card-elm-content",
+      "tag": "bts-card-elm-content",
       "dependencies": [],
       "componentClass": "CardElmContent",
-      "componentPath": "components/btw-card-elm/btw-card-elm-content.js",
+      "componentPath": "components/bts-card-elm/bts-card-elm-content.js",
       "styles": {},
       "props": [
         {
@@ -37,10 +35,10 @@
       ]
     },
     {
-      "tag": "btw-card-elm-header",
+      "tag": "bts-card-elm-header",
       "dependencies": [],
       "componentClass": "CardElmHeader",
-      "componentPath": "components/btw-card-elm/btw-card-elm-header.js",
+      "componentPath": "components/bts-card-elm/bts-card-elm-header.js",
       "styles": {},
       "props": [
         {
@@ -50,10 +48,10 @@
       ]
     },
     {
-      "tag": "btw-confirm-actions",
+      "tag": "bts-confirm-actions",
       "dependencies": [],
       "componentClass": "ConfirmActions",
-      "componentPath": "components/btw-confirm-actions/btw-confirm-actions.js",
+      "componentPath": "components/bts-confirm-actions/bts-confirm-actions.js",
       "styles": {},
       "props": [
         {
@@ -83,10 +81,10 @@
       ]
     },
     {
-      "tag": "btw-svg-elm",
+      "tag": "bts-svg-elm",
       "dependencies": [],
       "componentClass": "SvgElm",
-      "componentPath": "components/btw-svg-elm/btw-svg-elm.js",
+      "componentPath": "components/bts-svg-elm/bts-svg-elm.js",
       "styles": {},
       "props": [
         {
@@ -107,10 +105,10 @@
       }
     },
     {
-      "tag": "btw-top-anchor",
+      "tag": "bts-top-anchor",
       "dependencies": [],
       "componentClass": "BtwTopAnchor",
-      "componentPath": "components/btw-top-anchor/btw-top-anchor.js",
+      "componentPath": "components/btw-top-anchor/bts-top-anchor.js",
       "styles": {},
       "props": [
         {
@@ -124,10 +122,10 @@
       }
     },
     {
-      "tag": "btw-top-anchor-content",
+      "tag": "bts-top-anchor-content",
       "dependencies": [],
       "componentClass": "TopAnchorContent",
-      "componentPath": "components/btw-top-anchor/btw-top-anchor-content.js",
+      "componentPath": "components/btw-top-anchor/bts-top-anchor-content.js",
       "styles": {}
     },
     {

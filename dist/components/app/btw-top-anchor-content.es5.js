@@ -1,2 +1,0 @@
-/*! Built with http://stenciljs.com */
-App.loadBundle("btw-top-anchor-content",["exports"],function(n){var e=window.App.h,t=(window.App.Context,function(){function n(){}return n.prototype.render=function(){return e("slot",null)},Object.defineProperty(n,"is",{get:function(){return"btw-top-anchor-content"},enumerable:!0,configurable:!0}),n}());n.BtwTopAnchorContent=t,Object.defineProperty(n,"__esModule",{value:!0})});
