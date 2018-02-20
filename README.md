@@ -45,27 +45,32 @@ At the core of BlackTie is a lightweight SASS/CSS utility library (10.93kb / 2.3
 <btw-confirm-actions url="/" label="Remove"></btw-confirm-actions>
 
 ```
+_________________________________________________
 
 ### Top Anchor
 
+BlackTie Top Anchor component add a scroll to top element to any page
+
 ![top anchor link](/btw-anchor.gif)
 
+__Scrolling displays hidden top anchor element__
 
 ![top anchor link](/scrolling-top.gif)
 
-
-BlackTie Top Anchor component add a scroll to top anchor to any page
+__Click top anchor to scroll to top of page__
 
 ``` html
+
 <btw-top-anchor></btw-top-anchor>
+
 ```
+_____________
 
 ## RiotJS
 
 > Simple and elegant component-based UI library
 
-
-
 Coming soon
+____________
 
 BlackTie is still under development more info coming soon..
