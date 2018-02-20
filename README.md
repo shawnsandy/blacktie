@@ -18,11 +18,13 @@ yarn install
 ```
 yarn run start
 ```
+## Sass/CSS
 
+At the core of BlackTie is a lightweight SASS/CSS utility library (10.93kb / 2.3Kb gzip) that makes it easy to customize current UI elements, it's goal is not to enhance and not replace your current framework.
 
 ## Blacktie WebComponents
 
-We converted some of the most commonly used UI elements / patterns (buttons, scroll to top, cards, confirmation actions, contact us page) into an easy to use set of reusable web components that can be dropped into any framework.
+**BlackTie** converts commonly used UI elements / patterns (buttons, scroll to top, cards, confirmation actions, contact us page) into an easy to use set of reusable web components that can be dropped into any framework.
 
 > [Web components](https://www.webcomponents.org/introduction) are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. Custom components and widgets build on the Web Component standards, will work across modern browsers, and can be used with any JavaScript library or framework that works with HTML.
 
