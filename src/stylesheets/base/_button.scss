@@ -8,6 +8,9 @@
   font-size: 1rem;
   display: inline-block;
   font-weight: 400;
+  &:focus {
+    outline: none;
+  }
 
 
   &.elm-blue {
