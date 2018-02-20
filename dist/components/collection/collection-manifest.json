@@ -50,6 +50,30 @@
       ]
     },
     {
+      "tag": "btw-svg-elm",
+      "dependencies": [],
+      "componentClass": "SvgElm",
+      "componentPath": "components/btw-svg-elm/btw-svg-elm.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "classes",
+          "type": "String"
+        },
+        {
+          "name": "icon",
+          "type": "String"
+        },
+        {
+          "name": "iconUrl",
+          "type": "String"
+        }
+      ],
+      "host": {
+        "theme": "svg"
+      }
+    },
+    {
       "tag": "btw-top-anchor",
       "dependencies": [],
       "componentClass": "BtwTopAnchor",
