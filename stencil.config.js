@@ -1,5 +1,5 @@
 exports.config = {
-  srcDir: "src/js/stencil",
+  srcDir: "src/stencil",
   generateDistribution: true,
   namespace: "btw",
   buildDir: "./build",
