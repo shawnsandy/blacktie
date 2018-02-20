@@ -2,7 +2,7 @@ export class ConfirmActions {
     constructor() {
         this.label = "Delete";
         this.confirmLabel = "Confirm";
-        this.timeout = 2000;
+        this.timeout = 4000;
         this.classes = "";
         this.buttonType = "submit";
     }
@@ -12,7 +12,7 @@ export class ConfirmActions {
     handleClickActions(event) {
         const label = event.target;
         event.returnValue;
-        if (this.confirmLabel === label.innerHTML) {
+        if (label.confirmLabel === label.innerHTML) {
             label.innerHTML = this.label;
         }
         else {
