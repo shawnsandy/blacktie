@@ -1,2 +1,0 @@
-/*! Built with http://stenciljs.com */
-const{h:t,Context:s}=window.btw;class e{constructor(){this.icon="i-photo",this.iconUrl="/icons/bytesize-symbols.min.svg",this.classes="svg-elm-48"}render(){return t("svg",{class:`${this.classes}`},t("use",{href:`${this.iconUrl}/${this.icon}`}))}static get is(){return"btw-svg-element"}static get properties(){return{classes:{type:String,attr:"classes"},icon:{type:String,attr:"icon"},iconUrl:{type:String,attr:"icon-url"}}}}export{e as BtwSvgElement};
