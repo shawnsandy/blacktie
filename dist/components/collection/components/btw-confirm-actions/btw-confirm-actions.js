@@ -2,7 +2,7 @@ export class ConfirmActions {
     constructor() {
         this.label = "Delete";
         this.confirmLabel = "Confirm";
-        this.timeout = 4000;
+        this.timeout = 2000;
         this.classes = "";
         this.buttonType = "submit";
     }
