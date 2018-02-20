@@ -8,7 +8,7 @@ export class ConfirmActions {
   @Prop() url: string;
   @Prop() label: string = "Delete";
   @Prop() confirmLabel: string = "Confirm";
-  @Prop() timeout: number = 4000;
+  @Prop() timeout: number = 2000;
   @Prop() classes: string = "";
   @Prop() buttonType: string = "submit";
 
