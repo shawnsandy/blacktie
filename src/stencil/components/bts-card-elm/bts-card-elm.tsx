@@ -15,9 +15,9 @@ export class CardElm {
     return (
       <div class={`card-elm ${this.className}`}>
         <slot name="card-header" />
-        <btw-card-elm-content>
+        <bts-card-elm-content>
           <slot />
-        </btw-card-elm-content>
+        </bts-card-elm-content>
       </div>
     );
   }

@@ -5,7 +5,7 @@ export class CardElm {
     render() {
         return (h("div", { class: `card-elm ${this.className}` },
             h("slot", { name: "card-header" }),
-            h("btw-card-elm-content", null,
+            h("bts-card-elm-content", null,
                 h("slot", null))));
     }
     static get is() { return "bts-card-elm"; }

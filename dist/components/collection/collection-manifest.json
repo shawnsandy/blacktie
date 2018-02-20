@@ -2,7 +2,9 @@
   "components": [
     {
       "tag": "bts-card-elm",
-      "dependencies": [],
+      "dependencies": [
+        "bts-card-elm-content"
+      ],
       "componentClass": "CardElm",
       "componentPath": "components/bts-card-elm/bts-card-elm.js",
       "styles": {},
