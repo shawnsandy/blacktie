@@ -50,6 +50,39 @@
       ]
     },
     {
+      "tag": "btw-confirm-actions",
+      "dependencies": [],
+      "componentClass": "ConfirmActions",
+      "componentPath": "components/btw-confirm-actions/btw-confirm-actions.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "buttonType",
+          "type": "String"
+        },
+        {
+          "name": "classes",
+          "type": "String"
+        },
+        {
+          "name": "confirmLabel",
+          "type": "String"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "timeout",
+          "type": "Number"
+        },
+        {
+          "name": "url",
+          "type": "String"
+        }
+      ]
+    },
+    {
       "tag": "btw-svg-elm",
       "dependencies": [],
       "componentClass": "SvgElm",

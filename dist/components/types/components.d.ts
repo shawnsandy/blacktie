@@ -106,6 +106,41 @@ declare global {
 
 
 import {
+  ConfirmActions as BtwConfirmActions
+} from './components/btw-confirm-actions/btw-confirm-actions';
+
+declare global {
+  interface HTMLBtwConfirmActionsElement extends BtwConfirmActions, HTMLStencilElement {
+  }
+  var HTMLBtwConfirmActionsElement: {
+    prototype: HTMLBtwConfirmActionsElement;
+    new (): HTMLBtwConfirmActionsElement;
+  };
+  interface HTMLElementTagNameMap {
+    "btw-confirm-actions": HTMLBtwConfirmActionsElement;
+  }
+  interface ElementTagNameMap {
+    "btw-confirm-actions": HTMLBtwConfirmActionsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "btw-confirm-actions": JSXElements.BtwConfirmActionsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtwConfirmActionsAttributes extends HTMLAttributes {
+      buttonType?: string;
+      classes?: string;
+      confirmLabel?: string;
+      label?: string;
+      timeout?: number;
+      url?: string;
+    }
+  }
+}
+
+
+import {
   SvgElm as BtwSvgElm
 } from './components/btw-svg-elm/btw-svg-elm';
 
