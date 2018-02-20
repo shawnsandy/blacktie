@@ -9,6 +9,6 @@ exports.config = {
   hashFileNames: false,
   bundles: [
     { components: ["my-first-component"] },
-    { components: ["btw-card-elm", "btw-card-elm-content", "btw-card-elm-header", "btw-top-anchor"] }
+    { components: ["btw-card-elm", "btw-card-elm-content", "btw-card-elm-header", "btw-top-anchor", "btw-svg-elm"] }
   ]
 }
