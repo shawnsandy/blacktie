@@ -6,6 +6,7 @@
 	stroke-width: 2px;
 	overflow: hidden;
 	margin-bottom: -1px;
+	display: inline-block;
 }
 
 .svg-elm-24 {
@@ -26,12 +27,12 @@
 	@extend .svg-elm;
 	width: 48px;
 	height: 48px;
-	margin-bottom: -2px;
+	margin-bottom: -3px;
 }
 
 .svg-elm-64 {
 	@extend .svg-elm;
-	width: 48px;
-	height: 48px;
-	margin-bottom: -2px;
+	width: 64px;
+	height: 64px;
+	margin-bottom: -4px;
 }

@@ -22,7 +22,7 @@
 		}
 	}
 
-	.elm-stroke-#{name} {
+	.elm-stroke-#{$name} {
 		stroke: $color;
 	}
 
