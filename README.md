@@ -29,6 +29,12 @@ BlackTie is still under development more info coming soon..
 
 Confirm critical user actions (delete /update) before submissions
 
+``` html
+<btw-confirm-actions></btw-confirm-actions>
+<btw-confirm-actions url="/" label="Remove"></btw-confirm-actions>
+
+```
+
 ### Top Anchor
 
 ![top anchor link](/btw-anchor.gif)
