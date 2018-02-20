@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+blacktie.loadBundle("btw-top-anchor-content",["exports"],function(e){var n=window.blacktie.h,t=(window.blacktie.Context,function(){function e(){}return e.prototype.render=function(){return n("slot",null)},Object.defineProperty(e,"is",{get:function(){return"btw-top-anchor-content"},enumerable:!0,configurable:!0}),e}());e.BtwTopAnchorContent=t,Object.defineProperty(e,"__esModule",{value:!0})});
