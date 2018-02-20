@@ -1,5 +1,5 @@
 exports.config = {
-  srcDir: "src/js/stencil",
+  srcDir: "src/stencil",
   generateDistribution: true,
   namespace: "btw",
   buildDir: "./build",
@@ -9,6 +9,6 @@ exports.config = {
   hashFileNames: false,
   bundles: [
     { components: ["my-first-component"] },
-    { components: ["btw-card-elm", "btw-card-elm-content", "btw-card-elm-header", "btw-top-anchor", "btw-svg-elm", 'btw-confirm-actions'] }
+    { components: ["bts-card-elm", "bts-card-elm-content", "bts-card-elm-header", "bts-top-anchor", "bts-svg-elm", 'bts-confirm-actions'] }
   ]
 }
