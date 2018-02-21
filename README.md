@@ -18,11 +18,13 @@ yarn install
 ```
 yarn run start
 ```
+## Sass/CSS
 
+At the core of BlackTie is a lightweight SASS/CSS utility library (10.93kb / 2.3Kb gzip) that makes it easy to customize current UI elements, it's goal is not to enhance and not replace your current framework.
 
 ## Blacktie WebComponents
 
-We converted some of the most commonly used UI elements / patterns (buttons, scroll to top, cards, confirmation actions, contact us page) into an easy to use set of reusable web components that can be dropped into any framework.
+**BlackTie** converts commonly used UI elements / patterns (buttons, scroll to top, cards, confirmation actions, contact us page) into an easy to use set of reusable web components that can be dropped into any framework.
 
 > [Web components](https://www.webcomponents.org/introduction) are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. Custom components and widgets build on the Web Component standards, will work across modern browsers, and can be used with any JavaScript library or framework that works with HTML.
 
@@ -43,27 +45,48 @@ We converted some of the most commonly used UI elements / patterns (buttons, scr
 <btw-confirm-actions url="/" label="Remove"></btw-confirm-actions>
 
 ```
+_________________________________________________
 
 ### Top Anchor
 
+BlackTie Top Anchor component add a scroll to top element to any page
+
 ![top anchor link](/btw-anchor.gif)
 
+__Scrolling displays hidden top anchor element__
 
 ![top anchor link](/scrolling-top.gif)
 
-
-BlackTie Top Anchor component add a scroll to top anchor to any page
+__Click top anchor to scroll to top of page__
 
 ``` html
+
 <btw-top-anchor></btw-top-anchor>
+
+```
+_____________
+
+### Upload Component
+
+Replace a basic file input browser element with a Stylized custom upload component.
+
+![File Upload](bts-upload-component.gif)
+
+``` html
+
+<div class="content">
+<p><bts-upload-elm></bts-upload-elm></p>
+<p><bts-upload-elm classes="elm-border-blue" label-class="elm-bg-blue elm-color-white" icon-classes="elm-stroke-white"></bts-upload-elm></p>
+</div>
+</div>
+
 ```
 
 ## RiotJS
 
 > Simple and elegant component-based UI library
 
-
-
 Coming soon
+____________
 
 BlackTie is still under development more info coming soon..
