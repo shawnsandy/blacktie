@@ -1,0 +1,14 @@
+@each $name, $color in ($color_set) {
+  .#{$name}-elm {
+    color: lighten($color, 50%);
+    background-color: $color;
+    border-color: $color;
+    &:hover {
+      color: darken(lighten($color, 20%), 50%);
+    }
+  }
+}
+
+.inverted-color {
+  color: invert(#000000);
+}
