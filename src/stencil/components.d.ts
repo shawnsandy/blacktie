@@ -198,6 +198,8 @@ declare global {
     export interface BtsUploadElmAttributes extends HTMLAttributes {
       classes?: string;
       fieldName?: string;
+      iconClasses?: string;
+      iconSize?: string;
       label?: string;
       labelClass?: string;
       placeHolderClass?: string;

@@ -148,6 +148,14 @@
           "type": "String"
         },
         {
+          "name": "iconClasses",
+          "type": "String"
+        },
+        {
+          "name": "iconSize",
+          "type": "String"
+        },
+        {
           "name": "label",
           "type": "String"
         },

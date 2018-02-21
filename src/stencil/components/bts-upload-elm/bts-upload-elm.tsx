@@ -6,45 +6,39 @@ import { Component, Prop, State } from "@stencil/core";
 export class UploadElm {
   @Prop() label: string = "File Upload";
   @Prop() classes: string;
-  @Prop() labelClass: string = '';
-  @Prop() placeHolderClass: string = '';
+  @Prop() labelClass: string = "";
+  @Prop() iconClasses: string = "";
+  @Prop() iconSize: string = "24";
+  @Prop() placeHolderClass: string = "";
   @Prop() fieldName: string = "upload";
   @Prop() required: boolean = false;
 
-  @State() placeholder:string = 'Select a file to upload'
+  @State() placeholder: string = "Select a file to upload";
 
   componentDidLoad() {
-	console.log("The component has been rendered");
-
+    console.log("The component has been rendered");
   }
 
   handleSelectUpload(e) {
-	console.log(e.currentTarget.files);
-	this.placeholder = e.target.files[0].name;
+    console.log(e.currentTarget.files);
+    this.placeholder = e.target.files[0].name;
   }
 
   render() {
-    return (
-      <div class="upload-elm">
+    return <div class={`upload-elm ${this.classes}`}>
         <label htmlFor={this.fieldName}>
-          <input
-            type="file"
-            class={`file-elm ${this.classes}`}
-            name={this.fieldName}
-            onChange={e => {
+          <input type="file" class={`file-elm`} name={this.fieldName} onChange={e => {
               this.handleSelectUpload(e);
-            }}
-          />
+            }} />
           <span class={`file-elm-label ${this.labelClass}`}>
             <div>
-              <bts-svg-elm classes="svg-elm-24" icon="i-upload" /> {this.label}
+              <bts-svg-elm classes={`svg-elm-${this.iconSize} ${this.iconClasses}`} icon="i-export" /> {this.label}
             </div>
           </span>
           <span class={`file-elm-placeholder ${this.placeHolderClass}`}>
             <div class="placeholder">{this.placeholder}</div>
           </span>
         </label>
-      </div>
-    );
+      </div>;
   }
 }
