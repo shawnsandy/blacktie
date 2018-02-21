@@ -1,11 +1,18 @@
 @each $name, $color in ($color_set) {
   .#{$name}-elm {
-    color: lighten($color, 50%);
+	color: lighten($color, 60%);
+	stroke: lighten($color, 60%);
     background-color: $color;
     border-color: $color;
-    &:hover {
-      color: darken(lighten($color, 20%), 50%);
-    }
+  }
+}
+
+@each $name, $color in ($color_set_light) {
+  .#{$name}-elm {
+	color: darken($color, 60%);
+	stroke: darken($color, 60%);
+    background-color: $color;
+    border-color: $color;
   }
 }
 

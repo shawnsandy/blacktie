@@ -1,11 +1,7 @@
-
 @each $name, $color in ($color_set) {
 
 	.elm-color-#{$name} {
 		color: $color;
-		&:hover {
-			color: darken($color, 10%)
-		}
 	}
 
 	.elm-border-#{$name} {
