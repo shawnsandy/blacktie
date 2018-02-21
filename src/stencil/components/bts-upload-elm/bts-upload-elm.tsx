@@ -35,7 +35,7 @@ export class UploadElm {
           />
           <span class="file-elm-label">
             <div>
-              <bts-svg-elm classes="svg-elm-24" icon="i-export" /> {this.label}
+              <bts-svg-elm classes="svg-elm-24" icon="i-upload" /> {this.label}
             </div>
           </span>
           <span class="file-elm-placeholder">

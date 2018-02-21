@@ -20,7 +20,7 @@ export class UploadElm {
                     } }),
                 h("span", { class: "file-elm-label" },
                     h("div", null,
-                        h("bts-svg-elm", { classes: "svg-elm-24", icon: "i-export" }),
+                        h("bts-svg-elm", { classes: "svg-elm-24", icon: "i-upload" }),
                         " ",
                         this.label)),
                 h("span", { class: "file-elm-placeholder" },
