@@ -1,0 +1,43 @@
+.upload-elm {
+	@extend .elm-border;
+	width: 100%;
+	position: relative;
+	height: 50px;
+
+  [type=file] {
+       height: 100%;
+       width: 100%;
+       left: 0;
+       outline: none;
+       position: absolute;
+	   top: 0;
+	   opacity: 0;
+	   cursor: pointer;
+  }
+
+  label {
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  align-items: stretch;
+	  justify-content: flex-start;
+  }
+
+}
+
+.file-elm-label {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	min-width: 200px;
+	@extend .elm-bg-lightgray;
+}
+
+.file-elm-placeholder {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	width: 100%;
+	padding: 0 25px;
+}

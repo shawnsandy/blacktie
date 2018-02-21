@@ -1,4 +1,5 @@
 import "./../stylesheets/app.scss";
+import "./../stylesheets/colors.scss";
 
 // let test = new TestClass();
 import { u } from "umbrellajs";

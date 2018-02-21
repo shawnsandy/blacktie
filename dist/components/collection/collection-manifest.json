@@ -131,6 +131,54 @@
       "styles": {}
     },
     {
+      "tag": "bts-upload-elm",
+      "dependencies": [
+        "bts-svg-elm"
+      ],
+      "componentClass": "UploadElm",
+      "componentPath": "components/bts-upload-elm/bts-upload-elm.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "classes",
+          "type": "String"
+        },
+        {
+          "name": "fieldName",
+          "type": "String"
+        },
+        {
+          "name": "iconClasses",
+          "type": "String"
+        },
+        {
+          "name": "iconSize",
+          "type": "String"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "labelClass",
+          "type": "String"
+        },
+        {
+          "name": "placeHolderClass",
+          "type": "String"
+        },
+        {
+          "name": "required",
+          "type": "Boolean"
+        }
+      ],
+      "states": [
+        {
+          "name": "placeholder"
+        }
+      ]
+    },
+    {
       "tag": "my-component",
       "dependencies": [],
       "componentClass": "MyComponent",
