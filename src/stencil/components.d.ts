@@ -173,6 +173,39 @@ declare global {
 
 
 import {
+  UploadElm as BtsUploadElm
+} from './components/bts-upload-elm/bts-upload-elm';
+
+declare global {
+  interface HTMLBtsUploadElmElement extends BtsUploadElm, HTMLStencilElement {
+  }
+  var HTMLBtsUploadElmElement: {
+    prototype: HTMLBtsUploadElmElement;
+    new (): HTMLBtsUploadElmElement;
+  };
+  interface HTMLElementTagNameMap {
+    "bts-upload-elm": HTMLBtsUploadElmElement;
+  }
+  interface ElementTagNameMap {
+    "bts-upload-elm": HTMLBtsUploadElmElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "bts-upload-elm": JSXElements.BtsUploadElmAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtsUploadElmAttributes extends HTMLAttributes {
+      classes?: string;
+      fieldName?: string;
+      label?: string;
+      required?: boolean;
+    }
+  }
+}
+
+
+import {
   TopAnchorContent as BtsTopAnchorContent
 } from './components/btw-top-anchor/bts-top-anchor-content';
 
