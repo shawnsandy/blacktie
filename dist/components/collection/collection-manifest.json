@@ -152,6 +152,14 @@
           "type": "String"
         },
         {
+          "name": "labelClass",
+          "type": "String"
+        },
+        {
+          "name": "placeHolderClass",
+          "type": "String"
+        },
+        {
           "name": "required",
           "type": "Boolean"
         }

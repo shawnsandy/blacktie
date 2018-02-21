@@ -199,6 +199,8 @@ declare global {
       classes?: string;
       fieldName?: string;
       label?: string;
+      labelClass?: string;
+      placeHolderClass?: string;
       required?: boolean;
     }
   }
