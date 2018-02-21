@@ -66,6 +66,22 @@ __Click top anchor to scroll to top of page__
 ```
 _____________
 
+### Upload Component
+
+Replace a basic file input browser element with a Stylized custom upload component.
+
+![File Upload](bts-upload-component.gif)
+
+``` html
+
+<div class="content">
+<p><bts-upload-elm></bts-upload-elm></p>
+<p><bts-upload-elm classes="elm-border-blue" label-class="elm-bg-blue elm-color-white" icon-classes="elm-stroke-white"></bts-upload-elm></p>
+</div>
+</div>
+
+```
+
 ## RiotJS
 
 > Simple and elegant component-based UI library
