@@ -129,6 +129,7 @@ declare global {
   }
   namespace JSXElements {
     export interface BtsConfirmActionsAttributes extends HTMLAttributes {
+      buttonClass?: string;
       buttonType?: string;
       classes?: string;
       confirmLabel?: string;
