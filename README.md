@@ -11,13 +11,23 @@
 git clone https://github.com/shawnsandy/blacktie
 ```
 
-```bash
+* Install node modules
+
+``` bash
 yarn install
 ```
+* Start the development environment
 
 ```
 yarn run start
 ```
+
+#### Use the package in you local development by running
+
+* Run `yarn link` in the directory you cloned the package into.
+* Run `yarn link "blacktie"` from you local development directory.
+* More info on [Package linking](https://yarnpkg.com/lang/en/docs/cli/link/)
+
 ## Sass/CSS
 
 At the core of BlackTie is a lightweight SASS/CSS utility library (10.93kb / 2.3Kb gzip) that makes it easy to customize current UI elements, it's goal is not to enhance and not replace your current framework.
@@ -76,8 +86,6 @@ Replace a basic file input browser element with a Stylized custom upload compone
 
 <div class="content">
 <p><bts-upload-elm></bts-upload-elm></p>
-<p><bts-upload-elm classes="elm-border-blue" label-class="elm-bg-blue elm-color-white" icon-classes="elm-stroke-white"></bts-upload-elm></p>
-</div>
 </div>
 
 ```
