@@ -18,7 +18,6 @@ $gray: #7B838B;
 $gray-dark: #2E3338;
 $black:black;
 $black-pearl:#1F2529;
-$black-haze: #F7F7F7;
 $big-stone: #363F48;
 $dark-blue: #132433;
 
@@ -34,16 +33,19 @@ $color_set: (
 	"teal": $teal,
 	"cyan": $cyan,
 	"white":$white,
-	"lightgrey":$lightgrey,
 	"lightgray": $lightgrey,
-	"darkgrey":$darkgrey,
 	"darkgray": $darkgray,
 	"whitesmoke": $whitesmoke,
 	"gray": $gray,
 	"gray-dark": $gray-dark,
 	"black": $black,
 	"black-pearl": $black-pearl,
-	"black-haze": $black-haze,
 	"big-stone": $big-stone,
 	"dark-blue": $dark-blue,
 	);
+
+	$color_set_light: (
+		"white": $white,
+		"whitesmoke": $whitesmoke,
+		"lightgray": $lightgrey,
+	)
