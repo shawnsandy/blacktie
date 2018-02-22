@@ -57,6 +57,10 @@
       "styles": {},
       "props": [
         {
+          "name": "buttonClass",
+          "type": "String"
+        },
+        {
           "name": "buttonType",
           "type": "String"
         },
