@@ -7,12 +7,12 @@ export class SvgElm {
     componentDidLoad() {
         const elm = document.querySelector("btw-svg-elm");
         elm.classList.add(this.classes);
-        elm.classList.remove('hydrated');
+        elm.classList.remove("hydrated");
         console.log(elm);
     }
     render() {
         return (h("svg", { class: `${this.classes}` },
-            h("use", { href: `${this.iconUrl}#${this.icon}` })));
+            h("use", { xlinkHref: `${this.iconUrl}#${this.icon}` })));
     }
     static get is() { return "bts-svg-elm"; }
     static get host() { return { "theme": "svg" }; }
