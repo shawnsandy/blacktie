@@ -174,6 +174,39 @@ declare global {
 
 
 import {
+  UploadRounded as BtsUploadElmRounded
+} from './components/bts-upload-elm/bts-upload-elm-rounded';
+
+declare global {
+  interface HTMLBtsUploadElmRoundedElement extends BtsUploadElmRounded, HTMLStencilElement {
+  }
+  var HTMLBtsUploadElmRoundedElement: {
+    prototype: HTMLBtsUploadElmRoundedElement;
+    new (): HTMLBtsUploadElmRoundedElement;
+  };
+  interface HTMLElementTagNameMap {
+    "bts-upload-elm-rounded": HTMLBtsUploadElmRoundedElement;
+  }
+  interface ElementTagNameMap {
+    "bts-upload-elm-rounded": HTMLBtsUploadElmRoundedElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "bts-upload-elm-rounded": JSXElements.BtsUploadElmRoundedAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BtsUploadElmRoundedAttributes extends HTMLAttributes {
+      classNames?: string;
+      fieldName?: string;
+      iconClass?: string;
+      labelClass?: string;
+    }
+  }
+}
+
+
+import {
   UploadElm as BtsUploadElm
 } from './components/bts-upload-elm/bts-upload-elm';
 

@@ -1,7 +1,8 @@
 export class UploadElm {
     constructor() {
         this.label = "File Upload";
-        this.labelClass = "";
+        this.classes = "elm-border";
+        this.labelClass = "elm-bg-lightgray";
         this.iconClasses = "";
         this.iconSize = "24";
         this.placeHolderClass = "";
@@ -17,8 +18,8 @@ export class UploadElm {
         this.placeholder = e.target.files[0].name;
     }
     render() {
-        return (h("div", { class: `upload-elm ${this.classes}` },
-            h("label", { htmlFor: this.fieldName },
+        return (h("div", { class: `upload-elm` },
+            h("label", { htmlFor: this.fieldName, class: this.classes },
                 h("input", { type: "file", class: `file-elm`, name: this.fieldName, onChange: e => {
                         this.handleSelectUpload(e);
                     } }),

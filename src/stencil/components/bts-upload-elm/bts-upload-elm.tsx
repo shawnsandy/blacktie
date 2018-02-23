@@ -5,8 +5,8 @@ import { Component, Prop, State } from "@stencil/core";
 })
 export class UploadElm {
   @Prop() label: string = "File Upload";
-  @Prop() classes: string;
-  @Prop() labelClass: string = "";
+  @Prop() classes: string = "elm-border";
+  @Prop() labelClass: string = "elm-bg-lightgray";
   @Prop() iconClasses: string = "";
   @Prop() iconSize: string = "24";
   @Prop() placeHolderClass: string = "";
@@ -26,8 +26,8 @@ export class UploadElm {
 
   render() {
     return (
-      <div class={`upload-elm ${this.classes}`}>
-        <label htmlFor={this.fieldName}>
+      <div class={`upload-elm`}>
+        <label htmlFor={this.fieldName} class={this.classes}>
           <input
             type="file"
             class={`file-elm`}
