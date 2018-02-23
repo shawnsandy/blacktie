@@ -7,6 +7,7 @@ export declare class UploadElm {
     placeHolderClass: string;
     fieldName: string;
     required: boolean;
+    elmColor: string;
     placeholder: string;
     componentDidLoad(): void;
     handleSelectUpload(e: any): void;
