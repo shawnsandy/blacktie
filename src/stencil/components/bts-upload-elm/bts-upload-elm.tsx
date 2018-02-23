@@ -25,20 +25,31 @@ export class UploadElm {
   }
 
   render() {
-    return <div class={`upload-elm ${this.classes}`}>
+    return (
+      <div class={`upload-elm ${this.classes}`}>
         <label htmlFor={this.fieldName}>
-          <input type="file" class={`file-elm`} name={this.fieldName} onChange={e => {
+          <input
+            type="file"
+            class={`file-elm`}
+            name={this.fieldName}
+            onChange={e => {
               this.handleSelectUpload(e);
-            }} />
+            }}
+          />
           <span class={`file-elm-label ${this.labelClass}`}>
             <div>
-              <bts-svg-elm classes={`svg-elm-${this.iconSize} ${this.iconClasses}`} icon="i-export" /> {this.label}
+              <bts-svg-elm
+                classes={`svg-elm-${this.iconSize} ${this.iconClasses}`}
+                icon="i-export"
+              />{" "}
+              {this.label}
             </div>
           </span>
           <span class={`file-elm-placeholder ${this.placeHolderClass}`}>
             <div class="placeholder">{this.placeholder}</div>
           </span>
         </label>
-      </div>;
+      </div>
+    );
   }
 }
