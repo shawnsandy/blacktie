@@ -148,6 +148,10 @@
           "type": "String"
         },
         {
+          "name": "elmColor",
+          "type": "String"
+        },
+        {
           "name": "fieldName",
           "type": "String"
         },

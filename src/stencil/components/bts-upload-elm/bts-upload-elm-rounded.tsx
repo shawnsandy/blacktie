@@ -3,24 +3,24 @@ import { Component, Prop } from "@stencil/core";
 @Component({
   tag: "bts-upload-elm-rounded",
   host: {
-	  theme: 'upload-elm'
+    theme: "upload-elm"
   }
 })
 export class UploadRounded {
   @Prop() fieldName: string = "uploads";
   @Prop() elmColor: string = "lightgray";
-  @Prop() classNames: string = "";
+  @Prop() classNames: string = "elm-rds-rounded ";
   @Prop() labelClass: string = "";
   @Prop() iconClass: string = "";
 
   render() {
     return (
-	<bts-upload-elm
-	classes={`elm-border elm-rds-rounded elm-border-${this.elmColor} ${this.classNames}`}
-	label-class={`${this.elmColor}-elm ${this.labelClass}`}
-	field-name={this.fieldName}
-	icon-classes={`${this.elmColor}-elm ${this.iconClass}`} >
-	</bts-upload-elm>
-);
+      <bts-upload-elm
+        classes={`elm-border elm-border-${this.elmColor} ${this.classNames}`}
+        field-name={this.fieldName}
+        icon-classes={this.iconClass}
+        elm-color={this.elmColor}
+      />
+    );
   }
 }

@@ -2,12 +2,12 @@ export class UploadRounded {
     constructor() {
         this.fieldName = "uploads";
         this.elmColor = "lightgray";
-        this.classNames = "";
+        this.classNames = "elm-rds-rounded ";
         this.labelClass = "";
         this.iconClass = "";
     }
     render() {
-        return (h("bts-upload-elm", { classes: `elm-border elm-rds-rounded elm-border-${this.elmColor} ${this.classNames}`, "label-class": `${this.elmColor}-elm ${this.labelClass}`, "field-name": this.fieldName, "icon-classes": `${this.elmColor}-elm ${this.iconClass}` }));
+        return (h("bts-upload-elm", { classes: `elm-border elm-border-${this.elmColor} ${this.classNames}`, "field-name": this.fieldName, "icon-classes": this.iconClass, "elm-color": this.elmColor }));
     }
     static get is() { return "bts-upload-elm-rounded"; }
     static get host() { return { "theme": "upload-elm" }; }
