@@ -148,6 +148,10 @@
           "type": "String"
         },
         {
+          "name": "elmColor",
+          "type": "String"
+        },
+        {
           "name": "fieldName",
           "type": "String"
         },
@@ -181,6 +185,40 @@
           "name": "placeholder"
         }
       ]
+    },
+    {
+      "tag": "bts-upload-elm-rounded",
+      "dependencies": [
+        "bts-upload-elm"
+      ],
+      "componentClass": "UploadRounded",
+      "componentPath": "components/bts-upload-elm/bts-upload-elm-rounded.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "classNames",
+          "type": "String"
+        },
+        {
+          "name": "elmColor",
+          "type": "String"
+        },
+        {
+          "name": "fieldName",
+          "type": "String"
+        },
+        {
+          "name": "iconClass",
+          "type": "String"
+        },
+        {
+          "name": "labelClass",
+          "type": "String"
+        }
+      ],
+      "host": {
+        "theme": "upload-elm"
+      }
     },
     {
       "tag": "my-component",
