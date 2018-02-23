@@ -198,6 +198,7 @@ declare global {
   namespace JSXElements {
     export interface BtsUploadElmRoundedAttributes extends HTMLAttributes {
       classNames?: string;
+      elmColor?: string;
       fieldName?: string;
       iconClass?: string;
       labelClass?: string;
