@@ -2,15 +2,14 @@
 {
 
 	@extend .flex-elm-column;
-	border-radius: 5px;
+	@extend .elm-rds-square;
 	@extend .elm-shadow;
 	@extend .elm-border;
 	> * {
-		width: 100%;
+		@extend .elm-full-width;
 		padding: 0;
 		margin: 0;
 	}
-
 }
 
 .card-elm-shadow {
@@ -22,11 +21,11 @@
 	@extend .flex-elm-left;
 	padding: 10px 20px;
 	font-weight: 500;
-	width: 100%
+	@extend .elm-full-width;
 }
 
 .card-elm-content {
-	height: 100%;
+	@extend .elm-full-height;
 	> * {
 
 		@extend .flex-elm-column;

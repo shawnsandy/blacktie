@@ -17,7 +17,7 @@ export class UploadElm {
         this.placeholder = e.target.files[0].name;
     }
     render() {
-        return h("div", { class: `upload-elm ${this.classes}` },
+        return (h("div", { class: `upload-elm ${this.classes}` },
             h("label", { htmlFor: this.fieldName },
                 h("input", { type: "file", class: `file-elm`, name: this.fieldName, onChange: e => {
                         this.handleSelectUpload(e);
@@ -28,7 +28,7 @@ export class UploadElm {
                         " ",
                         this.label)),
                 h("span", { class: `file-elm-placeholder ${this.placeHolderClass}` },
-                    h("div", { class: "placeholder" }, this.placeholder))));
+                    h("div", { class: "placeholder" }, this.placeholder)))));
     }
     static get is() { return "bts-upload-elm"; }
     static get properties() { return { "classes": { "type": String, "attr": "classes" }, "fieldName": { "type": String, "attr": "field-name" }, "iconClasses": { "type": String, "attr": "icon-classes" }, "iconSize": { "type": String, "attr": "icon-size" }, "label": { "type": String, "attr": "label" }, "labelClass": { "type": String, "attr": "label-class" }, "placeholder": { "state": true }, "placeHolderClass": { "type": String, "attr": "place-holder-class" }, "required": { "type": Boolean, "attr": "required" } }; }
