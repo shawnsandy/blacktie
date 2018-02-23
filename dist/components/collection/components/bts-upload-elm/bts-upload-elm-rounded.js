@@ -1,9 +1,9 @@
 export class UploadRounded {
     constructor() {
         this.fieldName = "uploads";
-        this.classNames = "elm-border-blue ";
-        this.labelClass = "lightgrey-elm";
-        this.iconClass = "elm-stroke-white";
+        this.classNames = "elm-border-lightgray ";
+        this.labelClass = "lightgray-elm";
+        this.iconClass = "elm-stroke-black";
     }
     render() {
         return (h("bts-upload-elm", { classes: `elm-border elm-rds-rounded ${this.classNames}`, "label-class": this.labelClass, "field-name": this.fieldName, "icon-classes": this.iconClass }));

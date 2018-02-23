@@ -8,9 +8,9 @@ import { Component, Prop } from "@stencil/core";
 })
 export class UploadRounded {
   @Prop() fieldName: string = "uploads";
-  @Prop() classNames: string = "elm-border-blue ";
-  @Prop() labelClass: string = "lightgrey-elm";
-  @Prop() iconClass: string = "elm-stroke-white";
+  @Prop() classNames: string = "elm-border-lightgray ";
+  @Prop() labelClass: string = "lightgray-elm";
+  @Prop() iconClass: string = "elm-stroke-black";
 
   render() {
     return (
