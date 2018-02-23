@@ -36,24 +36,24 @@
 	border-right: none;
 }
 
-.elm-radius-rounded
+.elm-rds-rounded
 {
 	border-radius: 9999px;
 }
 
-.elm-radius-tiny {
-	border-radius: 2px;
+.elm-rds-tiny, .elm-rds-square {
+	border-radius: 1px;
 }
 
-.elm-radius-small {
+.elm-rds-small {
 	border-radius: 5px;
 }
 
-.elm-radius-medium {
+.elm-rds-medium {
 	border-radius: 8px;
 }
 
-.elm-radius-large {
+.elm-rds-large {
 	border-radius: 12px;
 }
 

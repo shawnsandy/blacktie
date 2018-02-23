@@ -1,6 +1,6 @@
 # Blacktie (beta)
 
- Blacktie is a framework agnostic reusable collection of Javascript and SASS utilities designed to make it easy to customize FrontEnd frameworks like bootstrap, Bulma Foundation etc.
+ Blacktie is a framework agnostic reusable collection of Javascript and SASS utilities created to make it easy to customize FrontEnd frameworks like bootstrap, adding missing utilities and elements.
 
 
 ## Usage
@@ -16,6 +16,7 @@ git clone https://github.com/shawnsandy/blacktie
 ``` bash
 yarn install
 ```
+
 * Start the development environment
 
 ```
@@ -51,8 +52,8 @@ At the core of BlackTie is a lightweight SASS/CSS utility library (10.93kb / 2.3
 
 
 ``` html
-<btw-confirm-actions></btw-confirm-actions>
-<btw-confirm-actions url="/" label="Remove"></btw-confirm-actions>
+<bts-confirm-actions></bts-confirm-actions>
+<bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
 
 ```
 _________________________________________________
@@ -61,7 +62,7 @@ _________________________________________________
 
 BlackTie Top Anchor component add a scroll to top element to any page
 
-![top anchor link](/btw-anchor.gif)
+![top anchor link](/bts-anchor.gif)
 
 __Scrolling displays hidden top anchor element__
 
@@ -71,7 +72,7 @@ __Click top anchor to scroll to top of page__
 
 ``` html
 
-<btw-top-anchor></btw-top-anchor>
+<bts-top-anchor></bts-top-anchor>
 
 ```
 _____________

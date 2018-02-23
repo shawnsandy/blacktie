@@ -4,6 +4,7 @@ export declare class ConfirmActions {
     confirmLabel: string;
     timeout: number;
     classes: string;
+    buttonClass: string;
     buttonType: string;
     componentDidLoad(): void;
     handleClickActions(event: any): void;

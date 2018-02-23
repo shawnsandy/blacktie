@@ -9,6 +9,7 @@ export class ConfirmActions {
   @Prop() confirmLabel: string = "Confirm";
   @Prop() timeout: number = 4000;
   @Prop() classes: string = "";
+  @Prop() buttonClass: string = "button";
   @Prop() buttonType: string = "submit";
 
   componentDidLoad() {
@@ -37,7 +38,7 @@ export class ConfirmActions {
         <a
           onClick={(event) => this.handleClickActions(event)}
           href={this.url}
-          class={`button-elm ${this.classes}`}
+          class={`${this.buttonClass} ${this.classes}`}
         >
           {this.label}
         </a>
@@ -47,7 +48,7 @@ export class ConfirmActions {
         <button
           onClick={(event) => this.handleClickActions(event)}
           type={this.buttonType}
-          class={`button-elm ${this.classes}`}
+          class={`${this.buttonClass} ${this.classes}`}
         >
           {this.label}
         </button>

@@ -36,10 +36,10 @@
         <article class="content">
           <section class="header">
             <h1 class="elm-color-blue">
-            <bts-svg-elm classes="svg-elm-64 elm-stroke-blue"></bts-svg-elm>  Sample
-              <span class="elm-color-blue">Article</span>
+              Sample Article
             </h1>
-            <p><bts-svg-elm classes="svg-elm elm-stroke-lightgray"></bts-svg-elm> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto nisi autem ratione officiis
+            <p>
+              </bts-svg-elm> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto nisi autem ratione officiis
               iste sed debitis hic earum nostrum, tempore eligendi rem quas nemo doloribus! Ex cum fuga saepe?</p>
             <p>Inventore sit, exercitationem quia vero architecto ipsum, dolore voluptas cumque dolores culpa nemo quaerat dicta
               amet eum praesentium velit accusantium officia omnis fugiat tenetur! Architecto nulla deserunt laudantium magnam
@@ -95,28 +95,32 @@
 
   </div>
   <div class="container section">
-  <p class="subtitle is-3">Color Elements (color-elm)</p>
+    <p class="subtitle is-3">Color Elements (color-elm)</p>
     <div class="content">
       <p class="box subtitle is-6 darkgray-elm">blackgray-elm</p>
       <p class="box subtitle is-6 black-elm">black-elm</p>
-      <p class="box subtitle is-6 blue-elm">blue</p>
+      <p class="box subtitle is-6 blue-elm">blue-elm</p>
       <p class="box subtitle is-6 purple-elm">purple-elm</p>
       <p class="box subtitle is-6 pink-elm">pink-elm</p>
       <p class="box subtitle is-6 red-elm">red-elm</p>
       <p class="box subtitle is-6 orange-elm">orange-elm</p>
       <p class="box subtitle is-6 yellow-elm">yellow-elm</p>
       <p class="box subtitle is-6 green-elm">green-elm</p>
-      <p class="box subtitle is-6 teal-elm">teal-elm</p>
       <p class="box subtitle is-6 cyan-elm">cyan-elm</p>
-      <p class="box subtitle is-6 white-elm">white-elm</p>
-      <p class="box subtitle is-6 barkgrey-elm">barkgrey-elm</p>
+      <p class="box subtitle is-6 lightgray-elm">lightgray-elm</p>
       <p class="box subtitle is-6 whitesmoke-elm">whitesmoke-elm</p>
       <p class="box subtitle is-6 gray-elm">gray-elm</p>
       <p class="box subtitle is-6 gray-dark-elm">gray-dark-elm</p>
       <p class="box subtitle is-6 black-pearl-elm">black-pearl-elm</p>
-      <p class="box subtitle is-6 black-haze-elm">black-haze-elm</p>
       <p class="box subtitle is-6 big-stone-elm">big-stone-elm</p>
       <p class="box subtitle is-6 dark-blue-elm">dark-blue-elm</p>
+      <hr>
+      <button class="button dark-blue-elm-button">Button</button>
+      <button class="button whitesmoke-elm-button">Button</button>
+      <button class="button yellow-elm-button">Button</button>
+      <button class="button orange-elm-button">Button</button>
+      <button class="button green-elm-button">Button</button>
+      <button class="button blue-elm-button">Button</button>
     </div>
   </div>
 
@@ -124,22 +128,39 @@
     <div class="content">
       <p class="subtitle is-3">Confirm Actions</p>
       <p>
-      <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
-      <bts-confirm-actions></bts-confirm-actions>
-      <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
-      <bts-confirm-actions></bts-confirm-actions>
+        <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
+        <bts-confirm-actions></bts-confirm-actions>
+        <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
+        <bts-confirm-actions></bts-confirm-actions>
       </p>
     </div>
   </div>
 
+  <div class="container section">
+    <div class="content">
+      <p class="subtitle is-3">Svg Elements</p>
+      <div class="box">
+      <p>
+        <bts-svg-elm classes="svg-elm-64"></bts-svg-elm>
+        <bts-svg-elm classes="svg-elm-48"></bts-svg-elm>
+        <bts-svg-elm classes="svg-elm-32"></bts-svg-elm>
+        <bts-svg-elm classes="svg-elm-24"></bts-svg-elm>
+      </p>
+      </div>
+    </div>
+  </div>
 
-<div class="section container">
-<p class="subtitle is-3">File Upload Component</p>
-<div class="content">
-<p><bts-upload-elm></bts-upload-elm></p>
-<p><bts-upload-elm classes="elm-border-blue" label-class="elm-bg-blue elm-color-white" icon-classes="elm-stroke-white"></bts-upload-elm></p>
-</div>
-</div>
+  <div class="section container">
+    <p class="subtitle is-3">File Upload Component</p>
+    <div class="content">
+      <p>
+        <bts-upload-elm></bts-upload-elm>
+      </p>
+      <p>
+        <bts-upload-elm classes="elm-border-blue" label-class="elm-bg-blue elm-color-white" icon-classes="elm-stroke-white"></bts-upload-elm>
+      </p>
+    </div>
+  </div>
 
   <section class="section container">
     <p class="subtitle is-3">Cards</p>
@@ -147,38 +168,38 @@
 
 
       <div class="column">
-        <bts-card-elm>
-        <div slot="card-header">
-        <bts-card-elm-header>CARD HEADER</bts-card-elm-header>
-        </div>
-        <p class="">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
-        </p>
+        <bts-card-elm class-name="gray-dark-elm">
+          <div slot="card-header">
+            <bts-card-elm-header>CARD HEADER</bts-card-elm-header>
+          </div>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
+          </p>
         </bts-card-elm>
       </div>
 
       <div class="column">
         <bts-card-elm class-name="bt-card-elm-shadow elm-background-transparent orange-elm">
-        <p class="">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
-        </p>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+          </p>
         </bts-card-elm>
       </div>
 
 
       <div class="column">
         <bts-card-elm>
-        <div class="has-text-centered">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
-        </div>
+          <div class="has-text-centered">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+          </div>
         </bts-card-elm>
       </div>
 
       <div class="column">
         <bts-card-elm>
-        <div class="has-text-centered">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
-        </div>
+          <div class="has-text-centered">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+          </div>
         </bts-card-elm>
       </div>
 
@@ -224,7 +245,7 @@
       </p>
 
     </div>
-<bts-top-anchor></bts-top-anchor>
+    <bts-top-anchor></bts-top-anchor>
   </footer>
 <script type="text/javascript" src="/js/vendors.js"></script><script type="text/javascript" src="/js/app.js"></script></body>
 
