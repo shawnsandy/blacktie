@@ -2,7 +2,7 @@ export class SvgElm {
     constructor() {
         this.icon = "i-photo";
         this.iconUrl = "/icons/bytesize-symbols.min.svg";
-        this.classes = "svg-elm-48";
+        this.classes = "svg-elm";
     }
     componentDidLoad() {
         const elm = document.querySelector("btw-svg-elm");

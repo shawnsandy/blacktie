@@ -10,7 +10,7 @@ export class SvgElm {
 
   @Prop() icon: string = "i-photo";
   @Prop() iconUrl: string = "/icons/bytesize-symbols.min.svg";
-  @Prop() classes: string = "svg-elm-48";
+  @Prop() classes: string = "svg-elm";
 
   componentDidLoad() {
 	const elm = document.querySelector("btw-svg-elm");
