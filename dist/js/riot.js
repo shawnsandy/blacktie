@@ -1,0 +1,1 @@
+webpackJsonp([1],{8:function(t,e,n){"use strict";var o,i=n(0),s=(o=i)&&o.__esModule?o:{default:o};n(9),s.default.mount("todo",{title:"hi there"})},9:function(t,e,n){var o=n(0);o.tag2("todo",'<p id="findMe">Do I even Exist?</p> <p>Is this real life?</p> <p>Or just fantasy?</p>',"","",function(t){"use strict";var e=document.getElementById("findMe");console.log("test1",e)})}},[8]);

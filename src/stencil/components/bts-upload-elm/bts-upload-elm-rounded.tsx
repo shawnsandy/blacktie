@@ -9,7 +9,7 @@ import { Component, Prop } from "@stencil/core";
 export class UploadRounded {
   @Prop() fieldName: string = "uploads";
   @Prop() elmColor: string = "lightgray";
-  @Prop() classNames: string = "elm-rds-rounded ";
+  @Prop() classNames: string = "elm-rds-rounded";
   @Prop() labelClass: string = "";
   @Prop() iconClass: string = "";
 
