@@ -58,11 +58,7 @@ const config = {
       {
         test: /\.tag$/,
         exclude: /node_modules/,
-        loader: "riot-tag-loader",
-        query: {
-          type: "es6", // transpile the riot tags using babel
-          hot: true
-        }
+        loader: "riot-tag-loader"
       },
       {
         test: /\.scss$/,

@@ -1,6 +1,6 @@
 import riot from 'riot'
 import './todo.tag'
 
-riot.mount('todo', {
+riot.mount('*', {
  title: 'hi there'
 })

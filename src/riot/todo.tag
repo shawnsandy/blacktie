@@ -9,5 +9,9 @@
 
   console.log('test1', test1)  // Fails
 
+  this.on = (mount) => {
+    console.log('before mount')
+  }
+
   </script>
 </todo>
