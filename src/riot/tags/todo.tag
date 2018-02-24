@@ -1,4 +1,4 @@
-<btr-todo>
+<bt-todo>
 
   <p id="findMe" class="title is-1">Do I even Exist? {opts.hello}</p>
 
@@ -12,4 +12,4 @@
 
   </script>
 
-</btr-todo>
+</bt-todo>

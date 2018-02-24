@@ -1,5 +1,7 @@
 import riot from 'riot'
-import './todo.tag'
+import './tags/todo.tag'
+import './tags/icon.tag'
+
 
 riot.mount('*', {
  title: 'hi there'
