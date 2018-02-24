@@ -1,17 +1,15 @@
-<todo>
+<btr-todo>
 
-  <p id="findMe">Do I even Exist?</p>
-  <p>Is this real life?</p>
-  <p>Or just fantasy?</p>
+  <p id="findMe" class="title is-1">Do I even Exist? {opts.hello}</p>
+
   <script>
 
-  var test1 = document.getElementById('findMe')
+   this.on('mount', function() {
+    var test3 = document.getElementById('findMe')
+    console.log('mount...', test3, opts.hello)
+  })
 
-  console.log('test1', test1)  // Fails
-
-  this.on = (mount) => {
-    console.log('before mount')
-  }
 
   </script>
-</todo>
+
+</btr-todo>
