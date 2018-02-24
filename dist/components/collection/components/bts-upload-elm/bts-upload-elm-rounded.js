@@ -2,7 +2,7 @@ export class UploadRounded {
     constructor() {
         this.fieldName = "uploads";
         this.elmColor = "lightgray";
-        this.classNames = "elm-rds-rounded ";
+        this.classNames = "elm-rds-rounded";
         this.labelClass = "";
         this.iconClass = "";
     }
