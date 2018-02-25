@@ -1,6 +1,6 @@
 <bt-icon>
 	<svg class={class }>
-		<use xlinkHref="http://www.w3.org/1999/xlink" xlink:href={ icon }></use>
+		<use xmlnsXlink"http://www.w3.org/1999/xlink" xlink:href={ icon }></use>
 	</svg>
 	<script>
 		this.url = opts.url || '/icons/bytesize-symbols.min.svg#'
