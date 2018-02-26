@@ -8,6 +8,7 @@ const Webpack = require("webpack");
 const Notify = require("webpack-notifier");
 const OptimizeCss = require("optimize-css-assets-webpack-plugin");
 const Monitor = require("webpack-monitor");
+const Jarvis = require("webpack-jarvis");
 
 require("dotenv").config();
 

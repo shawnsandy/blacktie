@@ -6,6 +6,9 @@ import { Component, Prop, State } from "@stencil/core";
 export class UploadElm {
   @Prop() label: string = "File Upload";
   @Prop() classes: string = "elm-border";
+
+
+
   @Prop() labelClass: string = "";
   @Prop() iconClasses: string = "";
   @Prop() iconSize: string = "24";
