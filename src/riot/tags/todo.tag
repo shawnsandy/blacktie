@@ -1,6 +1,6 @@
 <bt-todo>
 
-  <p id="findMe" class="title is-1">Do I even Exist? {opts.hello}</p>
+  <p id="findMe" class="title is-1">Demo Components : {opts.hello}</p>
 
   <script>
 

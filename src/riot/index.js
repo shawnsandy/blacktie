@@ -5,5 +5,6 @@ import './tags/todo.tag'
 import './tags/icon.tag'
 import './cards/bt-cards-elm.tag'
 import './uploads/bt-upload-elm.tag'
+import './uploads/bt-upload-elm-rounded.tag'
 
 riot.mount('*')
