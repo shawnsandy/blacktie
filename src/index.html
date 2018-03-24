@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <script src="/components/btw.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -159,13 +158,14 @@
     <p class="subtitle is-3">File Upload Component</p>
     <div class="content">
       <p>
-        <bts-upload-elm fiels-name="sample-upload"></bts-upload-elm>
+        <bt-upload-elm field-name="sample-upload"/>
       </p>
       <p>
-        <bts-upload-elm-rounded elm-color="dark-blue"></bts-upload-elm-rounded>
+        <bt-upload-elm color="dark-blue" />
       </p>
       <p>
-        <bts-upload-elm-rounded elm-color="red"></bts-upload-elm-rounded>
+        <bt-upload-elm color="red" elm-class="elm-rds-rounded"> Uploads
+        </bt-upload-elm>
       </p>
     </div>
   </div>
