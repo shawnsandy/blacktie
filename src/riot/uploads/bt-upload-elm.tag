@@ -19,7 +19,7 @@
 		const placeHolder = opts.uploadPlaceholder || "Please select a file to upload";
 		const placeHolderClass = opts.placeholderClasses || "file-elm-placeholder";
 		const elmColor = opts.color || "lightgray";
-		const labelClass = opts.labelClasses || "file-elm-placeholder";
+		const labelClass = opts.labelClasses || "";
 		const classes = opts.elmClass || ""
 
 		this.placeholder = placeHolder;
