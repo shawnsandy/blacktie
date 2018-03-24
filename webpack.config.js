@@ -106,11 +106,6 @@ const config = {
     ])
   ],
 
-  devServer: {
-    contentBase: "./dist",
-    port: "7700",
-    open: true
-  }
 };
 
 // Minify and copy assets in production

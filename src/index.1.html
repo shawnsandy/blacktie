@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <script src="/components/btw.js"></script>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -19,7 +19,7 @@
 <body id="body">
   <div class="container section">
     <div class="content">
-      <h1 class="is-1" data-module="example">BlackTie</h1>
+      <h1 class="is-1" data-module="example">BlackTie..</h1>
     </div>
   </div>
   <section class="block-elm flex-elm">
@@ -38,7 +38,7 @@
             </h1>
            <bt-todo hello="Shawn Sandy"></bt-todo>
             <p>
-              </bts-svg-elm> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto nisi autem ratione officiis
+              </bt-svg-elm> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto nisi autem ratione officiis
               iste sed debitis hic earum nostrum, tempore eligendi rem quas nemo doloribus! Ex cum fuga saepe?</p>
             <p>Inventore sit, exercitationem quia vero architecto ipsum, dolore voluptas cumque dolores culpa nemo quaerat dicta
               amet eum praesentium velit accusantium officia omnis fugiat tenetur! Architecto nulla deserunt laudantium magnam
@@ -127,30 +127,22 @@
     <div class="content">
       <p class="subtitle is-3">Confirm Actions</p>
       <p>
-        <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
-        <bts-confirm-actions></bts-confirm-actions>
-        <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
-        <bts-confirm-actions></bts-confirm-actions>
+        <bt-confirm-actions url="/" label="Remove"></bt-confirm-actions>
+        <bt-confirm-actions></bt-confirm-actions>
+        <bt-confirm-actions url="/" label="Remove"></bt-confirm-actions>
+        <bt-confirm-actions></bt-confirm-actions>
       </p>
     </div>
   </div>
 
   <div class="container section">
     <div class="content">
-      <p class="subtitle is-3">Svg Elements</p>
 
-      <p>
-        <bts-svg-elm classes="svg-elm-64"></bts-svg-elm>
-        <bts-svg-elm classes="svg-elm-48"></bts-svg-elm>
-        <bts-svg-elm></bts-svg-elm>
-        <bts-svg-elm classes="svg-elm-24"></bts-svg-elm>
-        <bts-svg-elm classes="svg-elm-16"></bts-svg-elm>
-      </p>
       <p class="subtitle is-3">Riot icons</p>
       <bt-icon svg="i-camera"></bt-icon>
       <bt-icon svg="i-camera" class-names="svg-elm-48"></bt-icon>
       <bt-icon svg="i-camera" class-names="svg-elm"></bt-icon>
-      <bt-icon svg="i-camera" class-names="svg-elm-24"></bt-icon>
+      <bt-icon svg="icard-camera" class-names="svg-elm-24"></bt-icon>
       <bt-icon svg="i-camera" class-names="svg-elm-16"></bt-icon>
     </div>
   </div>
@@ -159,13 +151,13 @@
     <p class="subtitle is-3">File Upload Component</p>
     <div class="content">
       <p>
-        <bts-upload-elm fiels-name="sample-upload"></bts-upload-elm>
+        <bt-upload-elm fiels-name="sample-upload"></bt-upload-elm>
       </p>
       <p>
-        <bts-upload-elm-rounded elm-color="dark-blue"></bts-upload-elm-rounded>
+        <bt-upload-elm-rounded elm-color="dark-blue"></bt-upload-elm-rounded>
       </p>
       <p>
-        <bts-upload-elm-rounded elm-color="red"></bts-upload-elm-rounded>
+        <bt-upload-elm-rounded elm-color="red"></bt-upload-elm-rounded>
       </p>
     </div>
   </div>
@@ -174,27 +166,31 @@
     <p class="subtitle is-3">Cards</p>
     <div class="columns">
 
+
       <div class="column">
         <bt-card-elm>
+        <yield>
           <p class="">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
           </p>
+        </yield>
         </bt-card-elm>
       </div>
 
       <div class="column">
-        <bt-card-elm class-names="orange-elm elm-background-transparent">
+        <bt-cards-elm>
           <p class="">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
           </p>
-        </bt-card-elm>
+        </bt-cards-elm>
       </div>
 
+
       <div class="column">
-        <bt-card-elm class-names="gray-elm elm-rds-medium">
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
-          </p>
+        <bt-card-elm class-name="gray-elm elm-rds-medium">
+          <div class="has-text-centered">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+          </div>
         </bt-card-elm>
       </div>
 
@@ -248,7 +244,7 @@
       </p>
 
     </div>
-    <bts-top-anchor></bts-top-anchor>
+    <bt-top-anchor></bt-top-anchor>
   </footer>
 </body>
 

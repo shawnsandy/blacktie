@@ -15,7 +15,7 @@
     "stencil": "stencil build",
     "start-stencil": "stencil-dev-server",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
-    "start": "concurrently \"stencil build --watch\" \"cross-env ENV=local webpack-dev-server --history-api-fallback --inline --https --hot\" ",
+    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --watch --hot -d --port 7780 --https --open",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"
@@ -80,6 +80,7 @@
     "kss": "^3.0.0-beta.18",
     "michelangelo": "^0.7.0",
     "riot": "^3.9.0",
+    "riot-hot-reload": "^1.0.0",
     "smooth-scroll": "^12.1.5",
     "umbrellajs": "^2.10.1",
     "validate": "cferdinandi/validate"
