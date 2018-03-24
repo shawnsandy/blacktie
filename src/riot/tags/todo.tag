@@ -11,5 +11,16 @@
 
 
   </script>
+  <style type="text/scss">
+
+    #findMe {
+      color: blue;
+
+      &.title {
+        text-transform: uppercase;
+      }
+    }
+
+  </style>
 
 </bt-todo>
