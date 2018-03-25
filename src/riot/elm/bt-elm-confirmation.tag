@@ -20,7 +20,6 @@
 		const timeout = opts.timeout || 3000;
 		const classes = opts.elmClass || "";
 		const buttonClass = opts.buttonClass || "";
-		const buttonType = opts.buttonType || "submit";
 
 		this.urlLink = url;
 		this.buttonLabel = label;

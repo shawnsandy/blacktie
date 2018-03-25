@@ -8,5 +8,6 @@ import './uploads/bt-upload.tag'
 import './uploads/bt-upload-rounded.tag'
 import './elm/bt-elm-confirmation.tag'
 import './elm/bt-elm-pagetop.tag'
+import './img/bt-image.tag'
 
 riot.mount('*')

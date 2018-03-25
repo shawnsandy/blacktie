@@ -17,7 +17,6 @@
 			window.addEventListener('scroll', (e) => {
 
 				if (window.pageYOffset > screenH) {
-
 					elm.classList.remove("elm-hide")
 				} else {
 					elm.classList.add("elm-hide")

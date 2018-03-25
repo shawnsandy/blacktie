@@ -15,7 +15,7 @@
     "stencil": "stencil build",
     "start-stencil": "stencil-dev-server",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
-    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --watch --hot -d --port 7780 --https --open",
+    "start": "cross-env ENV=local webpack-dev-server --history-api-fallback --watch --hot --inline -d --port 7780 --https --open",
     "bump": "cross-env ENV=production np --no-publish",
     "kss": "kss --config kss-config.json",
     "reports": "gulp reports"

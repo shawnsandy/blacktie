@@ -7,7 +7,7 @@
 		<yield from="footer"></yield>
 	</div>
 	<script>
-		const customClasses = opts.classNames || "";
-		this.cardClasses = "card card-elm " + customClasses;
+		const customClasses = opts.elmClass || "";
+		this.cardClasses = "card-elm " + customClasses;
 	</script>
 </bt-card-elm>
