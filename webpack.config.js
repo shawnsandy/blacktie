@@ -8,6 +8,7 @@ const Webpack = require("webpack");
 const Notify = require("webpack-notifier");
 const OptimizeCss = require("optimize-css-assets-webpack-plugin");
 const Monitor = require("webpack-monitor");
+const Jarvis = require("webpack-jarvis");
 
 require("dotenv").config();
 
@@ -31,7 +32,8 @@ const config = {
 
   entry: {
     app: __dirname + "/src/js/app.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll"]
+    riot: __dirname + "/src/riot/index.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
   },
   output: {
     path: __dirname + "/dist",
@@ -53,6 +55,11 @@ const config = {
       {
         test: /\.html/,
         loader: "raw-loader"
+      },
+      {
+        test: /\.tag$/,
+        exclude: /node_modules/,
+        loader: "riot-tag-loader"
       },
       {
         test: /\.scss$/,
@@ -91,17 +98,14 @@ const config = {
         from: __dirname + "/public/stylesheets"
       },
       {
-        from: __dirname + "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-        to: 'icons/bytesize-symbols.min.svg'
+        from:
+          __dirname +
+          "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
+        to: "icons/bytesize-symbols.min.svg"
       }
     ])
   ],
 
-  devServer: {
-    contentBase: "./dist",
-    port: "7700",
-    open: true
-  }
 };
 
 // Minify and copy assets in production
