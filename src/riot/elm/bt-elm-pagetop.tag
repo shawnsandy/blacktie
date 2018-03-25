@@ -15,7 +15,7 @@
 			elm = document.querySelector('.back-to-top')
 
 			window.addEventListener('scroll', (e) => {
-				console.log(screenH, elm)
+
 				if (window.pageYOffset > screenH) {
 
 					elm.classList.remove("elm-hide")

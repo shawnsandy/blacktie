@@ -33,10 +33,10 @@
 
 			if (this.confirmation === elm.innerHTML.trim()) {
 				elm.innerHTML = this.buttonLabel;
-				console.log("confirmed");
+
 
 			} else {
-				console.log('unconfirmed');
+
 				elm.innerHTML = this.confirmation;
 				setTimeout(() => {
 					elm.innerHTML = this.buttonLabel;

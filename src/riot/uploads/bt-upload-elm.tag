@@ -28,9 +28,7 @@
 
 		detectChange(e)
 		{
-			console.log('changed', e.target.files[0].name);
 			this.placeholder = e.target.files[0].name;
-
 		}
 
 	</script>
