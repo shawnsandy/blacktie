@@ -7,5 +7,6 @@ import './cards/bt-cards-elm.tag'
 import './uploads/bt-upload-elm.tag'
 import './uploads/bt-upload-elm-rounded.tag'
 import './elm/bt-elm-confirm-btn.tag'
+import './elm/bt-elm-pagetop.tag'
 
 riot.mount('*')
