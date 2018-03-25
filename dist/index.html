@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style type="riot"></style>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -35,7 +36,7 @@
             <h1 class="elm-color-blue">
               Sample Article
             </h1>
-           <bt-todo hello="Shawn Sandy"></bt-todo>
+
             <p>
               </bts-svg-elm> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto nisi autem ratione officiis
               iste sed debitis hic earum nostrum, tempore eligendi rem quas nemo doloribus! Ex cum fuga saepe?</p>
@@ -126,10 +127,8 @@
     <div class="content">
       <p class="subtitle is-3">Confirm Actions</p>
       <p>
-        <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
-        <bts-confirm-actions></bts-confirm-actions>
-        <bts-confirm-actions url="/" label="Remove"></bts-confirm-actions>
-        <bts-confirm-actions></bts-confirm-actions>
+      <bt-elm-confirmation url="/me" ></bt-elm-confirmation>
+      <bt-elm-confirmation label="Remove Button" confirmation="Please Confirm" elm-class="green-elm-button" /></bt-elm-confirmation>
       </p>
     </div>
   </div>
@@ -158,19 +157,21 @@
     <p class="subtitle is-3">File Upload Component</p>
     <div class="content">
       <p>
-        <bt-upload-elm field-name="sample-upload"/>
+        <bt-upload field-name="sample-upload"/>
       </p>
       <p>
-        <bt-upload-elm color="dark-blue" />
+        <bt-upload color="dark-blue" />
       </p>
       <p>
-        <bt-upload-elm color="red" elm-class="elm-rds-rounded"> Uploads
-        </bt-upload-elm>
+        <bt-upload-rounded color="red" elm-class="elm-rds-rounded"> Upload Label
+        </bt-upload-rounded>
       </p>
     </div>
   </div>
 
   <section class="section container">
+  <div class="container-fluid">
+
     <p class="subtitle is-3">Cards</p>
     <div class="columns">
 
@@ -183,7 +184,7 @@
       </div>
 
       <div class="column">
-        <bt-card-elm class-names="orange-elm elm-background-transparent">
+        <bt-card-elm elm-class="orange-elm elm-background-transparent">
           <p class="">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
           </p>
@@ -191,7 +192,7 @@
       </div>
 
       <div class="column">
-        <bt-card-elm class-names="gray-elm elm-rds-medium">
+        <bt-card-elm elm-class="gray-elm elm-rds-medium">
           <p class="">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
           </p>
@@ -207,6 +208,7 @@
       </div>
 
     </div>
+     </div>
   </section>
 
   <footer class="elm-bg-gray-dark">
@@ -248,7 +250,13 @@
       </p>
 
     </div>
-    <bts-top-anchor></bts-top-anchor>
+
+    <bt-elm-pagetop>
+    <svg id="i-chevron-top" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path d="M30 20 L16 8 2 20" />
+</svg>
+</svg>
+    </bt-elm-pagetop>
   </footer>
 <script type="text/javascript" src="/js/vendors.js"></script><script type="text/javascript" src="/js/riot.js"></script><script type="text/javascript" src="/js/app.js"></script></body>
 
