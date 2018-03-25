@@ -1,4 +1,4 @@
-<bt-upload-elm>
+<bt-upload>
 
 	<div class="upload-elm">
 		<label for={ opts.fieldName || "upload" } class={ uploadStyle }>
@@ -33,4 +33,4 @@
 
 	</script>
 
-</bt-upload-elm>
+</bt-upload>

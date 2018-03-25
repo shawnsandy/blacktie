@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style type="riot"></style>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -126,8 +127,8 @@
     <div class="content">
       <p class="subtitle is-3">Confirm Actions</p>
       <p>
-      <bt-elm-confirm-btn url="/me" ></bt-elm-confirm-btn>
-      <bt-elm-confirm-btn label="Remove Button" confirmation="Please Confirm" elm-class="green-elm-button" /></bt-elm-confirm-btn>
+      <bt-elm-confirmation url="/me" ></bt-elm-confirmation>
+      <bt-elm-confirmation label="Remove Button" confirmation="Please Confirm" elm-class="green-elm-button" /></bt-elm-confirmation>
       </p>
     </div>
   </div>
@@ -156,14 +157,14 @@
     <p class="subtitle is-3">File Upload Component</p>
     <div class="content">
       <p>
-        <bt-upload-elm field-name="sample-upload"/>
+        <bt-upload field-name="sample-upload"/>
       </p>
       <p>
-        <bt-upload-elm color="dark-blue" />
+        <bt-upload color="dark-blue" />
       </p>
       <p>
-        <bt-upload-elm-rounded color="red" elm-class="elm-rds-rounded"> Upload Label
-        </bt-upload-elm-rounded>
+        <bt-upload-rounded color="red" elm-class="elm-rds-rounded"> Upload Label
+        </bt-upload-rounded>
       </p>
     </div>
   </div>

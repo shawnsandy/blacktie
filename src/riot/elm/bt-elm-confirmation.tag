@@ -1,4 +1,5 @@
-<bt-elm-confirm-btn>
+
+<bt-elm-confirmation>
 
 	<div class="elm-inline" if={ urlLink }>
 		<a href={ urlLink } onclick={ handleClickActions } class={ elmClass }>
@@ -50,4 +51,4 @@
 		});
 	</script>
 
-</bt-elm-confirm-btn>
+</bt-elm-confirmation>

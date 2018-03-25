@@ -1,6 +1,6 @@
-<bt-upload-elm-rounded>
+<bt-upload-rounded>
 	<div
-	data-is="bt-upload-elm"
+	data-is="bt-upload"
 	color={ opts.color || "red" }
 	elm-class={ styles }
 	placeholder-classes={ placeholderClasses || "file-elm-placeholder" }
@@ -12,4 +12,4 @@
 		const classes = opts.elmClass || '';
 		this.styles = "elm-rds-rounded " + classes;
 	</script>
-</bt-upload-elm-rounded>
+</bt-upload-rounded>
