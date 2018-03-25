@@ -26,7 +26,8 @@
 		this.labelStyle = "file-elm-label " + labelClass + " " + elmColor+"-elm";
 		this.uploadStyle = 'elm-border elm-border-'+ elmColor + " " + classes;
 
-		detectChange(e) {
+		detectChange(e)
+		{
 			console.log('changed', e.target.files[0].name);
 			this.placeholder = e.target.files[0].name;
 
