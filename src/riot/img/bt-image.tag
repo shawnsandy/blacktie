@@ -1,5 +1,5 @@
 <bt-image>
-	<figure class={ "figure-elm " + elmClass }>
+	<figure class={ "figure-elm " + elmClass } style={ styles }>
 		<img src={ opts.src || src } alt={ opts.alt } class="img-elm">
 		<figcaption class={ captionStyle }>
 			<yield></yield>
@@ -12,7 +12,7 @@
 		this.elmClass = classes
 		this.src = '//source.unsplash.com/collection/1278495/1300x400';
 		this.styles = {
-			height: opts.height || "400px",
+			height: opts.height || "100%",
 			width: opts.width || "100%"
 		};
 	</script>
