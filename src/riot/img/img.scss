@@ -2,7 +2,8 @@
   overflow: hidden;
   position: relative;
   display: inline-block;
-  margin: 10px;
+  margin: 0;
+  padding: 0;
 
   * {
     -webkit-transition: all 0.35s;
@@ -53,5 +54,7 @@
   .right {
     align-items: flex-end;
   }
+
+
 
 }
