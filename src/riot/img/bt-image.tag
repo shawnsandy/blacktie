@@ -1,5 +1,5 @@
 <bt-image>
-	<figure class={ "figure-elm " + elmClass } style={ styles }>
+	<figure class={ "figure-elm " + elmClass }>
 		<img src={ opts.src || src } alt={ opts.alt } class="img-elm">
 		<figcaption class={ captionStyle }>
 			<yield></yield>
