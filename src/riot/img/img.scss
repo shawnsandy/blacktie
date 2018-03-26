@@ -22,12 +22,12 @@
     padding: 20px;
     background-image: -webkit-linear-gradient(
       bottom,
-      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.7) 0%,
       transparent 100%
     );
     background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.7) 0%,
       transparent 100%
     );
     display: flex;
@@ -54,7 +54,6 @@
   .right {
     align-items: flex-end;
   }
-
 
 
 }
