@@ -49,3 +49,15 @@ $color_set: (
 		"whitesmoke": $whitesmoke,
 		"lightgray": $lightgrey,
 	)
+
+// Small tablets and large smartphones (landscape view)
+$mobile: 575.98px;
+
+// Small tablets (portrait view)
+$tablets: 767.98px;
+
+// Tablets and small desktops
+$desktops: 991.98px;
+
+// Large tablets and desktops
+$desktops-hd: 1199.98px;
