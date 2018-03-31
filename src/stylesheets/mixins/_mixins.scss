@@ -12,3 +12,13 @@
     }
   }
 }
+
+@function rem-calc($size) {
+  $remSize: $size / 14px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: rem-calc($size);
+}

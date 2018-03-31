@@ -1,4 +1,6 @@
 @import "base/variables";
+@import "./mixins/mixins";
+@import "./mixins/media_queries";
 @import "base/flex";
 @import "base/elements";
 @import "base/collections";
@@ -11,3 +13,4 @@
 @import "base/modifiers";
 @import "base/color-elements";
 @import "base/colors";
+@import "base/responsive";

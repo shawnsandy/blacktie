@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
@@ -19,16 +20,31 @@
 <body id="body">
   <div class="container section">
     <div class="content">
-      <h1 class="is-1" data-module="example">BlackTie</h1>
+      <h1 class="is-1" data-module="example">BlackTie
+        <small></small>
+      </h1>
     </div>
   </div>
   <section class="flex-elm">
-      <bt-image caption-style="centered" src="//source.unsplash.com/collection/1278495/2100x600">
-      <h1 class="title elm-color-white">
-				Some Caption here
-			</h1>
-      </bt-image>
+    <bt-image caption-style="centered" src="//source.unsplash.com/collection/1278495/2100x600">
+      <h1 class="subtitle is-1 elm-color-white">
+        Some Caption here
+      </h1>
+    </bt-image>
   </section>
+
+  <div class="container">
+    <bt-elm-lead>
+      <div class="columns">
+        <div class="column">
+          <p class="is-3 subtitle has-text-centered">
+            BlackTie is a framework agnostic reusable collection of custom elements, javascript and SASS utilities, created to make it
+            easy to customize FrontEnd frameworks like bulma, bootstrap, foundation etc.
+          </p>
+        </div>
+      </div>
+    </bt-elm-lead>
+  </div>
 
   <div class="container section posts-elm">
     <div class="columns">
@@ -129,8 +145,8 @@
     <div class="content">
       <p class="subtitle is-3">Confirm Actions</p>
       <p>
-      <bt-elm-confirmation url="/me" ></bt-elm-confirmation>
-      <bt-elm-confirmation label="Remove Button" confirmation="Please Confirm" elm-class="green-elm-button" /></bt-elm-confirmation>
+        <bt-elm-confirmation url="/me"></bt-elm-confirmation>
+        <bt-elm-confirmation label="Remove Button" confirmation="Please Confirm" elm-class="green-elm-button" /></bt-elm-confirmation>
       </p>
     </div>
   </div>
@@ -149,19 +165,19 @@
   </div>
 
   <section class="section container">
-  <div class="subtitle is-3">Images</div>
-  <bt-image caption-style="centered left bottom">
+    <div class="subtitle is-3">Images</div>
+    <bt-image caption-style="centered left bottom">
       <h1 class="title elm-color-white">
-				Some Caption here
-			</h1>
-      </bt-image>
+        Some Caption here
+      </h1>
+    </bt-image>
   </section>
 
   <div class="section container">
     <p class="subtitle is-3">File Upload Component</p>
     <div class="content">
       <p>
-        <bt-upload field-name="sample-upload"/>
+        <bt-upload field-name="sample-upload" />
       </p>
       <p>
         <bt-upload color="dark-blue" />
@@ -174,45 +190,45 @@
   </div>
 
   <section class="section container">
-  <div class="container-fluid">
+    <div class="container-fluid">
 
-    <p class="subtitle is-3">Cards</p>
-    <div class="columns">
+      <p class="subtitle is-3">Cards</p>
+      <div class="columns">
 
-      <div class="column">
-        <bt-card-elm>
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
-          </p>
-        </bt-card-elm>
+        <div class="column">
+          <bt-card-elm>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
+            </p>
+          </bt-card-elm>
+        </div>
+
+        <div class="column">
+          <bt-card-elm elm-class="orange-elm elm-background-transparent">
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
+            </p>
+          </bt-card-elm>
+        </div>
+
+        <div class="column">
+          <bt-card-elm elm-class="gray-elm elm-rds-medium">
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
+            </p>
+          </bt-card-elm>
+        </div>
+
+        <div class="column">
+          <bt-card-elm>
+            <div class="has-text-centered">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
+            </div>
+          </bt-card-elm>
+        </div>
+
       </div>
-
-      <div class="column">
-        <bt-card-elm elm-class="orange-elm elm-background-transparent">
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
-          </p>
-        </bt-card-elm>
-      </div>
-
-      <div class="column">
-        <bt-card-elm elm-class="gray-elm elm-rds-medium">
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!!!!
-          </p>
-        </bt-card-elm>
-      </div>
-
-      <div class="column">
-        <bt-card-elm>
-          <div class="has-text-centered">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, doloribus!
-          </div>
-        </bt-card-elm>
-      </div>
-
     </div>
-     </div>
   </section>
 
   <footer class="elm-bg-gray-dark">
@@ -256,10 +272,11 @@
     </div>
 
     <bt-elm-pagetop>
-    <svg id="i-chevron-top" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-    <path d="M30 20 L16 8 2 20" />
-</svg>
-</svg>
+      <svg id="i-chevron-top" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="3">
+        <path d="M30 20 L16 8 2 20" />
+      </svg>
+      </svg>
     </bt-elm-pagetop>
   </footer>
 </body>

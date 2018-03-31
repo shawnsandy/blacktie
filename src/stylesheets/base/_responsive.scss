@@ -1,0 +1,21 @@
+html {
+  @include mobile {
+	font-size: 12px;
+	min-width: 575px;
+  }
+
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include desktops {
+    font-size: 16px;
+  }
+
+  @include desktops-hd {
+    font-size: 18px;
+  }
+
+
+}
