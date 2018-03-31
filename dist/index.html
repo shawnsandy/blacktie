@@ -6,10 +6,10 @@
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <style type="riot"></style>
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <style type="riot"></style>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,10 +22,12 @@
       <h1 class="is-1" data-module="example">BlackTie</h1>
     </div>
   </div>
-  <section class="block-elm flex-elm">
-    <p class="subtitle is-3 has-text-centered">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, exercitationem?
-    </p>
+  <section class="flex-elm">
+      <bt-image caption-style="centered" src="//source.unsplash.com/collection/1278495/2100x600">
+      <h1 class="title elm-color-white">
+				Some Caption here
+			</h1>
+      </bt-image>
   </section>
 
   <div class="container section posts-elm">
@@ -137,13 +139,6 @@
     <div class="content">
       <p class="subtitle is-3">Svg Elements</p>
 
-      <p>
-        <bts-svg-elm classes="svg-elm-64"></bts-svg-elm>
-        <bts-svg-elm classes="svg-elm-48"></bts-svg-elm>
-        <bts-svg-elm></bts-svg-elm>
-        <bts-svg-elm classes="svg-elm-24"></bts-svg-elm>
-        <bts-svg-elm classes="svg-elm-16"></bts-svg-elm>
-      </p>
       <p class="subtitle is-3">Riot icons</p>
       <bt-icon svg="i-camera"></bt-icon>
       <bt-icon svg="i-camera" class-names="svg-elm-48"></bt-icon>
@@ -152,6 +147,15 @@
       <bt-icon svg="i-camera" class-names="svg-elm-16"></bt-icon>
     </div>
   </div>
+
+  <section class="section container">
+  <div class="subtitle is-3">Images</div>
+  <bt-image caption-style="centered left bottom">
+      <h1 class="title elm-color-white">
+				Some Caption here
+			</h1>
+      </bt-image>
+  </section>
 
   <div class="section container">
     <p class="subtitle is-3">File Upload Component</p>
