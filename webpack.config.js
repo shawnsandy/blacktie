@@ -9,8 +9,13 @@ const Notify = require("webpack-notifier");
 const OptimizeCss = require("optimize-css-assets-webpack-plugin");
 const Monitor = require("webpack-monitor");
 const Jarvis = require("webpack-jarvis");
+const BrowserSync = require("browser-sync-webpack-plugin")
 
 require("dotenv").config();
+
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 4040;
+const PROXY = `http://${HOST}:${PORT}`;
 
 const ENV = process.env.ENV;
 const isDevelopment = ENV === "development";
@@ -28,7 +33,7 @@ function setDevTool() {
 }
 
 const config = {
-  devtool: setDevTool(),
+  devtool: 'eval-source-map',
 
   entry: {
     app: __dirname + "/src/js/app.js",
@@ -39,6 +44,12 @@ const config = {
     path: __dirname + "/dist",
     filename: "js/[name].js",
     publicPath: "/"
+  },
+  devServer: {
+
+    host: HOST,
+    port: PORT,
+
   },
   module: {
     rules: [
@@ -93,6 +104,14 @@ const config = {
     new Webpack.optimize.CommonsChunkPlugin({
       name: "vendors"
     }),
+    new BrowserSync(
+      // BrowserSync options
+      {
+        host: HOST,
+        port: PORT,
+        proxy: PROXY
+      }
+    ),
     new Copy([
       {
         from: __dirname + "/public/stylesheets"
