@@ -10,6 +10,6 @@ import './elm/bt-elm-confirmation.tag'
 import './scroll/bt-scroll-up.tag'
 import './images/bt-image.tag'
 import './elm/bt-elm-lead.tag'
-import './turncate/bt-truncate.tag'
+import './truncate/bt-truncate.tag'
 
 riot.mount('*')
