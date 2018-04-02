@@ -7,6 +7,7 @@
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   <style type="riot"></style>
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
@@ -21,14 +22,14 @@
   <div class="container section">
     <div class="content">
       <h1 class="is-1" data-module="example">BlackTie
-        <small></small>
+        <small class="is-size-6 is-uppercase elm-color-gray">A small UI toolkit</small>
       </h1>
     </div>
   </div>
   <section class="flex-elm">
     <bt-image caption-style="centered" src="//source.unsplash.com/collection/1278495/2100x600">
       <h1 class="subtitle is-1 elm-color-white">
-        Some Caption here
+       BlackTie
       </h1>
     </bt-image>
   </section>
@@ -38,8 +39,8 @@
       <div class="columns">
         <div class="column">
           <p class="is-3 subtitle has-text-centered">
-            BlackTie is a framework agnostic reusable collection of custom elements, javascript and SASS utilities, created to make it
-            easy to customize FrontEnd frameworks like bulma, bootstrap, foundation etc.
+            BlackTie is a framework agnostic reusable collection of custom elements, javascript and SASS/CSS utilities, created to make it
+            easy to customize FrontEnd frameworks (Bulma, Bootstrap, Foundation etc).
           </p>
         </div>
       </div>
@@ -149,6 +150,28 @@
         <bt-elm-confirmation label="Remove Button" confirmation="Please Confirm" elm-class="green-elm-button" /></bt-elm-confirmation>
       </p>
     </div>
+  </div>
+
+  <div class="container section">
+
+    <div class="">
+      <p class="subtitle is-3">Truncate Text Component</p>
+      <hr>
+    </div>
+
+    <p><strong>This text has been truncated</strong>
+
+      <bt-elm-truncate limit="10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae maiores neque tenetur magnam corrupti quod autem recusandae, deleniti, pariatur, libero consequuntur architecto dolor perspiciatis quidem corporis? Fugiat, neque quos?
+      </bt-elm-truncate>
+      </p>
+
+      <p>
+        <bt-elm-truncate limit="25">
+          Another set... Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae maiores neque tenetur magnam corrupti quod autem recusandae, deleniti, pariatur, libero consequuntur architecto dolor perspiciatis quidem corporis? Fugiat, neque quos?
+        </bt-elm-truncate>
+      </p>
+
   </div>
 
   <div class="container section">

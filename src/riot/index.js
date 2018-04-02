@@ -10,5 +10,6 @@ import './elm/bt-elm-confirmation.tag'
 import './elm/bt-elm-pagetop.tag'
 import './images/bt-image.tag'
 import './elm/bt-elm-lead.tag'
+import './elm/bt-elm-truncate.tag'
 
 riot.mount('*')
