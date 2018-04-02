@@ -1,5 +1,5 @@
 <bt-truncate>
-	<span class={ opts.elmClass || '' + "truncate" }>
+	<span class={ opts.elmClass || ' ' + "truncate" }>
 		<yield></yield>
 	</span>
 		<style>
