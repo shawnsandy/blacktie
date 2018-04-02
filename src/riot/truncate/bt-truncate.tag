@@ -1,7 +1,7 @@
 <bt-truncate>
 	<span class={ opts.elmClass || '' + "truncate" }>
 		<yield></yield>
-		</div>
+	</span>
 		<style>
 			:scope {
 				display: inline;
