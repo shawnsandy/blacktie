@@ -38,7 +38,7 @@ const config = {
   entry: {
     app: __dirname + "/src/js/app.js",
     riot: __dirname + "/src/riot/index.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
+    vendors: ["umbrellajs", "validate", "smooth-scroll", "riot"]
   },
   output: {
     path: __dirname + "/dist",
