@@ -7,9 +7,9 @@ import './cards/bt-cards-elm.tag'
 import './uploads/bt-upload.tag'
 import './uploads/bt-upload-rounded.tag'
 import './elm/bt-elm-confirmation.tag'
-import './elm/bt-elm-pagetop.tag'
+import './scroll/bt-scroll-up.tag'
 import './images/bt-image.tag'
 import './elm/bt-elm-lead.tag'
-import './elm/bt-elm-truncate.tag'
+import './turncate/bt-truncate.tag'
 
 riot.mount('*')

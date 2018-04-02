@@ -1,4 +1,4 @@
-<bt-card-elm>
+<bt-card>
 	<div class={ cardClasses }>
 		<yield from="header"></yield>
 		<div class={ opts.contentClasses || "card-elm-content"}>
@@ -10,4 +10,4 @@
 		const customClasses = opts.elmClass || "";
 		this.cardClasses = "card-elm " + customClasses;
 	</script>
-</bt-card-elm>
+</bt-card>
