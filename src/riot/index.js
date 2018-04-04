@@ -11,5 +11,6 @@ import './scroll/bt-scroll-up.tag'
 import './images/bt-image.tag'
 import './elm/bt-elm-lead.tag'
 import './truncate/bt-truncate.tag'
+import './purify-html/bt-purify-html.tag'
 
 riot.mount('*')
