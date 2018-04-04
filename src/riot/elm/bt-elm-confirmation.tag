@@ -31,15 +31,13 @@
 		{
 			const elm = e.target;
 
-			if (this.confirmation === elm.innerHTML.trim()) {
-				elm.innerHTML = this.buttonLabel;
-
-
+			if (this.confirmation === elm.textContent.trim()) {
+				elm.textContent = this.buttonLabel;
 			} else {
 
-				elm.innerHTML = this.confirmation;
+				elm.textContent = this.confirmation;
 				setTimeout(() => {
-					elm.innerHTML = this.buttonLabel;
+					elm.textContent = this.buttonLabel;
 				}, this.timer);
 				e.preventDefault();
 			}
