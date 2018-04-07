@@ -49,6 +49,7 @@ const config = {
 
     host: HOST,
     port: PORT,
+    contentBase: __dirname + '/dist',
 
   },
   module: {
@@ -117,7 +118,8 @@ const config = {
         from: __dirname + "/public/stylesheets"
       },
       {
-        from: __dirname + '/src/icons'
+        from: __dirname + '/src/icons',
+        to: "icons"
       },
       {
         from:
