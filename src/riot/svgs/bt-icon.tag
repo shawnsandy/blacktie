@@ -5,9 +5,9 @@
 	<script>
 		const name = opts.icon || 'account-circle'
 		const src = opts.srcFile || '/icons/material-icons.svg'
-		const elmClass = opts.iconClass || 'bt-icon'
+		const elmClass = opts.iconClass || ''
 		this.icon = src + "#" + name
-		this.elmClass =  elmClass
+		this.elmClass = 'bt-icon ' + elmClass
 	</script>
 	<style>
 
@@ -18,6 +18,7 @@
 		.bt-icon {
 			width: 16px;
 			height: 16px;
+			stroke-width: 2px;
 		}
 
 		.bt-icon-sm {
