@@ -13,5 +13,7 @@ import './elm/bt-elm-lead.tag'
 import './truncate/bt-truncate.tag'
 import './svgs/bt-svg-icon.tag'
 import './svgs/bt-icon.tag'
+import './svgs/bt-icon-bytes.tag'
+import './svgs/bt-icon-material.tag'
 
 riot.mount('*')
