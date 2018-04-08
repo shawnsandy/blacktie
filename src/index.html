@@ -29,7 +29,7 @@
   <section class="flex-elm">
     <bt-image caption-style="centered" src="//source.unsplash.com/collection/1278495/2100x600">
       <h1 class="subtitle is-1 elm-color-white">
-       BlackTie
+        BlackTie
       </h1>
     </bt-image>
   </section>
@@ -39,8 +39,8 @@
       <div class="columns">
         <div class="column">
           <p class="is-3 subtitle has-text-centered">
-            BlackTie is a framework agnostic reusable collection of custom elements, javascript and SASS/CSS utilities, created to make it
-            easy to customize FrontEnd frameworks (Bulma, Bootstrap, Foundation etc).
+            BlackTie is a framework agnostic reusable collection of custom elements, javascript and SASS/CSS utilities, created to make
+            it easy to customize FrontEnd frameworks (Bulma, Bootstrap, Foundation etc).
           </p>
         </div>
       </div>
@@ -159,30 +159,48 @@
       <hr>
     </div>
 
-    <p><strong>This text has been truncated</strong>
+    <p>
+      <strong>This text has been truncated</strong>
 
       <bt-truncate limit="10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae maiores neque tenetur magnam corrupti quod autem recusandae, deleniti, pariatur, libero consequuntur architecto dolor perspiciatis quidem corporis? Fugiat, neque quos?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae maiores neque tenetur magnam corrupti quod autem recusandae,
+        deleniti, pariatur, libero consequuntur architecto dolor perspiciatis quidem corporis? Fugiat, neque quos?
       </bt-truncate>
-      </p>
+    </p>
 
-      <p>
-        <bt-truncate limit="25">
-          Another set... Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae maiores neque tenetur magnam corrupti quod autem recusandae, deleniti, pariatur, libero consequuntur architecto dolor perspiciatis quidem corporis? Fugiat, neque quos?
-        </bt-truncate>
-      </p>
-
-      <p>
-        <bt-purify-html>
-          <p>Some dangerous content</p>
-        </bt-purify-html>
-      </p>
+    <p>
+      <bt-truncate limit="25">
+        Another set... Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae maiores neque tenetur magnam corrupti
+        quod autem recusandae, deleniti, pariatur, libero consequuntur architecto dolor perspiciatis quidem corporis? Fugiat,
+        neque quos?
+      </bt-truncate>
+    </p>
 
   </div>
 
   <div class="container section">
     <div class="content">
+      <p class="subtitle is-3">Loaders</p>
+      <div class="columns">
+        <div class="column is-3">
+
+          <bt-card elm-class="card-elm gray-dark-elm elm-rds-medium">
+            <div class="has-text-centered">
+              <p class="is-capitalized">Spimple spinning Loader</p>
+              <bt-loader-spin></bt-loader-spin>
+            </div>
+          </bt-card>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="content">
       <p class="subtitle is-3">Riot Icons</p>
+
       <p class="flex-elm col-6">
         <bt-icon></bt-icon>
         <bt-icon icon="i-search" icon-class="bt-icon-sm"></bt-icon>
