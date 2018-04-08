@@ -3,9 +3,9 @@
         <circle cx="14" cy="14" r="12" />
         <path d="M23 23l7 7" />
     </symbol>
-    <symbol id="i-close" viewBox="0 0 32 32">
-        <path d="M2 30L30 2m0 28L2 2" />
-    </symbol>
+    <svg id="i-close" viewBox="0 0 32 32" width="100%" height="100%" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M2 30 L30 2 M30 30 L2 2" />
+        </svg>
     <symbol id="i-plus" viewBox="0 0 32 32">
         <path d="M16 2v28M2 16h28" />
     </symbol>

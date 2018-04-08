@@ -4,7 +4,7 @@
 	</svg>
 	<script>
 		const name = opts.icon || 'account-circle'
-		const src = opts.src || '/icons/material-icons.svg'
+		const src = opts.srcFile || '/icons/material-icons.svg'
 		const elmClass = opts.iconClass || 'bt-icon'
 		this.icon = src + "#" + name
 		this.elmClass =  elmClass

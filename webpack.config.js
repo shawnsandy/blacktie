@@ -120,12 +120,6 @@ const config = {
       {
         from: __dirname + '/src/icons',
         to: "icons"
-      },
-      {
-        from:
-          __dirname +
-          "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-        to: "icons/bytesize-symbols.min.svg"
       }
     ])
   ],
