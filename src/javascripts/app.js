@@ -5,7 +5,9 @@ import { u } from "umbrellajs";
 import { setTimeout } from "timers";
 const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
-import {h, app} from "hyperapp";
+
+
+import '../riot/selections/dropdown/dropdown.js'
 
 /** simple and easy form validation */
 validate.init();

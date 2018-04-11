@@ -7,6 +7,9 @@ import { u } from "umbrellajs";
 const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
 
+
+import '../riot/selections/dropdown/dropdown.js'
+
 /** simple and easy form validation */
 validate.init();
 
