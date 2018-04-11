@@ -89,3 +89,11 @@ const main = app(
   view,
   document.querySelector(".hyper")
 );
+
+const truncate = function (elm, limit, after = "...") {
+	if(!elm || !limit) return;
+	 let truncated = elm.textContent.trim()
+	 truncated = truncated.split(' ').slice(0, limit);
+	 truncated = truncated.join(' ') + (after ? after : " ");
+	 elm.textContent = truncated;
+}
