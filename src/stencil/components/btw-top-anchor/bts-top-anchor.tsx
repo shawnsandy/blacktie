@@ -15,6 +15,8 @@ export class BtwTopAnchor {
     const screenHeight = window.innerHeight;
     const topLink = document.querySelector(".back-to-top");
 
+
+
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > screenHeight) {
         topLink.classList.remove("elm-hide");

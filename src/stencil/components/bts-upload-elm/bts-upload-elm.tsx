@@ -5,18 +5,22 @@ import { Component, Prop, State } from "@stencil/core";
 })
 export class UploadElm {
   @Prop() label: string = "File Upload";
-  @Prop() classes: string;
+  @Prop() classes: string = "elm-border";
+
+
+
   @Prop() labelClass: string = "";
   @Prop() iconClasses: string = "";
   @Prop() iconSize: string = "24";
   @Prop() placeHolderClass: string = "";
   @Prop() fieldName: string = "upload";
   @Prop() required: boolean = false;
+  @Prop() elmColor: string = "lightgray";
 
   @State() placeholder: string = "Select a file to upload";
 
   componentDidLoad() {
-    console.log("The component has been rendered");
+    //console.log("The component has been rendered");
   }
 
   handleSelectUpload(e) {
@@ -25,31 +29,20 @@ export class UploadElm {
   }
 
   render() {
-    return (
-      <div class={`upload-elm ${this.classes}`}>
-        <label htmlFor={this.fieldName}>
-          <input
-            type="file"
-            class={`file-elm`}
-            name={this.fieldName}
-            onChange={e => {
+    return <div class={`upload-elm`}>
+        <label htmlFor={this.fieldName} class={`${this.classes}`}>
+          <input type="file" class={`file-elm`} name={this.fieldName} onChange={e => {
               this.handleSelectUpload(e);
-            }}
-          />
-          <span class={`file-elm-label ${this.labelClass}`}>
+            }} />
+          <span class={`file-elm-label ${this.elmColor}-elm ${this.labelClass}`}>
             <div>
-              <bts-svg-elm
-                classes={`svg-elm-${this.iconSize} ${this.iconClasses}`}
-                icon="i-export"
-              />{" "}
-              {this.label}
+              <bts-svg-elm classes={`svg-elm-${this.iconSize} ${this.elmColor}-elm ${this.iconClasses}`} icon="i-export" /> {this.label}
             </div>
           </span>
           <span class={`file-elm-placeholder ${this.placeHolderClass}`}>
             <div class="placeholder">{this.placeholder}</div>
           </span>
         </label>
-      </div>
-    );
+      </div>;
   }
 }

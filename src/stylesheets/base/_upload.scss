@@ -1,5 +1,5 @@
 .upload-elm {
-	@extend .elm-border;
+
 	@extend .elm-full-width;
 	position: relative;
 	height: 50px;
@@ -16,11 +16,13 @@
   }
 
   label {
+
 	  @extend .elm-full-height;
 	  @extend .elm-full-width;
 	  display: flex;
 	  align-items: stretch;
 	  justify-content: flex-start;
+	  overflow: hidden;
   }
 
 }
@@ -30,8 +32,8 @@
 	@extend .elm-full-height;
 	align-items: center;
 	justify-content: center;
-	min-width: 200px;
-	@extend .elm-bg-lightgray;
+	min-width: 18%;
+	max-width: 25%;
 	padding: 0 20px;
 }
 
