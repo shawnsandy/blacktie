@@ -32,7 +32,7 @@
 						</p>
 						<hr>
 						<p class="text-info ">
-							<a href="" class="bt-address-option">
+							<a href="/ " class="bt-address-option">
 								Putri Y. Muhammad Alu
 								<br> Jhiriad Holdings Co.
 								<br> 73, Jalan Cilaki. #1123

@@ -17,5 +17,6 @@ import './svgs/bt-icon-bytes.tag'
 import './svgs/bt-icon-material.tag'
 import './loaders/spin-loader/bt-loader-spin.tag'
 import './selections/dropdown/bt-dropdown.tag'
+import './loaders/processing/bt-loader-processing.tag'
 
 riot.mount('*')
