@@ -1,5 +1,5 @@
-import "./../stylesheets/app.scss";
-import "./../stylesheets/colors.scss";
+import "./stylesheets/app.scss";
+import "./stylesheets/colors.scss";
 
 // let test = new TestClass();
 import { u } from "umbrellajs";
@@ -8,7 +8,7 @@ const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
 
 
-import '../riot/selections/dropdown/dropdown.js'
+import './components/selections/dropdown/dropdown.js'
 
 /** simple and easy form validation */
 validate.init();

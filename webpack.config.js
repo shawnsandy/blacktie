@@ -36,8 +36,8 @@ const config = {
   devtool: 'eval-source-map',
 
   entry: {
-    app: __dirname + "/src/js/app.js",
-    riot: __dirname + "/src/riot/index.js",
+    app: __dirname + "/src/app.js",
+    riot: __dirname + "/src/components/index.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll", "riot"]
   },
   output: {
