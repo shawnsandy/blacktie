@@ -1,31 +1,7 @@
-.hydrated, .components {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-}
 
 bts-card-elm, bts-card-elm-header, bts-card-elm-content {
 	@extend .elm-full-width;
 	@extend .elm-full-height;
-}
-
-bts-svg-elm {
-	&.size-16 {
-		width: 16px;
-		height: 16px;
-	}
-	&.size-32 {
-		width: 32px;
-		height: 32px;
-	}
-	&.size-48 {
-		width: 48px;
-		height: 48px;
-	}
-	&.size-64 {
-		width: 64px;
-		height: 64px;
-	}
 }
 
 bts-upload-elm {

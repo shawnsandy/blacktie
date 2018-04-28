@@ -9,32 +9,12 @@
 		this.icon = src + "#" + name
 		this.elmClass = 'bt-icon ' + elmClass
 	</script>
-	<style>
+	<style type="text/scss">
 
         :scope {
             display: inline-flex;
-        }
-
-		.bt-icon {
-			width: 16px;
-			height: 16px;
-			stroke-width: 2px;
 		}
 
-		.bt-icon-sm {
-			width: 24px;
-			height: 24px;
-		}
-
-		.bt-icon-md {
-			width: 48px;
-			height: 48px;
-		}
-
-		.bt-icon-lg {
-			width: 64px;
-			height: 64px;
-		}
-
+		@import './style.scss';
     </style>
 </bt-icon>

@@ -1,13 +1,10 @@
 <bt-icon-bytes>
-		<div data-is="bt-icon"
-		src-file="/icons/bytesize-symbols.min.svg"
-		icon={ opts.icon || 'i-info' }
-		icon-class={ opts.iconClass || 'bt-icon-lg'}>
-		</div>
-
-		<style>
+	<div data-is="bt-icon" class={ opts.iconClass || 'bt-icon-lg'} src-file="/icons/bytesize-symbols.min.svg" icon={ opts.icon
+	    || 'i-info' } icon-class={ opts.iconClass || 'bt-icon-lg'}>
+	</div>
+	<style>
 		.icon-bytes {
 			stroke-width: 2px;
 		}
-		</style>
+	</style>
 </bt-icon-bytes>
