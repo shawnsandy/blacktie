@@ -69,11 +69,6 @@ const config = {
         loader: "raw-loader"
       },
       {
-        test: /\.tag.html$/,
-        exclude: /node_modules/,
-        loader: "riot-tag-loader"
-      },
-      {
         test: /\.tag$/,
         exclude: /node_modules/,
         loader: "riot-tag-loader"

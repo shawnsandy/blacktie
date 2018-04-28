@@ -10,7 +10,7 @@
 
 	<style>
 		:scope {
-			display: inline
+			display: inline-block
 		}
 	</style>
 
