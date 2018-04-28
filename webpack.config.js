@@ -38,7 +38,7 @@ const config = {
   entry: {
     app: __dirname + "/src/app.js",
     components: __dirname + "/src/components/index.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", "riot" ]
+    vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
   output: {
     path: __dirname + "/dist",
@@ -141,6 +141,13 @@ if (isProduction) {
       title: "BlackTie Notifications",
       message: "Production bundled successfully. You are ready to party",
       sound: true
+    }),
+    new Monitor({
+      capture: true, // -> default 'true'
+      target: '../monitor/myStatsStore.json', // default -> '../monitor/stats.json'
+      port: 9999, // default -> 8081
+      launch: true,
+      excludeSourceMaps: true // default 'true'
     })
   );
 }
