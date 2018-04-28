@@ -1,34 +1,33 @@
-.card-elm
-{
-
-	@extend .flex-elm-column;
-	@extend .elm-rds-square;
-	@extend .elm-shadow;
-	@extend .elm-border;
-	> * {
-		@extend .elm-full-width;
-		padding: 0;
-		margin: 0;
-	}
+@import "../../stylesheets/placeholders";
+.card-elm {
+  @extend %flex-elm-column;
+  // @extend %elm-rds-square;
+  @extend %elm-shadow;
+  border-radius: 2px;
+  // @extend %elm-border;
+  > * {
+    width: 100% important;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .card-elm-shadow {
-	@extend .card-elm;
-	@extend .elm-shadow;
+  @extend %elm-shadow;
 }
 
+
 .card-elm-header {
-	@extend .flex-elm-left;
-	padding: 10px 20px;
-	font-weight: 500;
-	@extend .elm-full-width;
+  @extend %flex-elm-left;
+  padding: 10px 20px;
+  font-weight: 500;
+  width: 100% important;
 }
 
 .card-elm-content {
-	@extend .elm-full-height;
-	> * {
-
-		@extend .flex-elm-column;
-		padding: 20px 20px;
-	}
+  height: 100% important;
+  > * {
+    @extend %flex-elm-column;
+    padding: 20px 20px;
+  }
 }

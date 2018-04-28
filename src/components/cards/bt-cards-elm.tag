@@ -10,4 +10,7 @@
 		const customClasses = opts.elmClass || "";
 		this.cardClasses = "card-elm " + customClasses;
 	</script>
+	<style type="text/scss">
+	@import "./_cards.scss";
+	</style>
 </bt-card>
