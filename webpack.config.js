@@ -37,8 +37,8 @@ const config = {
 
   entry: {
     app: __dirname + "/src/app.js",
-    riot: __dirname + "/src/components/index.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", "riot"]
+    components: __dirname + "/src/components/index.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll", "riot" ]
   },
   output: {
     path: __dirname + "/dist",
@@ -121,7 +121,10 @@ const config = {
         from: __dirname + '/src/icons',
         to: "icons"
       }
-    ])
+    ]),
+    new Jarvis({
+      port: 1337 // optional: set a port
+    })
   ],
 
 };
