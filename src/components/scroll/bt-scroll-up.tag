@@ -7,4 +7,7 @@
 	<script src="./index.js">
 
 	</script>
+	<style type="scss">
+	@import "./scroll";
+	</style>
 </bt-scroll-up>
