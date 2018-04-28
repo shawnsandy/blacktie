@@ -13,8 +13,8 @@
   }
 }
 
-@function rem-calc($size) {
-  $remSize: $size / 14px;
+@function rem-calc($size, $default : 16px) {
+  $remSize: $size / $default;
   @return #{$remSize}rem;
 }
 

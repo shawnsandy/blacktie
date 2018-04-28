@@ -1,20 +1,21 @@
 html {
+  font-size: 16px;
+
   @include mobile {
-	font-size: 12px;
-	min-width: 575px;
+	font-size: 11px;
   }
 
 
   @include tablets {
-    font-size: 14px;
+    @include fontSize(14px);
   }
 
   @include desktops {
-    font-size: 16px;
+    @include fontSize(16px);
   }
 
   @include desktops-hd {
-    font-size: 18px;
+    @include fontSize(20px);
   }
 
 
