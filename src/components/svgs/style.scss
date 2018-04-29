@@ -1,20 +1,29 @@
+@import "../../stylesheets/mixins/_mixins.scss";
+
+.bt-icon-tiny {
+	width: rem-calc(16px);
+	height: rem-calc(16px);
+	stroke-width: 2px;
+}
+
 .bt-icon {
-	width: 16px;
-	height: 16px;
+	width: rem-calc(32px);
+	height: rem-calc(32px);
 	stroke-width: 2px;
 }
 
 .bt-icon-sm {
-	width: 24px;
-	height: 24px;
+	width: rem-calc(24px);
+	height: rem-calc(24px);
 }
 
+
 .bt-icon-md {
-	width: 48px;
-	height: 48px;
+	width: rem-calc(48px);
+	height: rem-calc(48px);
 }
 
 .bt-icon-lg {
-	width: 64px;
-	height: 64px;
+	width: rem-calc(64px);
+	height: rem-calc(64px);
 }

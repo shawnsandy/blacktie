@@ -12,7 +12,8 @@
 	<style type="text/scss">
 
         :scope {
-            display: inline-flex;
+			display: inline-flex;
+			overflow: hidden;
 		}
 
 		@import './style.scss';
