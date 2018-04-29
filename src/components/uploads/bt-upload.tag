@@ -33,4 +33,8 @@
 
 	</script>
 
+	<style type="text/scss">
+	@import "./_style.scss"
+	</style>
+
 </bt-upload>
