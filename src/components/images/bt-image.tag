@@ -1,5 +1,6 @@
 <bt-image>
-	<figure class="animated fadeIn figure-elm { elmClass }" style="{ styles }">
+
+	<figure class="animated fadeIn figure-elm { elmClass }" style={ styles }>
 		<img src={ opts.src || src } alt={ opts.alt } class="img-elm">
 		<figcaption class={ captionStyle }>
 			<yield></yield>
@@ -20,4 +21,5 @@
 	<style type="text/scss">
 		@import './img.scss';
 	</style>
+
 </bt-image>
