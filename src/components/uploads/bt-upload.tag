@@ -5,7 +5,7 @@
 			<input type="file" class={ opts.fileClass || "file-elm" } name={ opts.fieldName || "upload" } change={ detectChange } >
 			<span class={ labelStyle }>
 				<div class="upload">
-						<yield>File Upload</yield>
+						<yield>Upload</yield>
 				</div>
 			</span>
 			<span class="file-elm-placeholder">

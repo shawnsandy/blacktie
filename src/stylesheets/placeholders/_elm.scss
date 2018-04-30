@@ -26,3 +26,10 @@
 	@extend %elm-h-100;
 
 }
+
+%elm-truncate {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+}
