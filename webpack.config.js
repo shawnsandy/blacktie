@@ -141,13 +141,6 @@ if (isProduction) {
       title: "BlackTie Notifications",
       message: "Production bundled successfully. You are ready to party",
       sound: true
-    }),
-    new Monitor({
-      capture: true, // -> default 'true'
-      target: '../monitor/myStatsStore.json', // default -> '../monitor/stats.json'
-      port: 9999, // default -> 8081
-      launch: true,
-      excludeSourceMaps: true // default 'true'
     })
   );
 }

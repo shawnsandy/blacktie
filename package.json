@@ -11,7 +11,7 @@
   "collection": "dist/components/collection/collection-manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env ENV=production webpack --hide-modules",
+    "build": "cross-env ENV=production webpack --hide-modules && gulp reports",
     "stencil": "stencil build",
     "start-stencil": "stencil-dev-server",
     "dev": "cross-env ENV=local webpack --hide-modules --progress",
