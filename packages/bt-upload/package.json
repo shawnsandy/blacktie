@@ -1,0 +1,9 @@
+{
+  "name": "bt-upload",
+  "version": "0.0.1",
+  "description": "Blacktie upload copmponent",
+  "main": "index.js",
+  "repository": "http://",
+  "author": "shawn sandy",
+  "license": "MIT"
+}
