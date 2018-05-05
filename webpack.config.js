@@ -9,8 +9,13 @@ const Notify = require("webpack-notifier");
 const OptimizeCss = require("optimize-css-assets-webpack-plugin");
 const Monitor = require("webpack-monitor");
 const Jarvis = require("webpack-jarvis");
+const BrowserSync = require("browser-sync-webpack-plugin")
 
 require("dotenv").config();
+
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 4040;
+const PROXY = `http://${HOST}:${PORT}`;
 
 const ENV = process.env.ENV;
 const isDevelopment = ENV === "development";
@@ -28,17 +33,24 @@ function setDevTool() {
 }
 
 const config = {
-  devtool: setDevTool(),
+  devtool: 'eval-source-map',
 
   entry: {
-    app: __dirname + "/src/js/app.js",
-    riot: __dirname + "/src/riot/index.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
+    app: __dirname + "/src/app.js",
+    components: __dirname + "/src/components/index.js",
+    vendors: ["umbrellajs", "validate", "smooth-scroll"]
   },
   output: {
     path: __dirname + "/dist",
     filename: "js/[name].js",
     publicPath: "/"
+  },
+  devServer: {
+
+    host: HOST,
+    port: PORT,
+    contentBase: __dirname + '/dist',
+
   },
   module: {
     rules: [
@@ -93,17 +105,26 @@ const config = {
     new Webpack.optimize.CommonsChunkPlugin({
       name: "vendors"
     }),
+    new BrowserSync(
+      // BrowserSync options
+      {
+        host: HOST,
+        port: PORT,
+        proxy: PROXY
+      }
+    ),
     new Copy([
       {
-        from: __dirname + "/public/stylesheets"
+        from: __dirname + "/public/stylesheets/"
       },
       {
-        from:
-          __dirname +
-          "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-        to: "icons/bytesize-symbols.min.svg"
+        from: __dirname + '/src/icons/',
+        to: "icons"
       }
-    ])
+    ]),
+    new Jarvis({
+      port: 1337 // optional: set a port
+    })
   ],
 
 };

@@ -5,34 +5,34 @@
 	overflow: hidden;
 	margin-bottom: -1px;
 	display: inline-block;
-	width: 32px;
-	height: 32px;
+	width: rem-calc(32px);
+	height: rem-calc(32px);
 }
 
 .svg-elm-24 {
 	@extend .svg-elm;
-	width: 24px;
-	height: 24px;
+	width: rem-calc(24px);
+	height: rem-calc(24px);
 	margin-bottom: -1px;
 }
 
 .svg-elm-16 {
 	@extend .svg-elm;
-	width: 16px;
-	height: 16px;
+	width: rem-calc(16px);
+	height: rem-calc(16px);
 	margin-bottom: -1px;
 }
 
 .svg-elm-48 {
 	@extend .svg-elm;
-	width: 48px;
-	height: 48px;
+	width: rem-calc(48px);
+	height: rem-calc(48px);
 	margin-bottom: -2px;
 }
 
 .svg-elm-64 {
 	@extend .svg-elm;
-	width: 64px;
-	height: 64px;
+	width: rem-calc(64px);
+	height: rem-calc(64px);
 	margin-bottom: -2px;
 }
