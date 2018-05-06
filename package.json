@@ -1,7 +1,7 @@
 {
   "name": "blacktie",
   "version": "0.1.2",
-  "description": "Jarvis components",
+  "description": "BlacktieBlackTie is a framework agnostic reusable collection of UX/UI patterns, libraries and tools created to make it easy to customize and enhance FrontEnd frameworks like bootstrap, adding missing utilities and elements.",
   "main": "dist/components/btw.js",
   "types": "dist/components/types/index.d.ts",
   "files": [
@@ -31,7 +31,7 @@
     "url": "https://github.com/shawnsandy/blacktie/issues"
   },
   "homepage": "https://github.com/shawnsandy/blacktie#readme",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.0.0-beta.40",
     "autoprefixer": "^7.2.3",
@@ -84,5 +84,10 @@
     "smooth-scroll": "^12.1.5",
     "umbrellajs": "^2.10.1",
     "validate": "cferdinandi/validate"
+  },
+  "bolt": {
+    "workspaces": [
+      "packages/*"
+    ]
   }
 }
