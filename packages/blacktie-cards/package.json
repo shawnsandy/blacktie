@@ -1,0 +1,26 @@
+{
+  "name": "blacktie-cards",
+  "version": "0.0.1",
+  "description": "Blacktie cards component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://"
+  },
+  "keywords": [
+    "riot",
+    "cards",
+    "elements",
+    "custom",
+    "elements"
+  ],
+  "author": "shawn sandy",
+  "license": "MIT",
+  "dependencies": {
+    "blacktie-styles": "^0.0.1",
+    "riot": "^3.9.4"
+  }
+}

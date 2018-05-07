@@ -6,5 +6,6 @@
   "author": "shawn sandy",
   "license": "MIT",
   "dependencies": {
+    "riot": "^3.9.4"
   }
 }
