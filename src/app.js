@@ -1,5 +1,5 @@
-import "./stylesheets/app.scss";
-import "./stylesheets/colors.scss";
+import "../node_modules/blacktie-styles/app.scss";
+import "../node_modules/blacktie-styles/colors.scss";
 
 // let test = new TestClass();
 import { u } from "umbrellajs";
@@ -7,8 +7,6 @@ import { u } from "umbrellajs";
 const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
 
-
-import './components/selections/dropdown/dropdown.js'
 
 /** simple and easy form validation */
 validate.init();

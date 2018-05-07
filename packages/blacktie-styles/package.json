@@ -6,6 +6,5 @@
   "author": "shawn sandy",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.1"
   }
 }
