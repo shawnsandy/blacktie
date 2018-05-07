@@ -115,9 +115,6 @@ const config = {
     ),
     new Copy([
       {
-        from: __dirname + "/public/stylesheets/"
-      },
-      {
         from: __dirname + '/src/icons/',
         to: "icons"
       }
