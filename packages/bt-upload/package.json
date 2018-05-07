@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "http://",
   "author": "shawn sandy",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "riot": "^3.9.4"
+  }
 }
