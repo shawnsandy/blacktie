@@ -6,7 +6,7 @@ import './tags/icon.tag'
 import "blacktie-cards/bt-cards-elm.tag"
 import 'blacktie-file-upload/bt-upload.tag'
 import 'blacktie-file-upload/bt-upload-rounded.tag'
-import './confirm-actions/bt-confirm-action.tag'
+import 'blacktie-confirm-actions/bt-confirm-action.tag'
 import './scroll/bt-scroll-up.tag'
 import './images/bt-image.tag'
 import './elm/bt-elm-lead.tag'
