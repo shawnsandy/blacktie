@@ -1,0 +1,23 @@
+{
+  "name": "blacktie-scroll-top",
+  "version": "0.0.1",
+  "description": "Scroll to top of page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/blacktie.git"
+  },
+  "keywords": [
+    "Elements",
+    "scroll"
+  ],
+  "author": "Shaw Sandy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/blacktie/issues"
+  },
+  "homepage": "https://github.com/shawn-sandy/blacktie#readme"
+}
