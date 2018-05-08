@@ -1,0 +1,28 @@
+{
+  "name": "blacktie-loaders",
+  "version": "0.0.1",
+  "description": "Loading indicators",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/blacktie.git"
+  },
+  "keywords": [
+    "Loading",
+    "indicators",
+    "page",
+    "loading"
+  ],
+  "author": "Shawn Sandy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/blacktie/issues"
+  },
+  "homepage": "https://github.com/shawn-sandy/blacktie#readme",
+  "dependencies": {
+    "riot": "^3.9.4"
+  }
+}

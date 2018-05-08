@@ -11,12 +11,10 @@ import 'blacktie-scroll-top/bt-scroll-up.tag'
 import 'blacktie-images/bt-image.tag'
 import './elm/bt-elm-lead.tag'
 import './truncate/bt-truncate.tag'
-import './svgs/bt-svg-icon.tag'
 import "blacktie-icons/bt-icon.tag"
 import 'blacktie-icons/bt-icon-bytes.tag'
-import './svgs/bt-icon-material.tag'
-import './loaders/spin-loader/bt-loader-spin.tag'
-import './selections/dropdown/bt-dropdown.tag'
-import './loaders/processing/bt-loader-processing.tag'
+import 'blacktie-icons/bt-icon-material.tag'
+import 'blacktie-loaders/spin-loader/bt-loader-spin.tag'
+import 'blacktie-loaders/processing/bt-loader-processing.tag'
 
 riot.mount('*')
