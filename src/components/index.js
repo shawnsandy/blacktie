@@ -4,8 +4,8 @@ import "riot-hot-reload"
 import './tags/todo.tag'
 import './tags/icon.tag'
 import "blacktie-cards/bt-cards-elm.tag"
-import './uploads/bt-upload.tag'
-import './uploads/bt-upload-rounded.tag'
+import 'blacktie-file-upload/bt-upload.tag'
+import 'blacktie-file-upload/bt-upload-rounded.tag'
 import './confirm-actions/bt-confirm-action.tag'
 import './scroll/bt-scroll-up.tag'
 import './images/bt-image.tag'
