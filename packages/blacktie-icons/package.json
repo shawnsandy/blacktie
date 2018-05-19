@@ -8,8 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "riot": "^3.9.5"
+    "riot": "^3.10.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

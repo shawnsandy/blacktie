@@ -21,6 +21,6 @@
   "license": "MIT",
   "dependencies": {
     "blacktie-styles": "^0.0.1",
-    "riot": "^3.9.4"
+    "riot": "^3.10.0"
   }
 }
