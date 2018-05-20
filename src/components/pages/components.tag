@@ -1,5 +1,7 @@
 <bt-page-component>
+
 	<div class="page">
+		<hr>
 		  </div>
 
 		  <div class="container section">

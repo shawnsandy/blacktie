@@ -1,4 +1,5 @@
 <bt-landing-page>
+
 <section class="flex-elm">
     <bt-image caption-style="centered" src="//source.unsplash.com/collection/1278495/2100x600">
       <h1 class="subtitle is-1 elm-color-white">
