@@ -1,7 +1,5 @@
 <bt-page-component>
 	<div class="page">
-
-
 		  </div>
 
 		  <div class="container section">
