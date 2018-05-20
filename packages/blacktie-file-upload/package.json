@@ -24,6 +24,7 @@
   "homepage": "https://github.com/shawn-sandy/blacktie#readme",
   "dependencies": {
     "blacktie-styles": "^0.0.1",
+    "cross-env": "^5.1.5",
     "riot": "^3.10.0"
   }
 }

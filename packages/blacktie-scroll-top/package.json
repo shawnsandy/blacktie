@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/shawn-sandy/blacktie/issues"
   },
-  "homepage": "https://github.com/shawn-sandy/blacktie#readme"
+  "homepage": "https://github.com/shawn-sandy/blacktie#readme",
+  "dependencies": {
+    "cross-env": "^5.1.5"
+  }
 }
