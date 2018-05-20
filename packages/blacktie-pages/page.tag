@@ -2,20 +2,28 @@
 	<main data-is={ page }></main>
 	<script>
 		import route from 'riot-route'
-		var self = this;
-		route.start(true);
+		var self = this
+		const links = {
+			home: "/",
+			components: "bt-components"
+		}
+		route.start(true)
 
-		self.page = 'bt-landing-page';
+		self.page = 'bt-landing-page'
 
-		route('page', function () {
+		route(function (page, id, action) {
 
-			console.log('routes')
-			switchComponent()
+			if (page) {
+				self.page = page;
+				switchComponent(self.page)
+			}
+
+			console.log('routes', self.page, id, action)
 
 		})
 
-		function switchComponent(){
-			self.page = 'bt-page-component'
+		function switchComponent(page) {
+			self.page = page
 			self.update()
 		}
 	</script>
