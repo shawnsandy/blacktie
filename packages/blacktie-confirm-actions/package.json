@@ -18,6 +18,7 @@
   "homepage": "https://github.com/shawn-sandy/blacktie#readme",
   "dependencies": {
     "cross-env": "^5.1.5",
-    "riot": "^3.10.0"
+    "riot": "^3.10.0",
+    "riot-route": "^3.1.3"
   }
 }
